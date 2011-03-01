@@ -1,0 +1,62 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+
+class Controller_Helper_Lightcast extends Controller {
+	
+	public function action_index()
+	{
+		echo 'test';
+	}
+	
+	public function action_channel($channel_id = NULL, )
+	{
+		
+		if(isset($channel_id))
+		{
+			$get_channel = file_get_contents('http://customers.lightcastmedia.com/api/consoleListVideos?output=json&console=' . $channel_id . '&client=3073&limit=300');
+		
+			$channel_array = json_decode($get_channel, TRUE);
+			$channel_array = $channel_array['response']['data'];
+			
+			echo 'working...<br /><br />';
+			
+			foreach($channel_array as $array)
+			{
+				$video_db = ORM::factory('sermon');
+				$video_db->where('lightcast_id', '=', $array['id'])->find();
+				
+				if($video_db->loaded())
+				{
+					// Check to see if cupertino is set to 1 and update database
+					if ($array['cupertino'] == 1)
+					{
+						$video_db->cupertino = 1;
+						$video_db->save();
+					}
+				}
+				else
+				{
+					$video_db->lightcast_id = $array['id'];
+					$video_db->podcast_id = 1;
+					$video_db->speaker_id = 1;
+					$video_db->title = $array['title'];
+					$video_db->description = $array['description'];
+					$video_db->file_size = $array['size'];
+					$video_db->duration = $array['duration'];
+					$video_db->cupertino = $array['cupertino'];
+					$video_db->lightcast_location = $array['embed']['location'];
+					$video_db->lightcast_code = $array['embed']['code'];
+					$video_db->date = strtotime($array['updated']);
+					
+					$video_db->save();
+					
+				}
+				
+			}
+			
+			echo 'ET phoned home :)';
+		
+		}
+		
+	}
+	
+}
