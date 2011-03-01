@@ -4,7 +4,7 @@ class Controller_Admin_Dashboard extends Controller_Admin_Auth {
 	
 	public function action_index()
 	{
-		echo 'test';
+		$this->template->content = View::factory('admin/dashboard');
 	}
 	
 }

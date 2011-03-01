@@ -6,6 +6,10 @@ class Controller_Admin_Auth extends Controller_Admin_Default {
 	public function action_index()
 	{
 		// Set sessions and check if logged in.
+		// Render list of navigation
+		Session::instance();
 		
 	}
+	
+	
 }

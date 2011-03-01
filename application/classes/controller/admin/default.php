@@ -2,7 +2,7 @@
 
 class Controller_Admin_Default extends Controller_Template {
 	
-	public $template = 'admin';
+	public $template = 'admin/layout';
 	
 	public function before()
 	{
@@ -18,7 +18,7 @@ class Controller_Admin_Default extends Controller_Template {
 			$this->template->scripts	= array();
 			
 			// Load nav
-			$this->template->nav = View::factory('admin/blocks/nav')->render();
+			$this->template->nav = View::factory('admin/blocks/mainnav')->render();
 			
 		}
 	}
