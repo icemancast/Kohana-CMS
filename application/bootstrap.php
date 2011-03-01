@@ -83,7 +83,6 @@ Kohana::init(array(
 	'base_url'   => 'http://localhost/communitybible/',
 	'index_file' => '',
 ));
-
 /**
  * Attach the file write to logging. Multiple writers are supported.
  */
