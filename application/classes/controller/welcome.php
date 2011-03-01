@@ -5,6 +5,8 @@ class Controller_Welcome extends Controller {
 	public function action_index()
 	{
 		$this->request->response = 'hello, world!';
+		
+		echo KOHANA_VERSION;
 	}
 
 } // End Welcome
