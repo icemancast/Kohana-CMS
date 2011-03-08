@@ -7,7 +7,7 @@ class Controller_Helper_Lightcast extends Controller {
 		echo 'test';
 	}
 	
-	public function action_channel($channel_id = NULL, )
+	public function action_channel($channel_id = NULL)
 	{
 		
 		if(isset($channel_id))
@@ -27,7 +27,7 @@ class Controller_Helper_Lightcast extends Controller {
 				if($video_db->loaded())
 				{
 					// Check to see if cupertino is set to 1 and update database
-					if ($array['cupertino'] == 1)
+					if ($array['cupertino'] == 1 && $video_db->cupertino == 0)
 					{
 						$video_db->cupertino = 1;
 						$video_db->save();

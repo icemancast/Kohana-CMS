@@ -7,7 +7,7 @@ class Model_Speaker extends ORM {
 	);
 	
 	protected $_has_one = array(
-		'podcast' => array('model' => 'podcast');
+		'podcast' => array('model' => 'podcast'),
 	);
 	
 }

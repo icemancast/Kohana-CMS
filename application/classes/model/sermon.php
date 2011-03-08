@@ -7,4 +7,9 @@ class Model_Sermon extends ORM {
 		'podcast' => array('model' => 'podcast'),
 	);
 	
+	public function find_iphone_video()
+	{
+		return $this->where('cupertino', '=', '1')->find_all();
+	}
+	
 }
