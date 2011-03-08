@@ -7,7 +7,7 @@ class Controller_Admin_Nav extends Controller_Admin_Auth {
 	public function action_index()
 	{
 		
-		$navs = ORM::factory('nav')->order_by('date_modified', 'desc')->find_all();
+		$navs = ORM::factory('nav')->get_all();
 		$this->template->content = View::factory('admin/pages/nav')
 			->bind('navs', $navs);
 
@@ -20,36 +20,55 @@ class Controller_Admin_Nav extends Controller_Admin_Auth {
 			->bind('post', $post)
 			->bind('errors', $errors);
 		
-		$id = $this->request->param('id', FALSE);
+		$id = (!empty($_POST)) ? $_POST['id'] : $this->request->param('id', FALSE);
 		$nav = ORM::factory('nav', $id);
 		
 		if($nav->loaded())
 		{
 			$post['title'] = $nav->title;
+			$post['id'] = $nav->id;
 		}
 		
 		if(!empty($_POST))
 		{
 			
-			$values = Arr::extract($_POST, array('title'));
+			$values = Arr::extract($_POST, array('title', 'id'));
 			$nav->values($values);
 			
-			if($nav->check())
+			try
 			{
-
+				
 				$nav->save();
 				
-				Session::instance()->set('message', $id . ' - You navigation has been added/updated. | <a href="nav/manage/">Add Another</a>');
+				Session::instance()->set('message', 'You navigation has been added/updated. | <a href="nav/manage/">Add Another</a>');	
+				$this->request->redirect('/admin/nav/');
 				
-				$message = Session::instance()->get('message');
-				echo $message;
 			}
-			else
+			catch (ORM_Validation_Exception $e)
 			{
-				$errors = $nav->validate()->errors('msg_errors');
+				$errors = $e->errors('models');
 			}
 		}
 		
+	}
+	
+	public function action_delete()
+	{
+		$id = $this->request->param('id', false);
+		$nav = ORM::factory('nav', $id);
+		
+		if($this->request->param('var', false) == 'Y3s')
+		{
+			$nav->delete();
+			Session::instance()->set('message', 'Item ' . $id . ' has been deleted.');
+			$this->request->redirect(url::site() . 'admin/nav/');
+		}
+		else
+		{
+			Session::instance()->set('message', 'Are you sure you want to delete item ' . $id . '? <a href="' . url::site() . 'admin/nav/delete/' . $id . '/Y3s">Yes</a>.');
+			$this->request->redirect(url::site() . 'admin/nav/');
+		}
+
 	}
 	
 }

@@ -3,32 +3,45 @@
 class Model_Nav extends ORM {
 	
 	//protected has one user
-	
-	protected $_rules = array
-	(
-		
-		'title' => array(
-			'not_empty' => NULL,
-		),
-		
+	protected $_has_one = array(
+		'user' => array('model', 'user'),
 	);
+	
+	public function rules()
+	{
+		
+		return array(
+			'title' => array(
+				array('not_empty'),
+			),
+		
+		);
+	}
 
-	protected $_filters = array
-	(
-		'title' => array(
-			'trim' => NULL,
-			'stripslashes' => NULL
-		),
-	);
+	public function filters()
+	{
+		return array(
+			'title' => array(
+				array('trim'),
+			),
+		);
+	}
 	
-	public $fields = array
-	(
-		'id',
-		'title',
-	);
+	public function labels()
+	{
+		return array(
+			'id' => 'id',
+			'title' => 'Title',
+		);
+	}
 	
 	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
 	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
+	
+	public function get_all()
+	{
+		return $this->order_by('date_created', 'desc')->find_all();
+	}
 	
 	
 	//protected $_created_column = array('column')

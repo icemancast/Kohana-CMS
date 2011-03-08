@@ -2,7 +2,7 @@
 <ul class="errors ui-state-error ui-corner-all">
 	<span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
 	<?php foreach($errors as $error) : ?>
-	<li><?= $error; ?></li>
+	<li><?= ucfirst($error); ?></li>
 	<?php endforeach ?>
 </ul>
 <?php endif; ?>
@@ -22,6 +22,7 @@
 
 <p>
 	<label>&nbsp;</label>
+	<?= Form::hidden('id', $post['id']); ?>
 	<?= Form::submit('send', 'Submit to my Power', array('class' => 'button ui-corner-all')); ?>
 </p>
 

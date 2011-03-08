@@ -29,11 +29,11 @@ Session::instance()->delete('message');
 		
 		<?php foreach($navs as $nav): ?>
 		<?php
-			$date_modified = date('M d, y', $nav->date_modified);
+			$date_created = date('M d, y', $nav->date_created);
 		
 			echo '<tr>
 				<td>' . $nav->title . '</td>
-				<td>' . $date_modified . '</td>
+				<td>' . $date_created . '</td>
 				<td class="text-center"><a href="' . url::base() . 'admin/nav/manage/' . $nav->id . '"><img src="' . url::base() . 'media/images/icons/application_edit.png"></a></td>
 			</tr>';	?>
 		<?php endforeach; ?>
