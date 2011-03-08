@@ -83,6 +83,7 @@ Kohana::init(array(
 	'base_url'   => 'http://localhost/communitybible/',
 	'index_file' => '',
 ));
+
 /**
  * Attach the file write to logging. Multiple writers are supported.
  */
@@ -111,19 +112,19 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 	->defaults(array(
 		'directory' => 'admin',
 		'controller' => 'dashboard',
 		'action'     => 'index',
 	));
 
-Route::set('helper', 'helper(/<controller>(/<action>(/<id>)))')
-	->defaults(array(
-		'directory' => 'helper',
-		'controller' => 'welcome',
-		'action'     => 'index',
-	));
+// Route::set('helper', 'helper(/<controller>(/<action>(/<id>)))')
+// 	->defaults(array(
+// 		'directory' => 'helper',
+// 		'controller' => 'welcome',
+// 		'action'     => 'index',
+// 	));
 
 Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	->defaults(array(
