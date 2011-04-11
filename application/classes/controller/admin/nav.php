@@ -25,14 +25,14 @@ class Controller_Admin_Nav extends Controller_Admin_Auth {
 		
 		if($nav->loaded())
 		{
-			$post['title'] = $nav->title;
+			$post['nav_title'] = $nav->nav_title;
 			$post['id'] = $nav->id;
 		}
 		
 		if(!empty($_POST))
 		{
 			
-			$values = Arr::extract($_POST, array('title', 'id'));
+			$values = Arr::extract($_POST, array('nav_title', 'id'));
 			$nav->values($values);
 			
 			try
