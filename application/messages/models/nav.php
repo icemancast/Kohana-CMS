@@ -2,7 +2,7 @@
 
 return array(
 	
-	'title' => array(
+	'nav_title' => array(
 		'not_empty' => 'Yo fill in the title.',
 	),
 );

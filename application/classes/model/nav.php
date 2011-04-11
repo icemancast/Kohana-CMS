@@ -7,21 +7,31 @@ class Model_Nav extends ORM {
 		'user' => array('model', 'user'),
 	);
 	
+	protected $_has_many = array(
+		'url' => array('model', 'url'),
+	);
+	
+	protected $_belongs_to = array(
+		'user' => array(),
+	);
+	
+	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
+	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
+	
 	public function rules()
 	{
 		
 		return array(
-			'title' => array(
+			'nav_title' => array(
 				array('not_empty'),
 			),
-		
 		);
 	}
 
 	public function filters()
 	{
 		return array(
-			'title' => array(
+			'nav_title' => array(
 				array('trim'),
 			),
 		);
@@ -31,61 +41,18 @@ class Model_Nav extends ORM {
 	{
 		return array(
 			'id' => 'id',
-			'title' => 'Title',
+			'nav_title' => 'Title',
 		);
 	}
-	
-	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
-	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
 	
 	public function get_all()
 	{
 		return $this->order_by('date_created', 'desc')->find_all();
 	}
 	
-	
-	//protected $_created_column = array('column')
-	
-/*
-	public function validate_create($post)
+	public function get_for_pulldown()
 	{
-		$array = Validate::factory($post)
-			->rules('title', $this->_rules['title'])
-			->filter('title', 'trim')
-			->filter('title', 'stripslashes');
-		
-		return $array;
+		return $this->find_all()->as_array('id', 'nav_title');
 	}
-	*/
-	/*
-	public function save_it($field, $id)
-	{
-		
-		// Get and save user id
-		// FOR NOW USER ID 1 TILL LOGIN CREATED
-
-		// Date
-		$today = date('Y-m-d H:i:s');
-		$date_string = strtotime($today);
-		
-		$this->user_id = '1';
-		$this->title = $field['title'];
-		if ($id == NULL) { $this->date_created = $date_string; }
-		$this->date_modified = $date_string;
-		
-		return $this->save();
-		
-	}
-	
-	/*public function get_one($id)
-	{
-		return $this->find($id);
-	}*
-	
-	public function get_all()
-	{
-		return $this->find_all();
-	}
-	*/
 	
 }
