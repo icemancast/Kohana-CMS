@@ -14,8 +14,8 @@
 <legend>All required</legend>
 
 <p>
-	<?= Form::label('title', '* Nav Title'); ?>
-	<?= Form::input('title', !empty($post['title']) ? $post['title'] : '', array('id' => 'title' )); ?>
+	<?= Form::label('nav_title', '* Nav Title'); ?>
+	<?= Form::input('nav_title', !empty($post['nav_title']) ? $post['nav_title'] : '', array('id' => 'nav_title' )); ?>
 </p>
 
 </fieldset>

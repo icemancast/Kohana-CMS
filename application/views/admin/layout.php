@@ -12,6 +12,17 @@
 <?= HTML::script('media/admin/js/jquery-1.4.2.min.js') . "\n"; ?>
 <?= HTML::script('media/admin/js/jquery-ui-1.8.4.custom.min.js') . "\n"; ?>
 
+<script type="text/javascript"> 
+	
+	$(document).ready(function()
+		{
+			$(".datepicker").datepicker();
+			$(".time").timepickr();
+		}
+	);
+	
+</script>
+
 </head>
 
 <body>

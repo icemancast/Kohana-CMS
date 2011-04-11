@@ -20,6 +20,7 @@ Session::instance()->delete('message');
 	<caption>Navigation Items</caption>
 	<thead>
   	<tr>
+		<th width="25">id</td>
 		<th>Title</td>
 		<th width="100">Last Modified</td>
 		<th width="35">Edit</td>
@@ -32,7 +33,8 @@ Session::instance()->delete('message');
 			$date_created = date('M d, y', $nav->date_created);
 		
 			echo '<tr>
-				<td>' . $nav->title . '</td>
+				<td>' . $nav->id . '</td>
+				<td>' . $nav->nav_title . '</td>
 				<td>' . $date_created . '</td>
 				<td class="text-center"><a href="' . url::base() . 'admin/nav/manage/' . $nav->id . '"><img src="' . url::base() . 'media/images/icons/application_edit.png"></a></td>
 			</tr>';	?>
