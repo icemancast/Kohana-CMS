@@ -1,9 +1,7 @@
 <?php defined('SYSPATH') or die ('No direct script access.');
 
 class Controller_Admin_Nav extends Controller_Admin_Auth {
-	
-	public $navs;
-	
+		
 	public function action_index()
 	{
 		
@@ -47,6 +45,7 @@ class Controller_Admin_Nav extends Controller_Admin_Auth {
 			catch (ORM_Validation_Exception $e)
 			{
 				$errors = $e->errors('models');
+				$post = $values;
 			}
 		}
 		
