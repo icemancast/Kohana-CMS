@@ -32,9 +32,6 @@ class Model_Event extends ORM {
 			'date_published' => array(
 				array('not_empty'),
 			),
-			'date_expired' => array(
-				array('not_empty'),
-			),
 		);
 	}
 	

@@ -33,6 +33,11 @@
 </p>
 
 <p>
+	<?= Form::label('registration_url', 'Registration Url'); ?>
+	<?= Form::input('registration_url', !empty($post['registration_url']) ? $post['registration_url'] : '', array('id' => 'registration_url' )); ?>
+</p>
+
+<p>
 	<?= Form::label('tags', '* Tags'); ?>
 	<?= Form::input('tags', !empty($post['tags']) ? $post['tags'] : '', array('id' => 'tags' )); ?>
 	<small>(Separate by commma)</small>
@@ -49,12 +54,22 @@
 </p>
 
 <p>
+	<?= Form::label('date_eventend', 'Event End Date'); ?>
+	<?= Form::input('date_eventend', !empty($post['date_eventend']) ? $post['date_eventend'] : '0', array('id' => 'date_eventend', 'class' => 'datepicker' )); ?>
+</p>
+
+<p>
+	<?= Form::label('event_time', '* Event Time'); ?>
+	<?= Form::input('event_time', !empty($post['event_time']) ? $post['event_time'] : '', array('id' => 'event_time', 'class' => 'timepicker' )); ?> <small>(Format HH:mm - 24 hour)</small>
+</p>
+
+<p>
 	<?= Form::label('date_published', '* Date published'); ?>
 	<?= Form::input('date_published', !empty($post['date_published']) ? $post['date_published'] : '', array('id' => 'date_published', 'class' => 'datepicker' )); ?>
 </p>
 
 <p>
-	<?= Form::label('date_expired', '* Date expired'); ?>
+	<?= Form::label('date_expired', 'Date expired'); ?>
 	<?= Form::input('date_expired', !empty($post['date_expired']) ? $post['date_expired'] : '0', array('id' => 'date_expired', 'class' => 'datepicker' )); ?>
 	<small>(put "0" to use event date as expiration)</small>
 </p>

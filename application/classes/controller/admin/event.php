@@ -27,16 +27,21 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 		if($events->loaded())
 		{
 			$date_event = date('m/d/Y', $events->date_event);
+			$event_time = date('HH:i', $events->date_event);
 			$date_published = date('m/d/Y', $events->date_published);
-			$date_expired = date('m/d/Y', $events->date_expired);
+			if ($events->date_expired != 0) { $date_expired = date('m/d/Y', $events->date_expired); } else { $date_expired = $events->date_expired; }
+			if ($events->date_eventend != 0) { $date_eventend = date('m/d/Y', $events->date_eventend); } else { $date_eventend = $events->date_eventend; }
 			
 			$post['id'] = $events->id;
 			$post['event_title'] = $events->event_title;
 			$post['image'] = $events->image;
 			$post['description'] = $events->description;
+			$post['registration_url'] = $events->registration_url;
 			$post['tags'] = $events->tags;
 			$post['slug'] = $events->slug;
 			$post['date_event'] = $date_event;
+			$post['date_eventend'] = $date_eventend;
+			$post['event_time'] = $event_time;
 			$post['date_published'] = $date_published;
 			$post['date_expired'] = $date_expired;
 		}
@@ -47,11 +52,14 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 				TODO Make sure all fields are in order. Also look at using fields in model.
 			*/
 			// Convert date
-			$_POST['date_event'] = strtotime($_POST['date_event']);
+			$_POST['date_event'] = strtotime($_POST['date_event'] . ' ' . $_POST['event_time']);
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
 			
-			$values = Arr::extract($_POST, array('id', 'event_title', 'image', 'description', 'tags', 'slug', 'date_event', 'date_published', 'date_expired'));
+			$tags = str_replace(', ', ',', trim($_POST['tags']));
+			$_POST['tags'] = json_encode(explode(',', $tags));
+			
+			$values = Arr::extract($_POST, array('id', 'event_title', 'image', 'description', 'registration_url', 'tags', 'slug', 'date_event', 'date_published', 'date_expired'));
 			$events->values($values);
 			
 			try
@@ -66,6 +74,7 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 			catch (ORM_Validation_Exception $e)
 			{
 				$errors = $e->errors('models');
+				$post = $values;
 			}
 		}
 		
