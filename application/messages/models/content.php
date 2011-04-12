@@ -7,5 +7,14 @@ return array(
 	'content_title' => array(
 		'not_empty' => 'Yo fill in the title.',
 	),
+	'content' => array(
+		'not_empty' => 'You need content.',
+	),
+	'sort' => array(
+		'not_empty' => 'Don\'t forget to add a sort.',
+	),
+	'date_published' => array(
+		'not_empty' => 'Need to put a publish date.',
+	),
 	
 );

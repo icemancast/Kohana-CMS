@@ -19,6 +19,9 @@ class Model_Content extends ORM {
 			'content' => array(
 				array('not_empty'),
 			),
+			'sort' => array(
+				array('not_empty'),
+			),
 			'date_published' => array(
 				array('not_empty'),
 			),

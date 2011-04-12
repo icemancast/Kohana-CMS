@@ -31,7 +31,7 @@ class Controller_Admin_Content extends Controller_Admin_Auth {
 		if($contents->loaded())
 		{
 			$date_published = date('m/d/Y', $contents->date_published);
-			$date_expired = date('m/d/Y', $contents->date_expired);
+			if ($contents->date_expired != 0) { $date_expired = date('m/d/Y', $contents->date_expired); } else { $date_expired = $contents->date_expired; }
 			
 			$post['id'] = $contents->id;
 			$post['page_id'] = $contents->page_id;
@@ -64,6 +64,7 @@ class Controller_Admin_Content extends Controller_Admin_Auth {
 			catch (ORM_Validation_Exception $e)
 			{
 				$errors = $e->errors('models');
+				$post = $values;
 			}
 		}
 		
