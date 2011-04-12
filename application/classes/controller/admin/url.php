@@ -1,15 +1,15 @@
 <?php defined('SYSPATH') or die ('No direct script access.');
 
 class Controller_Admin_Url extends Controller_Admin_Auth {
-	
-	public $nav_urls;
-	
+		
 	public function action_index()
 	{
 		
 		$urls = ORM::factory('url')->get_all();
+		$navs = ORM::factory('nav')->get_all();
 		$this->template->content = View::factory('admin/pages/url')
-			->bind('urls', $urls);
+			->bind('urls', $urls)
+			->bind('navs', $navs);
 
 	}
 	
@@ -35,7 +35,7 @@ class Controller_Admin_Url extends Controller_Admin_Auth {
 		if($url->loaded())
 		{
 			$date_published = date('m/d/Y', $url->date_published);
-			$date_expired = date('m/d/Y', $url->date_expired);
+			if ($url->date_expired != 0) { $date_expired = date('m/d/Y', $url->date_expired); } else { $date_expired = $url->date_expired; }
 			
 			$post['id'] = $url->id;
 			$post['nav_id'] = $url->nav_id;
@@ -68,6 +68,7 @@ class Controller_Admin_Url extends Controller_Admin_Auth {
 			catch (ORM_Validation_Exception $e)
 			{
 				$errors = $e->errors('models');
+				$post = $values;
 			}
 		}
 		

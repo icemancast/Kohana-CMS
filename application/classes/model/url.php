@@ -36,6 +36,7 @@ class Model_Url extends ORM {
 			'date_published' => array(
 				array('not_empty'),
 			),
+			
 		);
 	}
 	
