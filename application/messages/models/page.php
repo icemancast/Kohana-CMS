@@ -19,5 +19,5 @@ return array(
 	),
 	'date_published' => array(
 		'not_empty' => 'Select a date to publish this.',
-	)
+	),
 );

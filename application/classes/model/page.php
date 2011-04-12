@@ -21,10 +21,16 @@ class Model_Page extends ORM {
 	public function rules()
 	{
 		return array(
+			'slug' => array(
+				array('not_empty'),
+			),
 			'browser_title' => array(
 				array('not_empty'),
 			),
 			'page_title' => array(
+				array('not_empty'),
+			),
+			'date_published' => array(
 				array('not_empty'),
 			),
 		);

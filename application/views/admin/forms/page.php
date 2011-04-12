@@ -59,7 +59,7 @@
 </p>
 
 <p>
-	<?= Form::label('date_expired', '* Date expired'); ?>
+	<?= Form::label('date_expired', 'Date expired'); ?>
 	<?= Form::input('date_expired', !empty($post['date_expired']) ? $post['date_expired'] : '0', array('id' => 'date_expired', 'class' => 'datepicker' )); ?>
 </p>
 
