@@ -49,8 +49,13 @@
 </p>
 
 <p>
-	<?= Form::label('date_event', '* Event Date'); ?>
-	<?= Form::input('date_event', !empty($post['date_event']) ? $post['date_event'] : '', array('id' => 'date_event', 'class' => 'datepicker' )); ?>
+	<?= Form::label('status', '* Event Status'); ?>
+	<?= Form::select('status', $select_status, !empty($post['status']) ? $post['status'] : ''); ?>
+</p>
+
+<p>
+	<?= Form::label('event_date', '* Event Date'); ?>
+	<?= Form::input('event_date', !empty($post['event_date']) ? $post['event_date'] : '', array('id' => 'event_date', 'class' => 'datepicker' )); ?>
 </p>
 
 <p>

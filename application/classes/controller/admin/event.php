@@ -19,15 +19,19 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 
 		$this->template->content = View::factory('admin/forms/event')
 			->bind('post', $post)
-			->bind('errors', $errors);
+			->bind('errors', $errors)
+			->bind('select_status', $select_status);
 		
 		$id = (!empty($_POST)) ? $_POST['id'] : $this->request->param('id', FALSE);
 		$events = ORM::factory('event', $id);
 		
+		$select_status = $events->select_status;
+		
 		if($events->loaded())
 		{
-			$date_event = date('m/d/Y', $events->date_event);
-			$event_time = date('HH:i', $events->date_event);
+			$event_date = date('m/d/Y', $events->date_event);
+			$event_time = date('H:i', $events->date_event);
+			
 			$date_published = date('m/d/Y', $events->date_published);
 			if ($events->date_expired != 0) { $date_expired = date('m/d/Y', $events->date_expired); } else { $date_expired = $events->date_expired; }
 			if ($events->date_eventend != 0) { $date_eventend = date('m/d/Y', $events->date_eventend); } else { $date_eventend = $events->date_eventend; }
@@ -39,7 +43,8 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 			$post['registration_url'] = $events->registration_url;
 			$post['tags'] = $events->tags;
 			$post['slug'] = $events->slug;
-			$post['date_event'] = $date_event;
+			$post['status'] = $events->status;
+			$post['event_date'] = $event_date;
 			$post['date_eventend'] = $date_eventend;
 			$post['event_time'] = $event_time;
 			$post['date_published'] = $date_published;
@@ -52,14 +57,30 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 				TODO Make sure all fields are in order. Also look at using fields in model.
 			*/
 			// Convert date
-			$_POST['date_event'] = strtotime($_POST['date_event'] . ' ' . $_POST['event_time']);
+			
+			$_POST['date_event'] = strtotime($_POST['event_date'] . ' ' . $_POST['event_time']);
+			
+			
+			/*
+			echo '<br />';
+			
+			$str_date = strtotime($_POST['date_event']);
+			
+			echo $str_date . '<br />';
+			
+			$datestuff = date('m/d/Y h:ia', $str_date);
+			
+			$time = date('h:ia', $str_date);
+			
+			echo $datestuff;
+			
+			echo '<br /><br />' . $time; */
+			
+			//$_POST['date_event'] = strtotime($_POST['date_event'] . ' ' . $_POST['event_time']);
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
 			
-			$tags = str_replace(', ', ',', trim($_POST['tags']));
-			$_POST['tags'] = json_encode(explode(',', $tags));
-			
-			$values = Arr::extract($_POST, array('id', 'event_title', 'image', 'description', 'registration_url', 'tags', 'slug', 'date_event', 'date_published', 'date_expired'));
+			$values = Arr::extract($_POST, array('id', 'event_title', 'image', 'description', 'registration_url', 'tags', 'slug', 'status', 'event_date', 'date_event', 'event_time', 'date_published', 'date_expired'));
 			$events->values($values);
 			
 			try
