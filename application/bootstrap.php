@@ -104,6 +104,7 @@ Kohana::modules(array(
 	'database'   => MODPATH.'database',   // Database access
 	'image'      => MODPATH.'image',      // Image manipulation
 	'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	'f1'        => MODPATH.'f1',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 ));
@@ -126,6 +127,8 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 // 		'action'     => 'index',
 // 	));
 
+
+
 Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'directory' => 'app',
@@ -135,6 +138,6 @@ Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
-		'controller' => 'welcome',
+		'controller' => 'admin/dashboard',
 		'action'     => 'index',
 	));
