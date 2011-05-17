@@ -35,6 +35,11 @@ class Model_Event extends ORM {
 		);
 	}
 	
+	public $select_status = array(
+		'inactive' => 'inactive',
+		'active' => 'active',
+	);
+	
 	public function get_all()
 	{
 		return $this->order_by('date_event', 'desc')->find_all();
