@@ -88,7 +88,15 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 				
 				$events->save();
 				
-				Session::instance()->set('message', 'You navigation has been added/updated. | <a href="event/manage/">Add Another</a>');	
+				// Save tags
+				$tags = ORM::factory('tag')->tags_to_array($events->tags);
+				//$tags->add('tags', $tags);
+				
+				var_dump($tags);
+				
+				exit();
+				
+				Session::instance()->set('message', 'You event has been added/updated. | <a href="event/manage/">Add Another</a>');	
 				$this->request->redirect('/admin/event/');
 				
 			}
