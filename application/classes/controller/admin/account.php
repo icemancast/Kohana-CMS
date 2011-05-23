@@ -10,7 +10,17 @@ class Controller_Admin_Account extends Controller_Admin_Auth {
 		
 		if(!empty($_POST))
 		{
+			$values = Arr::extract($_POST, array('email', 'password'));
 			
+			try
+			{
+				$validate = Validation::factory($values)
+					->rule()
+			}
+			catch('......?' $e)
+			{
+				$errors = $e->errors('models');
+			}
 		}
 		
 	}
