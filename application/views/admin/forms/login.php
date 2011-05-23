@@ -14,6 +14,19 @@
 <legend>All Fields required</legend>
 
 <p>
-	<?= Form::label('email', 'Email'); ?>
+	<?= Form::label('email', '* Email'); ?>
 	<?= Form::input('email', !empty($post['email']) ? $post['email'] : '', array('id' => 'email' )); ?>
 </p>
+
+<p>
+	<?= Form::label('password', '* Password'); ?>
+	<?= Form::password('password', '', array('id' => 'password' )); ?>
+</p>
+
+<p>
+	<label>&nbsp;</label>
+	<?= Form::hidden('id', $post['id']); ?>
+	<?= Form::submit('send', 'Submit to my Power', array('class' => 'button ui-corner-all')); ?>
+</p>
+
+<?= Form::close(); ?>
