@@ -7,6 +7,13 @@ class Model_Event extends ORM {
 		'user' => array('model', 'user'),
 	);
 	
+	protected $_has_many = array(
+		'tags' => array(
+			'model' => 'tag',
+			'through' => 'tags_events',
+		),
+	);
+	
 	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
 	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
 	
