@@ -92,6 +92,8 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 				$tags = ORM::factory('tag')->tags_to_array($events->tags);
 				//$tags->add('tags', $tags);
 				
+				foreach ($tags as $tag) { $events->add('tags', $tag); }
+				
 				var_dump($tags);
 				
 				exit();
