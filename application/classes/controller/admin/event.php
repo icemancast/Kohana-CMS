@@ -90,13 +90,11 @@ class Controller_Admin_Event extends Controller_Admin_Auth {
 				
 				// Save tags
 				$tags = ORM::factory('tag')->tags_to_array($events->tags);
-				//$tags->add('tags', $tags);
 				
-				foreach ($tags as $tag) { $events->add('tags', $tag); }
-				
-				var_dump($tags);
-				
-				exit();
+				foreach ($tags as $tag)
+				{
+					$events->add('tags', $tag);
+				}
 				
 				Session::instance()->set('message', 'You event has been added/updated. | <a href="event/manage/">Add Another</a>');	
 				$this->request->redirect('/admin/event/');
