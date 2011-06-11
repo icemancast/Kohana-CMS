@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die ('No direct script access.');
 
-class Controller_Admin_Url extends Controller_Admin_Auth {
+class Controller_Admin_Url extends Controller_Admin_Default {
 		
 	public function action_index()
 	{

@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die ('No direct script access');
 
-class Controller_Admin_Account extends Controller_Admin_Auth {
+class Controller_Admin_Account extends Controller_Admin_Default {
 	
 	public function action_index()
 	{
@@ -8,20 +8,20 @@ class Controller_Admin_Account extends Controller_Admin_Auth {
 			->bind('post', $post)
 			->bind('errors', $errors);
 		
-		if(!empty($_POST))
-		{
-			$values = Arr::extract($_POST, array('email', 'password'));
-			
-			try
-			{
-				$validate = Validation::factory($values)
-					->rule()
-			}
-			catch('......?' $e)
-			{
-				$errors = $e->errors('models');
-			}
-		}
+		// if(!empty($_POST))
+		// {
+		// 	$values = Arr::extract($_POST, array('email', 'password'));
+		// 	
+		// 	try
+		// 	{
+		// 		$validate = Validation::factory($values)
+		// 			->rule();
+		// 	}
+		// 	catch('......?' $e)
+		// 	{
+		// 		$errors = $e->errors('models');
+		// 	}
+		// }
 		
 	}
 	

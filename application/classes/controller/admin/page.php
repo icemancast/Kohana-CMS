@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die('No direct script access');
 
-class Controller_Admin_Page extends Controller_Admin_auth {
+class Controller_Admin_Page extends Controller_Admin_Default {
 
 	public $pages;
 

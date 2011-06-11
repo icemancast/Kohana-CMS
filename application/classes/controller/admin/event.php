@@ -1,6 +1,6 @@
 <?php defined('SYSPATH') or die ('No direct script access.');
 
-class Controller_Admin_Event extends Controller_Admin_Auth {
+class Controller_Admin_Event extends Controller_Admin_Default {
 	
 	/*
 		TODO Probably need to add status to event for draft, published.
