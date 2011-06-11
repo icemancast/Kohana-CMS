@@ -4,6 +4,8 @@ class Controller_Admin_Default extends Controller_Template {
 	
 	public $template = 'admin/layout';
 	
+	private $_session;
+	
 	public function before()
 	{
 		
@@ -21,6 +23,9 @@ class Controller_Admin_Default extends Controller_Template {
 			$this->template->nav = View::factory('admin/blocks/mainnav')->render();
 			
 		}
+		
+		$this->_session = Session::instance();
+		
 	}
 	
 	
