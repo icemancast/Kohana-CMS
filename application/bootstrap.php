@@ -119,16 +119,7 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 		'controller' => 'dashboard',
 		'action'     => 'index',
 	));
-
-// Route::set('helper', 'helper(/<controller>(/<action>(/<id>)))')
-// 	->defaults(array(
-// 		'directory' => 'helper',
-// 		'controller' => 'welcome',
-// 		'action'     => 'index',
-// 	));
-
-
-
+	
 Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'directory' => 'app',
@@ -138,6 +129,7 @@ Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
-		'controller' => 'admin/dashboard',
+		'directory' => 'site'
+		'controller' => 'page',
 		'action'     => 'index',
 	));
