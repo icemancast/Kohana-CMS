@@ -1,7 +1,13 @@
 <?php defined('SYSPATH') or die ('No direct script access.');
 
-class Controller_Admin_Event extends Controller_Admin_Default {
+class Controller_Admin_Event extends Controller_Admin_Application {
 	
+	public $assert_auth_actions = array(
+		'index' => array('login'),
+		'manage' => array('login'),
+		'delete' => array('login'),
+	);
+
 	/*
 		TODO Probably need to add status to event for draft, published.
 	*/
