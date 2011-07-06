@@ -1,4 +1,7 @@
 <ul id="nav" class="left width-site">
+	
+	<?php if (Auth::instance()->logged_in() && $user = Auth::instance()->get_user()) : ?>
+		
 	<li><a href="<?= url::base(); ?>admin/nav">Navigation</a>
 		<ul>
 			<li><a href="<?= url::base(); ?>admin/nav/manage/">Add Navigation</a></li>
@@ -18,4 +21,7 @@
 			<li><a href="<?= url::base(); ?>admin/event/manage">Add an Event</a></li>
 		</ul>
 	</li>
+	
+	<?php endif; ?>
+	
 </ul>
