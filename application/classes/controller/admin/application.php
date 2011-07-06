@@ -50,6 +50,8 @@ abstract class Controller_Admin_Application extends Controller_Template {
 			else
 			{
 				$this->request->redirect('admin/auth/login');
+				
+				echo 'not logged in';
 			}
 		}
 	}
