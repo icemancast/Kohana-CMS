@@ -24,10 +24,25 @@ body {
 
 #admin {
 	color: #f0f0f0;
-	font-size: 0.8em;
+	font-size: 0.9em;
 	height: 20px;
-	padding: 5px 0 0 4px;
+	padding: 0px 0 0 4px;
 	width: 260px;
+}
+
+#user-nav {
+	height: 20px;
+	margin: 0px;
+	padding: 4px 0px 0px 3px;
+}
+
+#user-nav a {
+	color: #91d8fd;
+	text-decoration: none;
+}
+
+#user-nav a:hover {
+	text-decoration: underline;
 }
 
 #wrapper {
@@ -304,4 +319,10 @@ form.form {
 .form .button:hover {
 	background: #c4c4c4;
 	color: #363739;
+}
+
+.small-error {
+	color: #990000;
+	font-weight: bold;
+	margin: 1px;
 }
