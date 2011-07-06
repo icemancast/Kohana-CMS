@@ -119,6 +119,13 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 		'controller' => 'dashboard',
 		'action'     => 'index',
 	));
+
+Route::set('noaccess', 'noaccess')
+	->defaults(array(
+		'directory' => 'admin',
+		'controller' => 'user',
+		'action'     => 'noaccess',
+	));
 	
 Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	->defaults(array(
@@ -129,7 +136,7 @@ Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
 	
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
-		'directory' => 'site'
+		'directory' => 'site',
 		'controller' => 'page',
 		'action'     => 'index',
 	));
