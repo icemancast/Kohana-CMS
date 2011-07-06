@@ -33,7 +33,7 @@
 		<a href="<?= url::base(); ?>" id="brand"></a>
 		
 		<div id="admin" class="right">
-			
+			<?= $user_nav; ?>
 		</div>
 		
 	</div>
