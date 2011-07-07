@@ -92,7 +92,8 @@ class Controller_Admin_User extends Controller_Admin_Application {
 	
 	public function action_noaccess()
 	{
-		$content = View::factory('admin/user/noaccess');
+		$this->template->page_title = 'Sorry :(';
+		$this->template->content = View::factory('admin/user/noaccess');
 	}
 	
 }
