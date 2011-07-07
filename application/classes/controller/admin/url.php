@@ -1,6 +1,12 @@
 <?php defined('SYSPATH') or die ('No direct script access.');
 
 class Controller_Admin_Url extends Controller_Admin_Application {
+	
+	public $assert_auth = array('login', 'editor');
+	
+	public $assert_auth_actions = array(
+		'delete' => array('admin'),
+	);
 		
 	public function action_index()
 	{

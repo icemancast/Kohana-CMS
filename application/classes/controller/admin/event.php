@@ -2,10 +2,10 @@
 
 class Controller_Admin_Event extends Controller_Admin_Application {
 	
+	public $assert_auth = array('login', 'editor');
+	
 	public $assert_auth_actions = array(
-		'index' => array('login'),
-		'manage' => array('login'),
-		'delete' => array('login'),
+		'delete' => array('admin'),
 	);
 
 	/*
@@ -65,24 +65,6 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 			// Convert date
 			
 			$_POST['date_event'] = strtotime($_POST['event_date'] . ' ' . $_POST['event_time']);
-			
-			
-			/*
-			echo '<br />';
-			
-			$str_date = strtotime($_POST['date_event']);
-			
-			echo $str_date . '<br />';
-			
-			$datestuff = date('m/d/Y h:ia', $str_date);
-			
-			$time = date('h:ia', $str_date);
-			
-			echo $datestuff;
-			
-			echo '<br /><br />' . $time; */
-			
-			//$_POST['date_event'] = strtotime($_POST['date_event'] . ' ' . $_POST['event_time']);
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
 			

@@ -2,6 +2,12 @@
 
 class Controller_Admin_User extends Controller_Admin_Application {
 	
+	public $assert_auth = FALSE;
+	
+	public $assert_auth_actions = array(
+		'create' => array('admin'),
+	);
+	
 	public function action_index()
 	{
 		$this->template->content = View::factory('admin/user/info')
@@ -92,7 +98,8 @@ class Controller_Admin_User extends Controller_Admin_Application {
 	
 	public function action_noaccess()
 	{
-		$content = View::factory('admin/user/noaccess');
+		$this->template->page_title = 'Sorry :(';
+		$this->template->content = View::factory('admin/user/noaccess');
 	}
 	
 }
