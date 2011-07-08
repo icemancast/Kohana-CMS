@@ -54,21 +54,4 @@ abstract class Controller_Admin_Application extends Controller_Template {
 		}
 	}
 	
-	// protected function _user_auth()
-	// {
-	// 	$action_name = $this->request->action();
-	// 	
-	// 	if(($this->assert_auth !== FALSE && Auth::instance()->logged_in($this->assert_auth) === FALSE) || (is_array($this->assert_auth_actions) && array_key_exists($action_name, $this->assert_auth_actions) && Auth::instance()->logged_in($this->assert_auth_actions[$action_name]) === FALSE))
-	// 	{
-	// 		if(Auth::instance()->logged_in())
-	// 		{
-	// 			$this->request->redirect('admin/noaccess');
-	// 		}
-	// 		else
-	// 		{
-	// 			$this->request->redirect('admin/user/login');
-	// 		}
-	// 	}
-	// }
-	
 }
