@@ -30,7 +30,7 @@
 <div id="wrapper" class="width-site">
 	
 	<div id="header" class="width-site">
-		<a href="<?= url::base(); ?>" id="brand"></a>
+		<a href="<?= url::base(); ?>admin" id="brand"></a>
 		
 		<div id="admin" class="right">
 			<?= $user_nav; ?>
