@@ -57,4 +57,9 @@ class Model_Page extends ORM {
 		return $page_array;
 	}
 	
+	public function get_page_with_slug($slug)
+	{
+		return $this->where('slug', '=', $slug)->find();		
+	}
+	
 }
