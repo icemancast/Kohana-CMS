@@ -1,1 +1,1 @@
-<?= $pages->content->id;
+<?= $pages->content->content_title;
