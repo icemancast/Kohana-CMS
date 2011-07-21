@@ -12,7 +12,7 @@ class Controller_Admin_Url extends Controller_Admin_Application {
 	{
 		
 		$urls = ORM::factory('url')->get_all();
-		$navs = ORM::factory('nav')->get_all();
+		//$navs = ORM::factory('nav')->get_all();
 		$this->template->content = View::factory('admin/pages/url')
 			->bind('urls', $urls)
 			->bind('navs', $navs);
