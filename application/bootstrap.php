@@ -126,16 +126,8 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 		'controller' => 'dashboard',
 		'action'     => 'index',
 	));
-
-
-Route::set('app', 'app(/<controller>(/<action>(/<id>)))')
-	->defaults(array(
-		'directory' => 'app',
-		'controller' => 'sermon',
-		'action'     => 'index',
-	));
 	
-Route::set('default', '(<controller>(/<action>(/<id>)))')
+Route::set('default', '(<slug>)')
 	->defaults(array(
 		'directory' => 'site',
 		'controller' => 'page',
