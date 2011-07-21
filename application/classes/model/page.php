@@ -59,7 +59,9 @@ class Model_Page extends ORM {
 	
 	public function get_page_with_slug($slug)
 	{
-		return $this->where('slug', '=', $slug)->find();		
+		return $this->where('slug', '=', $slug)
+			->and_where('status', '=', 'published')
+			->find();		
 	}
 	
 }
