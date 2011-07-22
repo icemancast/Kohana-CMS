@@ -1,1 +1,6 @@
-<?= $pages->content->content_title;
+<?php
+
+	foreach($pages->content as $content)
+	{
+		var_dump($content);
+	}
