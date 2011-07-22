@@ -8,7 +8,12 @@
 </head>
 
 <body>
-<h1><?= $page_title; ?></h1>
-<p><?= $content; ?></p>
+	<div id="wrapper">
+		<h1><?= $page_title; ?></h1>
+		<p><?= $content; ?></p>
+		
+		
+		
+	</div>
 </body>
 </html>
