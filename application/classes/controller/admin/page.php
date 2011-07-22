@@ -61,6 +61,7 @@ class Controller_Admin_Page extends Controller_Admin_Application {
 			// Convert date
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
+			$_POST['slug'] = Url::title($_POST['slug']);
 
 			$values = Arr::extract($_POST, array('parent_id', 'nav_id', 'head_code', 'description', 'slug', 'browser_title', 'page_title', 'status', 'date_published', 'date_expired', 'id'));
 			$pages->values($values);
