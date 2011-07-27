@@ -126,10 +126,17 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 		'controller' => 'dashboard',
 		'action'     => 'index',
 	));
-	
+
+// Route::set('default', '(<controller>(/<slug>))')
+// 	->defaults(array(
+// 		'directory' => 'site',
+// 		'controller' => 'welcome',
+// 		'action'     => 'index',
+// 	));
+
 Route::set('default', '(<slug>)')
-	->defaults(array(
-		'directory' => 'site',
-		'controller' => 'page',
-		'action'     => 'index',
-	));
+ 	->defaults(array(
+ 		'directory' => 'site',
+ 		'controller' => 'page',
+ 		'action'     => 'index',
+));
