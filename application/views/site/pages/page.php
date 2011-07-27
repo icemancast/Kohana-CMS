@@ -1,6 +1,6 @@
 <?php
 
-	foreach($pages->content as $content)
+	foreach($contents as $content)
 	{
-		var_dump($content);
-	}
+		echo $content->content_title . '<br /><br />';
+	};

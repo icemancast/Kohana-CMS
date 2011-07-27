@@ -8,7 +8,7 @@ class Model_Page extends ORM {
 	);
 	
 	protected $_has_many = array(
-		'content' => array('model', 'content'),
+		'contents' => array('model', 'content'),
 	);
 	
 	protected $_belongs_to = array(

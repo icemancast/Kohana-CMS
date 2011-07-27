@@ -6,13 +6,16 @@ class Controller_Site_Page extends Controller_Site_Default {
 	{
 		
 		$this->template->content = View::factory('site/pages/page')
-			->bind('pages', $pages);
+			->bind('page', $page)
+			->bind('contents', $contents);
 			
 		$slug = $this->request->param('slug');
-		$pages = ORM::factory('page')->get_page_with_slug($slug);
+		$page = ORM::factory('page')->get_page_with_slug($slug);
 		
-		$this->template->browser_title = $pages->browser_title;
-		$this->template->page_title = $pages->page_title;
+		$contents = $page->contents->find_all();
+		
+		$this->template->browser_title = $page->browser_title;
+		$this->template->page_title = $page->page_title;
 	}
 	
 }
