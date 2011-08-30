@@ -2,12 +2,7 @@
 
 class Controller_Helper_Lightcast extends Controller {
 	
-	public function action_index()
-	{
-		echo 'test';
-	}
-	
-	public function action_channel($channel_id = NULL)
+	public function stream($channel_id = NULL)
 	{
 		
 		if(isset($channel_id))
