@@ -68,12 +68,10 @@ class Controller_Admin_Page extends Controller_Admin_Application {
 
 			try
 			{
-
 				$pages->save();
 
 				Session::instance()->set('message', 'You navigation has been added/updated. | <a href="page/manage/">Add Another</a>');	
 				$this->request->redirect('/admin/page/');
-
 			}
 			catch (ORM_Validation_Exception $e)
 			{

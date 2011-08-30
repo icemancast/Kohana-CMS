@@ -37,7 +37,7 @@ Session::instance()->delete('message');
 				<td>' . $page->page_title . '</td>
 				<td>' . $page->status . '</td>
 				<td>' . $date_modified . '</td>
-				<td class="text-center"><a href="' . url::base() . 'admin/page/manage/' . $page->id . '"><img src="' . url::base() . 'media/images/icons/application_edit.png"></a></td>
+				<td class="text-center"><a href="' . url::base() . 'admin/page/manage/' . $page->id . '"><img src="' . url::base() . 'media/admin/images/icons/application_edit.png"></a></td>
 			</tr>';	?>
 		<?php endforeach; ?>
 	</tbody>
