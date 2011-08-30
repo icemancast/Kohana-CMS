@@ -8,7 +8,7 @@ class Model_Nav extends ORM {
 	);
 	
 	protected $_has_many = array(
-		'url' => array('model', 'url'),
+		'urls' => array('model', 'url'),
 	);
 	
 	protected $_belongs_to = array(
