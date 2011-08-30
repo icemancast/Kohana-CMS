@@ -36,7 +36,7 @@ Session::instance()->delete('message');
 				<td>' . $nav->id . '</td>
 				<td>' . $nav->nav_title . '</td>
 				<td>' . $date_created . '</td>
-				<td class="text-center"><a href="' . url::base() . 'admin/nav/manage/' . $nav->id . '"><img src="' . url::base() . 'media/images/icons/application_edit.png"></a></td>
+				<td class="text-center"><a href="' . url::base() . 'admin/nav/manage/' . $nav->id . '"><img src="' . url::base() . 'media/admin/images/icons/application_edit.png"></a></td>
 			</tr>';	?>
 		<?php endforeach; ?>
 	</tbody>
