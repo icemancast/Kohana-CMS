@@ -7,6 +7,6 @@ class Model_Podcast extends ORM {
 	);
 	
 	protected $_has_many = array(
-		'sermon' => array('model' => 'sermon')
+		'sermons' => array('model' => 'sermon')
 	);
 }
