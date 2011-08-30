@@ -4,7 +4,11 @@
 <head>
 <meta charset="utf-8" />
 <title><?= $browser_title; ?></title>
+
 <link rel="stylesheet" href="media/site/css/reset.css" />
+<link href='http://fonts.googleapis.com/css?family=Give+You+Glory&v2' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="media/site/css/layout.css" />
+
 </head>
 
 <body>
