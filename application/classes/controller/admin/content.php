@@ -38,8 +38,9 @@ class Controller_Admin_Content extends Controller_Admin_Application {
 		{
 			$date_published = date('m/d/Y', $contents->date_published);
 			if ($contents->date_expired != 0) { $date_expired = date('m/d/Y', $contents->date_expired); } else { $date_expired = $contents->date_expired; }
-			
+		
 			$post['id'] = $contents->id;
+			$post['user_id'] = $this->_session->get('user_id');
 			$post['page_id'] = $contents->page_id;
 			$post['content_title'] = $contents->content_title;
 			$post['content'] = $contents->content;
@@ -52,6 +53,7 @@ class Controller_Admin_Content extends Controller_Admin_Application {
 		if(!empty($_POST))
 		{
 			// Convert date
+			$_POST['user_id'] = $this->_session->get('user_id');
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
 			
