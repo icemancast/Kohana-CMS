@@ -29,25 +29,28 @@ class Controller_Admin_Speaker extends Controller_Admin_Application {
 		
 		if($speaker->loaded())
 		{
+			$post['id'] = $speaker->id;
+			$post['user_id'] = $this->_session->get('user_id');
+			$post['console_id'] = $speaker->console_id;
 			$post['name'] = $speaker->name;
 			$post['title'] = $speaker->title;
-			$post['id'] = $speaker->id;
+			$post['slug'] = $speaker->slug;
+			
 		}
 		
 		if(!empty($_POST))
 		{
+			$_POST['user_id'] = $this->_session->get('user_id');
 			
-			$values = Arr::extract($_POST, array('name', 'title', 'id'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'console_id', 'name', 'title', 'slug'));
 			$speaker->values($values);
 			
 			try
-			{
-				
+			{		
 				$speaker->save();
 				
 				Session::instance()->set('message', 'You speaker has been added/updated. | <a href="speaker/manage/">Add Another</a>');	
-				$this->request->redirect('/admin/speaker/');
-				
+				$this->request->redirect('/admin/speaker/');			
 			}
 			catch (ORM_Validation_Exception $e)
 			{

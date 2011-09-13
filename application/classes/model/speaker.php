@@ -16,10 +16,16 @@ class Model_Speaker extends ORM {
 	public function rules()
 	{
 		return array(
+			'console_id' => array(
+				array('numeric'),
+			),
 			'name' => array(
 				array('not_empty'),
 			),
 			'title' => array(
+				array('not_empty'),
+			),
+			'slug' => array(
 				array('not_empty'),
 			),
 		);
