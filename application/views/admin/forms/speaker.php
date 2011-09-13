@@ -11,7 +11,12 @@
 
 <fieldset>
 
-<legend>All required</legend>
+<legend>* required</legend>
+
+<p>
+	<?= Form::label('console_id', 'Console ID'); ?>
+	<?= Form::input('console_id', !empty($post['console_id']) ? $post['console_id'] : '', array('id' => 'console_id' )); ?>
+</p>
 
 <p>
 	<?= Form::label('name', '* Speaker Name'); ?>
@@ -21,6 +26,11 @@
 <p>
 	<?= Form::label('title', '* Speaker Title'); ?>
 	<?= Form::input('title', !empty($post['title']) ? $post['title'] : '', array('id' => 'title' )); ?>
+</p>
+
+<p>
+	<?= Form::label('slug', '* Speaker Slug'); ?>
+	<?= Form::input('slug', !empty($post['slug']) ? $post['slug'] : '', array('id' => 'slug' )); ?>
 </p>
 
 </fieldset>
