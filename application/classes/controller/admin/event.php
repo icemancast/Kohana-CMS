@@ -43,6 +43,7 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 			if ($events->date_eventend != 0) { $date_eventend = date('m/d/Y', $events->date_eventend); } else { $date_eventend = $events->date_eventend; }
 			
 			$post['id'] = $events->id;
+			$post['user_id'] = $this->_session->get('user_id');
 			$post['event_title'] = $events->event_title;
 			$post['image'] = $events->image;
 			$post['description'] = $events->description;
@@ -63,12 +64,12 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 				TODO Make sure all fields are in order. Also look at using fields in model.
 			*/
 			// Convert date
-			
+			$_POST['user_id'] = $this->_session->get('user_id');
 			$_POST['date_event'] = strtotime($_POST['event_date'] . ' ' . $_POST['event_time']);
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
 			
-			$values = Arr::extract($_POST, array('id', 'event_title', 'image', 'description', 'registration_url', 'tags', 'slug', 'status', 'event_date', 'date_event', 'event_time', 'date_published', 'date_expired'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'event_title', 'image', 'description', 'registration_url', 'tags', 'slug', 'status', 'event_date', 'date_event', 'event_time', 'date_published', 'date_expired'));
 			$events->values($values);
 			
 			try
