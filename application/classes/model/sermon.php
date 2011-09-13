@@ -7,9 +7,17 @@ class Model_Sermon extends ORM {
 		'podcast' => array('model' => 'podcast'),
 	);
 	
+	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
+	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
+	
 	public function find_iphone_video()
 	{
 		return $this->where('cupertino', '=', '1')->find_all();
+	}
+	
+	public function get_all()
+	{
+		return $this->order_by('date_created', 'desc')->find_all();
 	}
 	
 }
