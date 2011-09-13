@@ -78,6 +78,8 @@ class Controller_Admin_User extends Controller_Admin_Application {
 			// If successful, redirect user
 			if($user)
 			{
+				$user = Auth::instance()->get_user();
+				$this->_session->set('user_id', $user->id);
 				Request::current()->redirect('admin/dashboard');
 			}
 			else
