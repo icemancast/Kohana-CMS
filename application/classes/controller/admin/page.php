@@ -44,6 +44,7 @@ class Controller_Admin_Page extends Controller_Admin_Application {
 			if ($pages->date_expired != 0) { $date_expired = date('m/d/Y', $pages->date_expired); } else { $date_expired = $pages->date_expired; }
 
 			$post['id'] = $pages->id;
+			$post['user_id'] = $this->_session->get('user_id');
 			$post['parent_id'] = $pages->parent_id;
 			$post['nav_id'] = $pages->nav_id;
 			$post['head_code'] = $pages->head_code;
@@ -62,8 +63,9 @@ class Controller_Admin_Page extends Controller_Admin_Application {
 			$_POST['date_published'] = strtotime($_POST['date_published']);
 			$_POST['date_expired'] = strtotime($_POST['date_expired']);
 			$_POST['slug'] = Url::title($_POST['slug']);
+			$_POST['user_id'] = $this->_session->get('user_id');
 
-			$values = Arr::extract($_POST, array('parent_id', 'nav_id', 'head_code', 'description', 'slug', 'browser_title', 'page_title', 'status', 'date_published', 'date_expired', 'id'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'parent_id', 'nav_id', 'head_code', 'description', 'slug', 'browser_title', 'page_title', 'status', 'date_published', 'date_expired'));
 			$pages->values($values);
 
 			try

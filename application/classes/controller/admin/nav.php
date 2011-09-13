@@ -31,12 +31,14 @@ class Controller_Admin_Nav extends Controller_Admin_Application {
 		{
 			$post['nav_title'] = $nav->nav_title;
 			$post['id'] = $nav->id;
+			$post['user_id'] = $this->_session->get('user_id');
 		}
 		
 		if(!empty($_POST))
 		{
+			$_POST['user_id'] = $this->_session->get('user_id');
 			
-			$values = Arr::extract($_POST, array('nav_title', 'id'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'nav_title'));
 			$nav->values($values);
 			
 			try
