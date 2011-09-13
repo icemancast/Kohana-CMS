@@ -134,6 +134,13 @@ Route::set('event', 'event(/<action>(/<var>))')
 		'action'     => 'index',
 	));
 
+Route::set('cron', 'cron(/<controller>(/<action>(/<var>)))')
+	->defaults(array(
+		'directory' => 'cron',
+		'controller' => 'sermon',
+		'action'     => 'index',
+	));
+
 // Route::set('default', '(<controller>(/<slug>))')
 // 	->defaults(array(
 // 		'directory' => 'site',
