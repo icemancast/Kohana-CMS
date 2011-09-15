@@ -36,7 +36,7 @@ class Controller_Admin_Speaker extends Controller_Admin_Application {
 			$post['title'] = $speaker->title;
 			$post['slug'] = $speaker->slug;
 			
-		}
+		} 
 		
 		if(!empty($_POST))
 		{

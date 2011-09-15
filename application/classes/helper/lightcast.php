@@ -1,16 +1,22 @@
 <?php defined('SYSPATH') or die('No direct script access.');
 
-class Controller_Helper_Lightcast extends Controller {
+class Helper_Lightcast {
 	
-	public function stream($channel_id = NULL)
+	static public function stream($channel_id = NULL)
 	{
 		
 		if(isset($channel_id))
 		{
-			$get_channel = file_get_contents('http://customers.lightcastmedia.com/api/consoleListVideos?output=json&console=' . $channel_id . '&client=3073&limit=300');
+			$lightcast = Kohana::config('lightcast');
+			
+			$get_channel = file_get_contents('http://customers.lightcastmedia.com/api/consoleListVideos?output=json&console=' . $channel_id . '&client=' . $lightcast['client_id'] . '&limit=300');
 		
 			$channel_array = json_decode($get_channel, TRUE);
 			$channel_array = $channel_array['response']['data'];
+			
+			return $channel_array;
+			
+			/*
 			
 			echo 'working...<br /><br />';
 			
@@ -49,6 +55,8 @@ class Controller_Helper_Lightcast extends Controller {
 			}
 			
 			echo 'ET phoned home :)';
+			
+			*/
 		
 		}
 		
