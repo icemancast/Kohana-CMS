@@ -31,4 +31,9 @@ class Model_Speaker extends ORM {
 		);
 	}
 	
+	public function get_speaker($slug)
+	{
+		return $this->where('slug', '=', $slug)->find();
+	}
+	
 }
