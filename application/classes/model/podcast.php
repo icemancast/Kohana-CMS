@@ -73,5 +73,10 @@ class Model_Podcast extends ORM {
 			),
 		);
 	}
+	
+	public function get_for_pulldown()
+	{
+		return $this->find_all()->as_array('id', 'podcast_title');
+	}
  
 }
