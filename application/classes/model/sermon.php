@@ -17,7 +17,7 @@ class Model_Sermon extends ORM {
 	
 	public function get_all()
 	{
-		return $this->order_by('date_created', 'desc')->find_all();
+		return $this->order_by('date_sermon', 'desc')->find_all();
 	}
 	
 }
