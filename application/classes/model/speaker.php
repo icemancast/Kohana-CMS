@@ -36,4 +36,9 @@ class Model_Speaker extends ORM {
 		return $this->where('slug', '=', $slug)->find();
 	}
 	
+	public function get_for_pulldown()
+	{
+		return $this->find_all()->as_array('id', 'name');
+	}
+	
 }
