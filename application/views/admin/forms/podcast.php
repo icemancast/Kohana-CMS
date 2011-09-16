@@ -98,7 +98,7 @@
 <p>
 	<?= Form::label('keywords', '* Keywords'); ?>
 	<?= Form::input('keywords', !empty($post['keywords']) ? $post['keywords'] : '', array('id' => 'keywords' )); ?>
-	 <small>(keyword 1, keyword 2, etc...)
+	 <small>(keyword 1, keyword 2, etc...)</small>
 </p>
 
 <p>
