@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * F1 Church codes
+ */
+
+return array(
+	'base_url' => 'https://{churchcode}.staging.fellowshiponeapi.com',
+	'consumer_key' => '{key}', // change index to "key" for kohana oauth when done
+	'consumer_secret' => '{secret}', // change index to "secret" for kohana oauth when done
+	'requesttoken_path' => '/v1/Tokens/RequestToken',
+	'accesstoken_path' => '/v1/PortalUser/AccessToken',
+	'auth_path' => '/v1/PortalUser/Login',
+	'callbackURI' => 'http://localhost/{url}/',
+	'set_content_type' => array('Accept: application/json', 'Content-type: application/json'),
+);
+
+?>
