@@ -9,5 +9,5 @@ kohana_release
 nbproject
 *.komodoproject
 build
-applications/config/f1.php
 applications/config/database.php
+applications/config/f1.php
