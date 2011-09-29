@@ -14,6 +14,11 @@
 <legend>All required</legend>
 
 <p>
+	<?= Form::label('speaker_id', '* Speaker ID'); ?>
+	<?= Form::select('speaker_id', $speakers, !empty($post['speaker_id']) ? $post['speaker_id'] : '', array('id' => 'speaker_id' )); ?>
+</p>
+
+<p>
 	<?= Form::label('podcast_title', '* Podcast Title'); ?>
 	<?= Form::input('podcast_title', !empty($post['podcast_title']) ? $post['podcast_title'] : '', array('id' => 'podcast_title' )); ?>
 </p>
