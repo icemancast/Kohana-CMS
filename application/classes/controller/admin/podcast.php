@@ -22,15 +22,20 @@ class Controller_Admin_Podcast extends Controller_Admin_Application {
 
 		$this->template->content = View::factory('admin/forms/podcast')
 			->bind('post', $post)
-			->bind('errors', $errors);
+			->bind('errors', $errors)
+			->bind('speakers', $speakers);
 		
 		$id = (!empty($_POST)) ? $_POST['id'] : $this->request->param('id', FALSE);
 		$podcast = ORM::factory('podcast', $id);
+		
+		// Load speaker pulldown
+		$speakers = ORM::factory('speaker')->get_for_pulldown();
 		
 		if($podcast->loaded())
 		{
 			$post['id'] = $podcast->id;
 			$post['user_id'] = $this->_session->get('user_id');
+			$post['speaker_id'] = $podcast->speaker_id;
 			$post['podcast_title'] = $podcast->podcast_title;
 			$post['podcast_author'] = $podcast->podcast_author;
 			$post['link'] = $podcast->link;
@@ -56,7 +61,7 @@ class Controller_Admin_Podcast extends Controller_Admin_Application {
 		{
 			$_POST['user_id'] = $this->_session->get('user_id');
 			
-			$values = Arr::extract($_POST, array('id', 'user_id', 'podcast_title', 'podcast_author', 'link', 'description', 'subtitle', 'summary', 'owner_name', 'owner_email', 'image', 'image_title', 'image_link', 'image_width', 'image_height', 'image_itunes', 'category', 'category_itunes', 'subcategory_itunes', 'keywords'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'speaker_id', 'podcast_title', 'podcast_author', 'link', 'description', 'subtitle', 'summary', 'owner_name', 'owner_email', 'image', 'image_title', 'image_link', 'image_width', 'image_height', 'image_itunes', 'category', 'category_itunes', 'subcategory_itunes', 'keywords'));
 			$podcast->values($values);
 			
 			try

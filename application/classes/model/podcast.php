@@ -76,7 +76,13 @@ class Model_Podcast extends ORM {
 	
 	public function get_for_pulldown()
 	{
+		//$select_none = array('None');
+		//$podcasts = $this->find_all()->as_array('id', 'podcast_title');
+		//$podcast_array = array_merge($select_none, $podcasts);
+		//return $podcast_array;
+		
 		return $this->find_all()->as_array('id', 'podcast_title');
+		
 	}
  
 }
