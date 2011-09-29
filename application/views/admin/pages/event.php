@@ -30,12 +30,12 @@ Session::instance()->delete('message');
 		
 		<?php foreach($events as $event): ?>
 		<?php
-			$date_event = date('M d, y', $event->date_event);
+			$event_date = date('M d, y', $event->event_date);
 		
 			echo '<tr>
 				<td>' . $event->id . '</td>
 				<td>' . $event->event_title . '</td>
-				<td>' . $date_event . '</td>
+				<td>' . $event_date . '</td>
 				<td class="text-center"><a href="' . url::base() . 'admin/event/manage/' . $event->id . '"><img src="' . url::base() . 'media/admin/images/icons/application_edit.png"></a></td>
 			</tr>';	?>
 		<?php endforeach; ?>

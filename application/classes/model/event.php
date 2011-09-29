@@ -10,7 +10,7 @@ class Model_Event extends ORM {
 	protected $_has_many = array(
 		'tags' => array(
 			'model' => 'tag',
-			'through' => 'tags_events',
+			'through' => 'event_tags',
 		),
 	);
 	
@@ -24,18 +24,18 @@ class Model_Event extends ORM {
 			'event_title' => array(
 				array('not_empty'),
 			),
-			'description' => array(
+			'event_what' => array(
 				array('not_empty'),
 			),
 			'tags' => array(
 				array('not_empty'),
 			),
-			'slug' => array(
+			'event_date' => array(
 				array('not_empty'),
 			),
-			'date_event' => array(
-				array('not_empty'),
-			),
+			// 'event_time' => array(
+			// 				array('not_empty'),
+			// 			),
 			'date_published' => array(
 				array('not_empty'),
 			),
@@ -49,7 +49,7 @@ class Model_Event extends ORM {
 	
 	public function get_all()
 	{
-		return $this->order_by('date_event', 'desc')->find_all();
+		return $this->order_by('event_date', 'desc')->find_all();
 	}
 	
 }
