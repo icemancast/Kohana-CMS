@@ -10,6 +10,11 @@ class Model_Sermon extends ORM {
 	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
 	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
 	
+	public $sermon_status_select = array(
+		'inactive' => 'inactive',
+		'active' => 'active',
+	);
+	
 	public function find_iphone_video()
 	{
 		return $this->where('cupertino', '=', '1')->find_all();
