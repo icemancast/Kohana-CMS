@@ -7,7 +7,7 @@
 </ul>
 <?php endif; ?>
 
-<?= Form::open('admin/podcast/manage', array('class' => 'form')); ?>
+<?= Form::open('admin/sermon/manage', array('class' => 'form')); ?>
 
 <fieldset>
 	
@@ -68,6 +68,11 @@
 	<?= Form::label('keywords', '* Keywords'); ?>
 	<?= Form::input('keywords', !empty($post['keywords']) ? $post['keywords'] : '', array('id' => 'keywords' )); ?>
 	 <small>(keyword 1, keyword 2, etc...)</small>
+</p>
+
+<p>
+	<?= Form::label('status', '* Status'); ?>
+	<?= Form::select('status', $sermon_status_select, !empty($post['status']) ? $post['status'] : '', array('id' => 'status' )); ?>
 </p>
 
 <p>
