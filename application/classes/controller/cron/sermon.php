@@ -14,9 +14,7 @@ class Controller_Cron_Sermon extends Controller {
 		
 		$lightcast_sermons = Helper_Lightcast::stream($speaker->console_id);
 		$lightcast_sermons = array_reverse($lightcast_sermons);
-		
-		//var_dump($lightcast_sermons);
-		
+				
 		echo 'working... ';
 		
 		foreach($lightcast_sermons as $lightcast_sermon)
@@ -27,6 +25,7 @@ class Controller_Cron_Sermon extends Controller {
 			if(!$sermon->loaded())
 			{
 				$values['lightcast_id'] = $lightcast_sermon['id'];
+				$values['podcast_id'] = $speaker->podcast->id;
 				$values['speaker_id'] = $speaker->id;
 				$values['sermon_title'] = $lightcast_sermon['title'];
 				$values['description'] = $lightcast_sermon['description'];
