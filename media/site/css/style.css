@@ -1,72 +1,241 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  /*
+    Override the default (display: inline) for
+    browsers that do not recognize HTML5 tags.
+  
+    IE8 (and lower) requires a shiv:
+    http://ejohn.org/blog/html5-shiv
+  */
+  display: block; }
+
+b,
+strong {
+  /*
+    Makes browsers agree.
+    IE + Opera = font-weight: bold.
+    Gecko + WebKit = font-weight: bolder.
+  */
+  font-weight: bold; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  /*
+    For IE.
+    http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+  */
+  -ms-interpolation-mode: bicubic; }
+
+li {
+  /*
+    For IE6 + IE7.
+  */
+  display: list-item; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left; }
+
+q {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+sub,
+sup,
+small {
+  font-size: 75%; }
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+svg {
+  /*
+    For IE9.
+  */
+  overflow: hidden; }
+
 /*
   960 Grid System ~ Text CSS.
   Learn more ~ http://960.gs/
 
   Licensed under GPL and MIT.
 */
-
-/* Fonts and text derived from 960 grid */
-
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
-
 body {
-  font: 13px/1.5 'Give You Glory', cursive;
-}
+  font: 13px/1.5 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif; }
 
 pre,
 code {
-  font-family: 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-}
+  font-family: 'DejaVu Sans Mono', Monaco, Consolas, monospace; }
 
 hr {
   border: 0 #ccc solid;
   border-top-width: 1px;
   clear: both;
-  height: 0;
-}
+  height: 0; }
 
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
-
 h1 {
-  font-size: 25px;
-}
+  font-size: 25px; }
 
 h2 {
-  font-size: 23px;
-}
+  font-size: 23px; }
 
 h3 {
-  font-size: 21px;
-}
+  font-size: 21px; }
 
 h4 {
-  font-size: 19px;
-}
+  font-size: 19px; }
 
 h5 {
-  font-size: 17px;
-}
+  font-size: 17px; }
 
 h6 {
-  font-size: 15px;
-}
+  font-size: 15px; }
 
 /* `Spacing
 ----------------------------------------------------------------------------------------------------*/
-
 ol {
-  list-style: decimal;
-}
+  list-style: decimal; }
 
 ul {
-  list-style: disc;
-}
+  list-style: disc; }
 
 li {
-  margin-left: 30px;
-}
+  margin-left: 30px; }
 
 p,
 dl,
@@ -84,16 +253,283 @@ table,
 address,
 fieldset,
 figure {
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
-/* Layout css
------------------------------------------------------------------------------------------------------*/
-body { 
-	min-width: 980px;
-}
+/*
+    Variable Grid System.
+    Learn more ~ http://www.spry-soft.com/grids/
+    Based on 960 Grid System - http://960.gs/
+ 
+    Licensed under GPL and MIT.
+*/
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+ 
+  Note: IE6 works fine without this fix.
+*/
+body {
+  min-width: 984px; }
 
-#wrapper {
-	margin: 0px auto 0px auto;
-	width: 980px;
-}
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 984px; }
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+  position: relative; }
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.alpha {
+  margin-left: 0; }
+
+.omega {
+  margin-right: 0; }
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .grid_1 {
+  width: 62px; }
+
+.container_12 .grid_2 {
+  width: 144px; }
+
+.container_12 .grid_3 {
+  width: 226px; }
+
+.container_12 .grid_4 {
+  width: 308px; }
+
+.container_12 .grid_5 {
+  width: 390px; }
+
+.container_12 .grid_6 {
+  width: 472px; }
+
+.container_12 .grid_7 {
+  width: 554px; }
+
+.container_12 .grid_8 {
+  width: 636px; }
+
+.container_12 .grid_9 {
+  width: 718px; }
+
+.container_12 .grid_10 {
+  width: 800px; }
+
+.container_12 .grid_11 {
+  width: 882px; }
+
+.container_12 .grid_12 {
+  width: 964px; }
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .prefix_1 {
+  padding-left: 82px; }
+
+.container_12 .prefix_2 {
+  padding-left: 164px; }
+
+.container_12 .prefix_3 {
+  padding-left: 246px; }
+
+.container_12 .prefix_4 {
+  padding-left: 328px; }
+
+.container_12 .prefix_5 {
+  padding-left: 410px; }
+
+.container_12 .prefix_6 {
+  padding-left: 492px; }
+
+.container_12 .prefix_7 {
+  padding-left: 574px; }
+
+.container_12 .prefix_8 {
+  padding-left: 656px; }
+
+.container_12 .prefix_9 {
+  padding-left: 738px; }
+
+.container_12 .prefix_10 {
+  padding-left: 820px; }
+
+.container_12 .prefix_11 {
+  padding-left: 902px; }
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .suffix_1 {
+  padding-right: 82px; }
+
+.container_12 .suffix_2 {
+  padding-right: 164px; }
+
+.container_12 .suffix_3 {
+  padding-right: 246px; }
+
+.container_12 .suffix_4 {
+  padding-right: 328px; }
+
+.container_12 .suffix_5 {
+  padding-right: 410px; }
+
+.container_12 .suffix_6 {
+  padding-right: 492px; }
+
+.container_12 .suffix_7 {
+  padding-right: 574px; }
+
+.container_12 .suffix_8 {
+  padding-right: 656px; }
+
+.container_12 .suffix_9 {
+  padding-right: 738px; }
+
+.container_12 .suffix_10 {
+  padding-right: 820px; }
+
+.container_12 .suffix_11 {
+  padding-right: 902px; }
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .push_1 {
+  left: 82px; }
+
+.container_12 .push_2 {
+  left: 164px; }
+
+.container_12 .push_3 {
+  left: 246px; }
+
+.container_12 .push_4 {
+  left: 328px; }
+
+.container_12 .push_5 {
+  left: 410px; }
+
+.container_12 .push_6 {
+  left: 492px; }
+
+.container_12 .push_7 {
+  left: 574px; }
+
+.container_12 .push_8 {
+  left: 656px; }
+
+.container_12 .push_9 {
+  left: 738px; }
+
+.container_12 .push_10 {
+  left: 820px; }
+
+.container_12 .push_11 {
+  left: 902px; }
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .pull_1 {
+  left: -82px; }
+
+.container_12 .pull_2 {
+  left: -164px; }
+
+.container_12 .pull_3 {
+  left: -246px; }
+
+.container_12 .pull_4 {
+  left: -328px; }
+
+.container_12 .pull_5 {
+  left: -410px; }
+
+.container_12 .pull_6 {
+  left: -492px; }
+
+.container_12 .pull_7 {
+  left: -574px; }
+
+.container_12 .pull_8 {
+  left: -656px; }
+
+.container_12 .pull_9 {
+  left: -738px; }
+
+.container_12 .pull_10 {
+  left: -820px; }
+
+.container_12 .pull_11 {
+  left: -902px; }
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+.clearfix {
+  zoom: 1; }
+
+/* Start CSS for Site */
+#test {
+  background: #000; }
