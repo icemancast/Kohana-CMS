@@ -10,7 +10,7 @@ class Model_Event extends ORM {
 	protected $_has_many = array(
 		'tags' => array(
 			'model' => 'tag',
-			'through' => 'event_tags',
+			'through' => 'events_tags',
 		),
 	);
 	
