@@ -11,3 +11,11 @@ nbproject
 build
 /application/config/database.php
 /application/config/f1.php
+/media/site/.sass-cache/f00695dd30e8ce1601e7976b76f37dfd9d5934c7/_984.scssc
+/media/site/.sass-cache/f00695dd30e8ce1601e7976b76f37dfd9d5934c7/_reset.scssc
+/media/site/.sass-cache/f00695dd30e8ce1601e7976b76f37dfd9d5934c7/_text.scssc
+/media/site/.sass-cache/f00695dd30e8ce1601e7976b76f37dfd9d5934c7/style.scssc
+/media/site/sass/_984.scss
+/media/site/sass/_reset.scss
+/media/site/sass/_text.scss
+/media/site/sass/style.scss
