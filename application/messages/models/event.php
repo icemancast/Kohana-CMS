@@ -11,7 +11,7 @@ return array(
 	'event_time' => array(
 		'not_empty' => 'What time does it start?',
 	),
-	'what' => array(
+	'event_what' => array(
 		'not_empty' => 'Don\'t forget to add description.',
 	),
 	'tags' => array(
