@@ -22,8 +22,15 @@ abstract class Controller_Site_Default extends Controller_Template {
 			$this->template->browser_title 	= 'Community Bible Church';
 			$this->template->page_title 	= 'Community Bible Church';
 			$this->template->content 		= '';
-			$this->template->styles 		= array();
-			$this->template->styles 		= array();
+			$this->template->styles 		= array(
+				array(
+					'name' => 'style',
+					'media' => 'screen',
+				),
+			);
+			$this->template->scripts 		= array(
+				'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
+			);
 			$this->template->head_code		= ''; // Not sure if i need this
 			$this->template->navigation		= ''; // Not sure if i need this either
 		}
