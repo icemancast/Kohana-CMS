@@ -59,7 +59,7 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 		
 		if(!empty($_POST))
 		{
-			$values = Arr::extract($_POST, array('id', 'user_id', 'event_title', 'event_who', 'event_what', 'event_date', 'event_end', 'event_time', 'event_where', 'event_cost', 'registration_url', 'tags', 'slug', 'status', 'date_published', 'date_expired'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'event_title', 'event_image', 'event_who', 'event_what', 'event_date', 'event_end', 'event_time', 'event_where', 'event_cost', 'registration_url', 'tags', 'slug', 'status', 'date_published', 'date_expired'));
 			$events->values($values);
 			
 			try
@@ -79,12 +79,34 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 				$events->event_image = date('Ymd') . '-' . Url::title($_POST['event_title']) . '.jpg';
 				$events->slug = Url::title($_POST['event_title']);
 				
+				// $foo = new Foo; $foo->save(); $bar = new Bar; $bar->save(); $foo->add('bar', $bar);
+				
 				// Save event
 				$events->save();
 				
 				// Save tags
-				// $tags = ORM::factory('tag');
-				// $converted_tags = $tags->tags_to_array($events->tags);
+				// $tags = ORM::factory('tag')->tags_to_array($events->tags);
+				
+				
+				$tags = ORM::factory('tag')->save_tags($events->tags);
+				// $tags_array = $tags->save_tags($events->tags);
+				
+				// $tags->add('tags', $tags);
+				// 				$events->add('tags', $tags);
+				
+				// foreach($tags_array as $tag)
+				// 				{
+				// 					$tags->tag = $tag;
+				// 					$tags->save();
+				// 					$tags->clear();
+				// 					$events->add('tags', $tags);
+				// 				}
+				// 				
+				
+				echo 'done';
+				
+				exit();
+				
 				// $tags->add('keywords', array(1, 2, 3, 4, 5));
 				// 
 				// var_dump($converted_tags);
@@ -97,7 +119,7 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 				// 	$add_tag->add('tag', $tag);
 				// }
 				
-				Session::instance()->set('message', 'You event has been added/updated. Please name the image for this event ' . $events->image . ' | <a href="event/manage/">Add Another</a>');	
+				Session::instance()->set('message', 'You event has been added/updated. Please name the image for this event ' . $events->event_image . ' | <a href="event/manage/">Add Another</a>');	
 				$this->request->redirect('/admin/event/');
 				
 			}
@@ -113,18 +135,18 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 	public function action_delete()
 	{
 		$id = $this->request->param('id', false);
-		$nav = ORM::factory('nav', $id);
+		$event = ORM::factory('event', $id);
 		
 		if($this->request->param('var', false) == 'Y3s')
 		{
-			$nav->delete();
+			$event->delete();
 			Session::instance()->set('message', 'Item ' . $id . ' has been deleted.');
-			$this->request->redirect(url::site() . 'admin/nav/');
+			$this->request->redirect(url::site() . 'admin/event/');
 		}
 		else
 		{
-			Session::instance()->set('message', 'Are you sure you want to delete item ' . $id . '? <a href="' . url::site() . 'admin/nav/delete/' . $id . '/Y3s">Yes</a>.');
-			$this->request->redirect(url::site() . 'admin/nav/');
+			Session::instance()->set('message', 'Are you sure you want to delete item ' . $id . '? <a href="' . url::site() . 'admin/event/delete/' . $id . '/Y3s">Yes</a>.');
+			$this->request->redirect(url::site() . 'admin/event/');
 		}
 
 	}
