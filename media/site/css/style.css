@@ -531,5 +531,17 @@ body {
   zoom: 1; }
 
 /* Start CSS for Site */
-#test {
-  background: #000; }
+html {
+  background: white url(../images/layout/html.jpg) top repeat-x; }
+
+#header {
+  background: url(../images/layout/top.jpg) top right no-repeat;
+  height: 100px; }
+
+#brand {
+  background: url(../images/layout/logo.png) no-repeat;
+  display: block;
+  float: left;
+  height: 71px;
+  margin-top: 14px;
+  width: 240px; }
