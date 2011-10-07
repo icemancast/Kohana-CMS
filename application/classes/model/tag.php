@@ -22,14 +22,6 @@ class Model_Tag extends ORM {
 		$comma_values = trim(str_replace(', ', ',', strtolower($comma_values)));
 		$tags = explode(',', $comma_values);
 		
-		// // Check if in database and if not add it
-		// 	foreach($tags_array as $value)
-		// 	{
-		// 		// Make all keywords singular
-		// 		$tags[] = Inflector::singular($value);
-		// 		
-		// 	}
-		
 		return $tags;
 	}
 	
@@ -48,7 +40,7 @@ class Model_Tag extends ORM {
 			echo 'one more ' . $value . ' <br />';
 		}
 		
-		// return $tag;
+		return $this;
 	}
 	
 }
