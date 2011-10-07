@@ -89,6 +89,13 @@ class Controller_Admin_Event extends Controller_Admin_Application {
 				
 				
 				$tags = ORM::factory('tag')->save_tags($events->tags);
+				
+				foreach($tags as $tag)
+				{
+					$events->add('tags', $tag);
+				}
+				
+				
 				// $tags_array = $tags->save_tags($events->tags);
 				
 				// $tags->add('tags', $tags);
