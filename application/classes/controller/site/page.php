@@ -9,6 +9,8 @@ class Controller_Site_Page extends Controller_Site_Default {
 		
 		if(empty($slug))
 		{
+			$template = 'site/layout/home';
+			
 			// Show home page if no slug appended
 			$this->template->content = View::factory('site/pages/home');
 		}
