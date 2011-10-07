@@ -19,3 +19,4 @@ build
 /media/site/sass/_reset.scss
 /media/site/sass/_text.scss
 /media/site/sass/style.scss
+/application/classes/controller/admin/test.php
