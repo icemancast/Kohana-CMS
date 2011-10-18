@@ -1,0 +1,1 @@
+<?php echo '&copy; ' . date('Y') . ' Community Bible Church. All rights reserved. | (210) 496-5096 | 2477 North Loop 1604 East San Antonio, TX 78232';
