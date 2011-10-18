@@ -535,7 +535,6 @@ html {
   background: white url(../images/layout/html.jpg) top repeat-x; }
 
 #header {
-  background: url(../images/layout/top.jpg) top right no-repeat;
   height: 100px; }
 
 #brand {
@@ -543,5 +542,266 @@ html {
   display: block;
   float: left;
   height: 71px;
-  margin-top: 14px;
+  margin: 14px 0px 0px 10px;
   width: 240px; }
+
+/* Timer ---------------------------------------------- */
+#online-service {
+  float: left;
+  height: 65px;
+  margin: 15px 0px 0px 100px;
+  overflow: hidden;
+  text-align: center;
+  width: 160px; }
+
+#online-live a {
+  background: url(../images/content/countdown/livenow.png) no-repeat;
+  clear: both;
+  color: #b9dde2;
+  display: block;
+  font-weight: bold;
+  height: 25px;
+  margin-top: 15px;
+  padding: 4px 0px;
+  text-decoration: none !important;
+  width: 121px; }
+
+#online-live span {
+  color: #cbcbcb;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 2px; }
+
+#timer-head {
+  color: #cbcbcb;
+  font-size: 12px;
+  margin-bottom: 3px;
+  text-align: left; }
+
+#timer {
+  background: url(../images/content/countdown/clockbg.png) no-repeat;
+  height: 58px;
+  position: left; }
+
+a#timer-link {
+  position: absolute;
+  display: block;
+  height: 30px;
+  text-decoration: none !important;
+  width: 160px; }
+
+#timer-values {
+  height: 34px;
+  width: 152px; }
+
+.timer-numbers {
+  color: #b9dde2;
+  float: left;
+  font-size: 20px;
+  height: 25px;
+  letter-spacing: 10px;
+  padding-top: 2px;
+  text-align: left;
+  width: 40px; }
+
+#timer-hours {
+  padding-left: 4px; }
+
+#timer-minutes {
+  margin-left: 15px; }
+
+#timer-seconds {
+  margin-left: 13px; }
+
+#timer-labels {
+  clear: both; }
+
+.timer-labels {
+  color: #cbcbcb;
+  font-size: 8px;
+  float: left;
+  text-align: left;
+  width: 44px; }
+
+#timer-label-hours {
+  margin-left: 0px; }
+
+#timer-label-minutes {
+  margin-left: 12px; }
+
+#timer-label-seconds {
+  margin-left: 12px; }
+
+/* Search ---------------------------------------------- */
+#search {
+  float: right;
+  margin: 35px 0px 0px 0px;
+  width: 155px; }
+
+#search input {
+  float: left;
+  margin-left: 3px; }
+
+/* Site navigation ---------------------------------------------- */
+#nav {
+  height: 40px;
+  float: right;
+  margin: 0px;
+  width: 395px; }
+
+#nav li {
+  list-style: none;
+  float: left;
+  margin: 0px; }
+
+#nav li a {
+  background: url(../images/layout/nav-separator.jpg) right no-repeat;
+  color: #f1f1f1;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 2px;
+  padding: 10px 12px 0px 12px;
+  text-decoration: none; }
+
+#nav li a:hover {
+  background: #d6ecee;
+  color: #512f13; }
+
+/* Subnavigation ---------------------------------------------- */
+#nav li ul {
+  border-collapse: collapse;
+  border-top: solid 1px #aedfe5;
+  display: none;
+  margin: -10px auto auto 0px;
+  padding: 0px;
+  position: absolute;
+  width: 160px;
+  z-index: 3; }
+
+#nav li ul li a {
+  background: #603813;
+  border-collapse: collapse;
+  border-bottom: solid 1px #aedfe5;
+  border-left: solid 1px #aedfe5;
+  border-right: solid 1px #aedfe5;
+  color: #aedfe5;
+  height: 29px;
+  padding: 6px 15px 0px 7px;
+  width: 138px;
+  filter: alpha(opacity=90);
+  -moz-opacity: .90;
+  opacity: .90; }
+
+#nav li ul li a:hover {
+  background: #fff;
+  color: #3b2313; }
+
+#nav li:hover ul {
+  display: block; }
+
+#nav LI.over ul {
+  display: block; }
+
+/* Left navigation ---------------------------------------------- */
+#left-nav {
+  background: #aedfe4;
+  float: left;
+  height: 454px;
+  margin-right: 0px;
+  padding: 0px; }
+
+#left-nav li {
+  list-style: none;
+  margin: 0px; }
+
+#left-nav li a {
+  background: url(../images/layout/nav-left.jpg) right top no-repeat;
+  color: #136b76;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  overflow: hidden;
+  padding: 18px 0px 0px 15px;
+  text-decoration: none; }
+
+#left-nav li a:hover {
+  background: url(../images/layout/nav-left.jpg) right bottom no-repeat; }
+
+.pastors-home-link {
+  background: url(../images/layout/pastors.jpg) left no-repeat !important;
+  color: #603810;
+  font-weight: bold;
+  height: 96px !important;
+  padding: 10px 0px 0px 120px; }
+
+.newsletter-home h2 {
+  text-indent: -9999px;
+  height: 1px; }
+
+.newsletter-home input {
+  border-collapse: collapse;
+  border: 1px #000000 solid;
+  color: #a4a4a4;
+  float: left;
+  font-style: italic;
+  height: 20px;
+  margin: -4px 0px 0px 15px; }
+
+/* Sub divs left nav ---------------------------------------------- */
+.left-nav-content {
+  background: #000;
+  color: #fff;
+  display: none;
+  height: 454px;
+  position: absolute;
+  z-index: 2;
+  filter: alpha(opacity=75);
+  -moz-opacity: .75;
+  opacity: .75; }
+
+/*
+#left-nav div {
+	background: #fff;
+	display: none;
+	left: 226px;
+	margin-top: -58px;
+	padding: 10px;
+	position: absolute;
+	z-index: 2;
+	
+	filter: alpha(opacity=75);
+	-moz-opacity: .75;
+	opacity: .75;
+}
+
+#left-nav li:hover div {
+	display: block;
+}
+
+/* Photos ---------------------------------------------- */
+#photos {
+  height: 454px;
+  margin: 0px 0px 0px 0px;
+  overflow: hidden;
+  width: 738px; }
+
+/* Banners ---------------------------------------------- */
+#banners {
+  background: #dddddd;
+  border-collapse: collapse;
+  border-top: solid 1px #136b76;
+  height: 90px;
+  margin-top: -20px;
+  padding-top: 10px; }
+
+.banner-slideshow {
+  height: 80px;
+  overflow: hidden;
+  width: 226px; }
+
+/* Footer ---------------------------------------------- */
+#footer {
+  color: #603813;
+  font-size: 10px;
+  padding: 5px; }
