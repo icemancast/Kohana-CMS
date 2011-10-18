@@ -14,6 +14,15 @@
 <script type="text/javascript" src="<?= $script; ?>"></script>
 <?php endforeach; ?>
 
+<script type="text/javascript">
+/*<![CDATA[*/
+	// onload
+	$(function() {
+		$("body").addGrid(12, {img_path: '<?= URL::base(); ?>media/site/images/'});
+	});
+/*]]>*/
+</script>
+
 </head>
 
 <body>
@@ -22,21 +31,26 @@
 			<a href="<?= URL::base(); ?>" id="brand"></a>
 			
 			<!-- timer code -->
+			<div id="online-service"></div>
 			
 			<!-- search bar -->
-		</div>
-		<ul id="nav" class="container_12">
-			<li>test</li>
-			<li>adsf</li>
-		</ul>
+			<?= $search ?>
+			
+		</div><!--end of header -->
 		
-		<ul id="left-nav">
-			<li>adsf</li>
-			<li>adsf</li>
-		</ul>
+		<?= $nav; ?>
 		
-		<h1><?= $page_title; ?></h1>
-		<p><?= $content; ?></p>
-	</div>
+		<span class="clear"></span>
+		
+		<?= $leftnav; ?>
+		
+		adsf
+
+		
+		<div id="footer" class="grid_12">
+		 <?= $footer; ?>
+		</div><!--end of footer -->
+		
+	</div><!--end of wrapper -->
 </body>
 </html>
