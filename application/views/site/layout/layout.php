@@ -44,8 +44,9 @@
 		
 		<?= $leftnav; ?>
 		
-		adsf
-
+		<h1><?= $page_title; ?></h1>
+		
+		<?= $content; ?>
 		
 		<div id="footer" class="grid_12">
 		 <?= $footer; ?>
