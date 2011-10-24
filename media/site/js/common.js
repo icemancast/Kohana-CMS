@@ -59,7 +59,17 @@ $(document).ready(
 		// $('.show-hide').show();
 		
 		$('.show-hide').mouseover(function(){
-			$('.left-nav-content').slideToggle();
+			
+			var currentselected = $('#' + $(this).attr('data-leftnav'));
+			$(this).addClass('current');
+			$(currentselected).addClass('current');
+			
+			$(currentselected).slideToggle();
+			$('.current').mouseout(function(){
+				$('.current').removeClass('current');
+			//	$(currentselected).slideToggle();
+			});
+			
 		});
 		
 		$('input').toggleValue();
