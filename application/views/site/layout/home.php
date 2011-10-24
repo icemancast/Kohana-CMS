@@ -45,9 +45,15 @@
 		<?= $leftnav; ?>
 		
 		<div id="photos" class="grid_9">
-			<div class="grid_5 alpha left-nav-content">
+			
+			<div id="sermon" class="grid_5 alpha left-nav-content">
 				<p>test this stuff</p>
 			</div>
+			
+			<div id="times" class="grid_5 alpha left-nav-content">
+				<p>#2nd content here</p>
+			</div>
+			
 			<img src="<?= URL::base(); ?>media/site/images/content/headers/header.jpg" height="454" width="738" />
 		</div><!--end of slidshow -->
 		
