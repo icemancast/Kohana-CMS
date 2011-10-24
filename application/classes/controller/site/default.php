@@ -49,7 +49,7 @@ abstract class Controller_Site_Default extends Controller_Template {
 			
 			$this->template->head_code		= ''; // Not sure if i need this
 			$this->template->nav			= View::factory('site/blocks/nav')->render();
-			$this->template->leftnav		= View::factory('site/blocks/leftnav')->render();
+			$this->template->leftnav		= View::factory('site/blocks/homeleftnav')->render();
 			$this->template->search			= View::factory('site/blocks/search')->render();
 			$this->template->banners		= View::factory('site/blocks/banners')->render();
 			$this->template->footer			= View::factory('site/blocks/footer')->render();
