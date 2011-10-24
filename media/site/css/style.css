@@ -659,7 +659,7 @@ a#timer-link {
   color: #f1f1f1;
   display: block;
   font-size: 14px;
-  height: 40px;
+  height: 30px;
   letter-spacing: 2px;
   padding: 10px 12px 0px 12px;
   text-decoration: none; }
@@ -673,7 +673,7 @@ a#timer-link {
   border-collapse: collapse;
   border-top: solid 1px #aedfe5;
   display: none;
-  margin: -10px auto auto 0px;
+  margin: 0px auto auto 0px;
   padding: 0px;
   position: absolute;
   width: 160px;
