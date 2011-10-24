@@ -22,14 +22,22 @@ class Controller_Site_Page extends Controller_Site_Default {
 			// If page exists then load it
 			if($page->loaded())
 			{
+				
+				$contents = $page->contents->find_all();
+				$url = ORM::factory('url', $page->nav->id)->find_all();
+				
+				$this->template->browser_title = $page->browser_title;
+				$this->template->page_title = $page->page_title;
+				
+				$this->template->leftnav = View::factory('site/blocks/leftnav')
+					->bind('url', $url)
+					->bind('page', $page)
+					->render();
+					
 				$this->template->content = View::factory('site/pages/page')
 					->bind('page', $page)
 					->bind('contents', $contents);
-					
-				$contents = $page->contents->find_all();
-
-				$this->template->browser_title = $page->browser_title;
-				$this->template->page_title = $page->page_title;
+				
 			}
 			else
 			{
