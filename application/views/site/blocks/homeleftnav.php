@@ -1,4 +1,4 @@
-	<ul id="left-nav" class="grid_3">
+	<ul id="home-left" class="grid_3">
 		<li class="pastors-home-link">
 			12 Services<br />
 			3 Preachers<br />

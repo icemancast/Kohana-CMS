@@ -1,4 +1,4 @@
-	<ul id="nav">
+<ul id="nav">
 		<li><a href="#">About</a>
 			<ul>
 				<li><a href="#">about cbc</a></li>
@@ -21,4 +21,5 @@
 				<li><a href="#">about 2</a></li>
 			</ul>
 		</li>
-	</ul><!--end of nav -->
+		</ul><!--end of nav -->
+		
