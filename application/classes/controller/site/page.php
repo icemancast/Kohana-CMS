@@ -26,14 +26,28 @@ class Controller_Site_Page extends Controller_Site_Default {
 				$contents = $page->contents->find_all();
 				$url = ORM::factory('url', $page->nav->id)->find_all();
 				
+				// Code to check for directory if headers, if so then create slideshow.
+				$handle = opendir(DOCROOT . 'media/site/images/content/headers/' . $slug);
+				while(false !== ($file = readdir($handle)))
+				{
+					if($file !== '.' && $file != '..' && $file != '.DS_Store')
+					{
+						$photos[] = URL::base() . 'media/site/images/content/headers/' . $slug  . '/' . $file;
+					}
+				}
+				
+				closedir($handle);
+				
 				$this->template->browser_title = $page->browser_title;
 				$this->template->page_title = $page->page_title;
+				$this->template->photos = $photos;       
 				
+				// Load vars to nav
 				$this->template->leftnav = View::factory('site/blocks/leftnav')
-					->bind('url', $url)
-					->bind('page', $page)
-					->render();
-					
+				->bind('url', $url)
+				->bind('page', $page); 
+				
+				// Load vars to page
 				$this->template->content = View::factory('site/pages/page')
 					->bind('page', $page)
 					->bind('contents', $contents);
@@ -41,8 +55,12 @@ class Controller_Site_Page extends Controller_Site_Default {
 			}
 			else
 			{
+				$message = 'Sorry page not found try the main navigation on top :)';
+				
 				// Page not found send to 404
-				echo 'not found';
+				$this->template->page_title = 'Page not found';
+				$this->template->content = View::factory('site/errors/404')
+					->bind('message', $message);
 			}
 		}
 		
