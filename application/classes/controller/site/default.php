@@ -20,6 +20,7 @@ abstract class Controller_Site_Default extends Controller_Template {
 		if($this->auto_render)
 		{
 			$this->template->browser_title 	= 'Community Bible Church';
+			$this->template->photos		 	= '';
 			$this->template->page_title 	= 'Community Bible Church';
 			$this->template->content 		= '';
 			$this->template->styles 		= array(
