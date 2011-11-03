@@ -1,13 +1,14 @@
-<ul id="left-nav" class="grid_3">
+<ul id="left-nav" class="alpha grid_3">
 <?php
 
-echo $page->nav->nav_title;
-
-echo '<br /><br />';
+echo '		<li class="nav-title"><a href="' . URL::base() . $page->slug . '">' . $page->nav->nav_title . '</a></li>
+	';
 
 foreach ($url as $link)
 {
-	echo $link->url_title;
+	echo '	<li><a href="' . $link->url . '">' . $link->url_title . '</a></li>
+	';
 }
 ?>
-</ul>
+	</ul>
+
