@@ -65,7 +65,7 @@ class Controller_Admin_Content extends Controller_Admin_Application {
 				
 				$contents->save();
 				
-				Session::instance()->set('message', 'You navigation has been added/updated. | <a href="content/manage/">Add Another</a>');	
+				Session::instance()->set('message', 'You content has been added/updated. | <a href="content/manage/">Add Another</a>');	
 				$this->request->redirect('/admin/content/');
 				
 			}
