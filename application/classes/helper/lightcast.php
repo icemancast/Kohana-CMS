@@ -7,7 +7,7 @@ class Helper_Lightcast {
 		
 		if(isset($channel_id))
 		{
-			$lightcast = Kohana::config('lightcast');
+			$lightcast = Kohana::$config->load('lightcast');
 			
 			$get_channel = file_get_contents('http://customers.lightcastmedia.com/api/consoleListVideos?output=json&console=' . $channel_id . '&client=' . $lightcast['client_id'] . '&limit=300');
 		
