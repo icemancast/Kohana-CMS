@@ -7,7 +7,7 @@ class Helper_Json {
 		
 		$value = str_replace(':', '', $value);
 		$value = str_replace('"', '', $value);
-		return json_encode($value);
+		return $value;
 		
 	}
 	
