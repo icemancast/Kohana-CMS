@@ -34,7 +34,7 @@ class Kohana_F1
 		$explode_user_name = explode('@', $email);
 		$user_name = trim($explode_user_name[0]);
 		
-		$this->f1_config = Kohana::config('f1');
+		$this->f1_config = Kohana::$config->load('f1');
 		
 		// Concatenate url string for request url
 		$this->request_url = $this->f1_config['base_url'] . $this->f1_config['accesstoken_path'];
