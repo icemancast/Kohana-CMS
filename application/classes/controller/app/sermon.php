@@ -17,29 +17,33 @@ class Controller_App_Sermon extends Controller {
 		$sermons = $load_sermon->find_iphone_video();
 		//$sermon_count = $sermons->count_all();
 		
-		$json = '{
-		"responseCode" : "0",
-		"model" : [
-		';
+		$json_array = array();
+		$json_array['responseCode'] = '0';
+		
+		$i = 0;
 		
 		foreach($sermons as $sermon)
-		{
-			
-			$imagePath = 'http://cupertino.lightcastmedia.com/cbcmedia/' . $sermon->lightcast_id . '/thumbnail.jpg';
-			$pageUrl = 'http://customers.lightcastmedia.com/cupertino/3073/' . $sermon->lightcast_id . '.m3u8';
+		{	
 			
 			$title = Helper_Json::clean_json_value($sermon->sermon_title);
 			$speaker = Helper_Json::clean_json_value($sermon->speaker);
 			$description = Helper_Json::clean_json_value($sermon->description);
 			
-			$json .= '{"title": ' . $title . ',"speaker": ' . $speaker . ',"description": ' . $description . ',"duration": "' . $sermon->duration . '","date": "' . $sermon->date_sermon . '","imagePath": "' . $imagePath . '","pageURL": "' . $pageUrl . '"},';
+			$json_array['model'][$i]['title'] = $title;
+			$json_array['model'][$i]['speaker'] = $speaker;
+			$json_array['model'][$i]['description'] = $description;
+			$json_array['model'][$i]['duration'] = $sermon->duration;
+			$json_array['model'][$i]['date'] = $sermon->date_sermon;
+			
+			$json_array['model'][$i]['imagePath'] = 'http://cupertino.lightcastmedia.com/cbcmedia/' . $sermon->lightcast_id . '/thumbnail.jpg';
+			$json_array['model'][$i]['pageUrl'] = 'http://customers.lightcastmedia.com/cupertino/3073/' . $sermon->lightcast_id . '.m3u8';
+			$i++;
 			
 		}
 		
-		$json .= ']}';
-			
-		echo $json;
-		
+		$json = json_encode($json_array);
+		$this->response->body($json);
+	
 	}
 	
 }
