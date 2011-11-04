@@ -209,22 +209,22 @@ hr {
 /* `Headings
 ----------------------------------------------------------------------------------------------------*/
 h1 {
-  font-size: 25px; }
-
-h2 {
   font-size: 23px; }
 
-h3 {
+h2 {
   font-size: 21px; }
 
-h4 {
+h3 {
   font-size: 19px; }
 
-h5 {
+h4 {
   font-size: 17px; }
 
-h6 {
+h5 {
   font-size: 15px; }
+
+h6 {
+  font-size: 13px; }
 
 /* `Spacing
 ----------------------------------------------------------------------------------------------------*/
@@ -677,7 +677,7 @@ a#timer-link {
   padding: 0px;
   position: absolute;
   width: 160px;
-  z-index: 3; }
+  z-index: 300; }
 
 #nav li ul li a {
   background: #603813;
@@ -703,30 +703,33 @@ a#timer-link {
 #nav LI.over ul {
   display: block; }
 
-/* Left navigation ---------------------------------------------- */
-#left-nav {
+/* Home left navigation ---------------------------------------------- */
+#home-left, #left-nav {
   background: #aedfe4;
-  float: left;
-  height: 454px;
   margin-right: 0px;
   padding: 0px; }
 
-#left-nav li {
+#home-left {
+  height: 454px; }
+
+#home-left li, #left-nav li {
   list-style: none;
   margin: 0px; }
 
-#left-nav li a {
-  background: url(../images/layout/nav-left.jpg) right top no-repeat;
+#home-left li a, #left-nav li a {
   color: #136b76;
   display: block;
-  font-size: 14px;
-  height: 40px;
   overflow: hidden;
-  padding: 18px 0px 0px 15px;
   text-decoration: none; }
 
-#left-nav li a:hover {
-  background: url(../images/layout/nav-left.jpg) right bottom no-repeat; }
+#home-left li a {
+  background: url(../images/layout/home-left.jpg) right top no-repeat;
+  font-size: 14px;
+  height: 40px;
+  padding: 18px 0px 0px 15px; }
+
+#home-left li a:hover {
+  background: url(../images/layout/home-left.jpg) right bottom no-repeat; }
 
 .pastors-home-link {
   background: url(../images/layout/pastors.jpg) left no-repeat !important;
@@ -747,6 +750,34 @@ a#timer-link {
   font-style: italic;
   height: 20px;
   margin: -4px 0px 0px 15px; }
+
+/* Left nav pages ---------------------------------------------- */
+.nav-title a {
+  background: url(../images/layout/nav-title.jpg) left top no-repeat !important;
+  color: #4499a4;
+  display: block;
+  font-size: 12px !important;
+  height: 30px;
+  padding: 9px 0px 0px 23px !important; }
+
+.nav-title a:hover {
+  text-decoration: underline !important; }
+
+#left-nav {
+  min-height: 400px; }
+
+#left-nav li a {
+  background: url(../images/layout/left-nav.jpg) right top no-repeat;
+  font-size: 14px;
+  height: 28px;
+  padding: 7px 0px 0px 26px; }
+
+#left-nav li a:hover {
+  background: url(../images/layout/left-nav.jpg) left bottom no-repeat; }
+
+/* left background in inner wrapper */
+#inner-wrapper {
+  background: url(../images/layout/left-nav-bg.jpg) left repeat-y; }
 
 /* Sub divs left nav ---------------------------------------------- */
 .left-nav-content {
@@ -780,11 +811,18 @@ a#timer-link {
 }
 
 /* Photos ---------------------------------------------- */
+/* home page photos */
 #photos {
   height: 454px;
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
   overflow: hidden;
   width: 738px; }
+
+/* photos on other pages  */
+.photo-slideshow {
+  height: 300px;
+  margin: 0px 0px 10px 0px;
+  #	overflow: hidden; }
 
 /* Banners ---------------------------------------------- */
 #banners {
@@ -800,8 +838,31 @@ a#timer-link {
   overflow: hidden;
   width: 226px; }
 
+/* Content area ------------------------------------------- */
+h1 {
+  text-transform: uppercase; }
+
+h1, h2, hh3, h4, h5, h6 {
+  color: #3c93b3;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: normal !important;
+  letter-spacing: 2px; }
+
+.content-block {
+  background: #e4f6f8 url(../images/layout/content.png) top right no-repeat;
+  margin-bottom: 20px; }
+
+.content-block h2, .content-block h3, .content-block h4, .content-block h5, .content-block h6 {
+  color: #8e8782;
+  padding: 7px 0px 0px 12px; }
+
+.content-block p {
+  padding: 0px 10px; }
+
 /* Footer ---------------------------------------------- */
 #footer {
   color: #603813;
   font-size: 10px;
-  padding: 5px; }
+  margin: 25px 0px;
+  padding: 5px 0px 20px 0px;
+  text-align: center; }
