@@ -23,3 +23,4 @@ build
 /media/site/images/12_col.png
 /media/site/sass/
 /application/classes/helper/vendor/awssdk/config.inc.php
+phpinfo.php
