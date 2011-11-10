@@ -35,6 +35,10 @@ class Controller_App_Sermon extends Controller {
 		}
 		
 		$json = json_encode($json_array);
+		$file = APPPATH . 'classes/controller/app/json/sermon.json';
+		
+		file_put_contents($file, $json, LOCK_EX);
+		
 		$this->response->body($json);
 	
 	}
