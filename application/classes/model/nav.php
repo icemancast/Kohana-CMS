@@ -15,12 +15,16 @@ class Model_Nav extends ORM {
 		'user' => array(),
 	);
 	
+	public $nav_select = array(
+		'0' => 'Not Main',
+		'1' => 'Yes Main',
+	);
+	
 	protected $_created_column = array('column' => 'date_created', 'format' => TRUE);
 	protected $_updated_column = array('column' => 'date_modified', 'format' => TRUE);
 	
 	public function rules()
 	{
-		
 		return array(
 			'nav_title' => array(
 				array('not_empty'),

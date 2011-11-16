@@ -22,23 +22,29 @@ class Controller_Admin_Nav extends Controller_Admin_Application {
 
 		$this->template->content = View::factory('admin/forms/nav')
 			->bind('post', $post)
-			->bind('errors', $errors);
+			->bind('errors', $errors)
+			->bind('nav_select', $nav_select);
 		
 		$id = (!empty($_POST)) ? $_POST['id'] : $this->request->param('id', FALSE);
+		
 		$nav = ORM::factory('nav', $id);
+		$nav_select = $nav->nav_select;
 		
 		if($nav->loaded())
 		{
-			$post['nav_title'] = $nav->nav_title;
 			$post['id'] = $nav->id;
 			$post['user_id'] = $this->_session->get('user_id');
+			$post['nav_title'] = $nav->nav_title;
+			$post['mainnav'] = $nav->mainnav;
+			$post['sort'] = $nav->sort;
+
 		}
 		
 		if(!empty($_POST))
 		{
 			$_POST['user_id'] = $this->_session->get('user_id');
 			
-			$values = Arr::extract($_POST, array('id', 'user_id', 'nav_title'));
+			$values = Arr::extract($_POST, array('id', 'user_id', 'nav_title', 'mainnav', 'sort'));
 			$nav->values($values);
 			
 			try

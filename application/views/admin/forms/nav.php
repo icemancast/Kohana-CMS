@@ -14,8 +14,18 @@
 <legend>All required</legend>
 
 <p>
+	<?= Form::label('mainnav', '* Main Nav'); ?>
+	<?= Form::select('mainnav', $nav_select, !empty($post['mainnav']) ? $post['mainnav'] : '', array('id' => 'mainnav' )); ?>
+</p>
+
+<p>
 	<?= Form::label('nav_title', '* Nav Title'); ?>
 	<?= Form::input('nav_title', !empty($post['nav_title']) ? $post['nav_title'] : '', array('id' => 'nav_title' )); ?>
+</p>
+
+<p>
+	<?= Form::label('sort', '* Sort'); ?>
+	<?= Form::input('sort', !empty($post['sort']) ? $post['sort'] : '0', array('id' => 'sort' )); ?>
 </p>
 
 </fieldset>
