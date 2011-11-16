@@ -21,10 +21,10 @@ class Controller_Site_Page extends Controller_Site_Default {
 			
 			// If page exists then load it
 			if($page->loaded())
-			{
-				
+			{				
 				$contents = $page->contents->find_all();
-				$url = ORM::factory('url', $page->nav->id)->find_all();
+				$url = ORM::factory('url')
+					->where('nav_id', '=', $page->nav->id)->find_all();
 				
 				// Code to check for directory if headers, if so then create slideshow.
 				$handle = opendir(DOCROOT . 'media/site/images/content/headers/' . $slug);
