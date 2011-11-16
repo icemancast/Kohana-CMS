@@ -772,7 +772,7 @@ a#timer-link {
   height: 28px;
   padding: 7px 0px 0px 26px; }
 
-#left-nav li a:hover {
+#left-nav li a:hover, #left-nav .current-uri {
   background: url(../images/layout/left-nav.jpg) left bottom no-repeat; }
 
 /* left background in inner wrapper */
@@ -814,7 +814,7 @@ a#timer-link {
 /* home page photos */
 #photos {
   height: 454px;
-  margin: 0px;
+  margin: 0px 0px -5px 0px;
   overflow: hidden;
   width: 738px; }
 
@@ -840,7 +840,8 @@ a#timer-link {
 
 /* Content area ------------------------------------------- */
 h1 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 15px 0px; }
 
 h1, h2, hh3, h4, h5, h6 {
   color: #3c93b3;
@@ -854,6 +855,7 @@ h1, h2, hh3, h4, h5, h6 {
 
 .content-block h2, .content-block h3, .content-block h4, .content-block h5, .content-block h6 {
   color: #8e8782;
+  margin-bottom: 7px;
   padding: 7px 0px 0px 12px; }
 
 .content-block p {
