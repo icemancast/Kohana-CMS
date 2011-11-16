@@ -6,7 +6,9 @@ echo '		<li class="nav-title"><a href="' . URL::base() . $page->slug . '">' . $p
 
 foreach ($url as $link)
 {
-	echo '	<li><a href="' . $link->url . '">' . $link->url_title . '</a></li>
+	// check if current page
+	$class = $page->slug == $link->url ? ' class="current-uri" ' : '';
+	echo '	<li><a href="' . URL::base() . $link->url . '"' . $class . '>' . $link->url_title . '</a></li>
 	';
 }
 ?>
