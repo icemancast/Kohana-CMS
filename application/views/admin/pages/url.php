@@ -15,9 +15,10 @@ Session::instance()->delete('message');
 
 ?>
 
-<p>
+<?php foreach($navs as $nav): ?>
+
 <table border="1" class="table admin-table">
-	<caption>Navigation Items</caption>
+	<caption><?= $nav->nav_title; ?></caption>
 	<thead>
   	<tr>
 		<th width="25">id</td>
@@ -28,20 +29,24 @@ Session::instance()->delete('message');
 	</tr>
 	</thead>
 	<tbody>
-		
-		<?php foreach($urls as $url): ?>
+			
+		<?php foreach($nav->urls->order_by('sort', 'asc')->find_all() as $url): ?>
 		<?php
+		
+			// echo $url->url_title;
 			$date_created = date('M d, y', $url->date_created);
 			echo '<tr>
-				<td>' . $url->id . '</td>
-				<td>' . $url->url_title . ' (<em>' . $url->nav->nav_title . '</em>)</td>
-				<td>' . $url->sort . '</td>
-				<td>' . $date_created . '</td>
-				<td class="text-center"><a href="' . url::base() . 'admin/url/manage/' . $url->id . '"><img src="' . url::base() . 'media/admin/images/icons/application_edit.png"></a></td>
-			</tr>';	?>
+			<td>' . $url->id . '</td>
+			<td>' . $url->url_title . '</td>
+			<td>' . $url->sort . '</td>
+			<td>' . $date_created . '</td>
+			<td class="text-center"><a href="' . url::base() . 'admin/url/manage/' . $url->id . '"><img src="' . url::base() . 'media/admin/images/icons/application_edit.png"></a></td>
+			</tr>';	
+		?>
 		<?php endforeach; ?>
+		
 	</tbody>
 </table>
-</p>
+<?php endforeach; ?>
 
 <p class="clear"></p>
