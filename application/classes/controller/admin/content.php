@@ -10,9 +10,9 @@ class Controller_Admin_Content extends Controller_Admin_Application {
 	
 	public function action_index()
 	{
-		$contents = ORM::factory('content')->get_all();
+		$pages = ORM::factory('page')->get_all();
 		$this->template->content = View::factory('admin/pages/content')
-			->bind('contents', $contents);
+			->bind('pages', $pages);
 	}
 
 	public function action_manage()

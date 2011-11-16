@@ -27,25 +27,33 @@ class Controller_Site_Page extends Controller_Site_Default {
 					->where('nav_id', '=', $page->nav->id)->find_all();
 				
 				// Code to check for directory if headers, if so then create slideshow.
-				$handle = opendir(DOCROOT . 'media/site/images/content/headers/' . $slug);
-				while(false !== ($file = readdir($handle)))
+				$directory = DOCROOT . 'media/site/images/content/headers/' . $slug;
+				
+				if(is_dir($directory))
 				{
-					if($file !== '.' && $file != '..' && $file != '.DS_Store')
+					$handle = opendir($directory);
+					while(false !== ($file = readdir($handle)))
 					{
-						$photos[] = URL::base() . 'media/site/images/content/headers/' . $slug  . '/' . $file;
+						if($file !== '.' && $file != '..' && $file != '.DS_Store')
+						{
+							$photos[] = URL::base() . 'media/site/images/content/headers/' . $slug  . '/' . $file;
+						}
 					}
+					closedir($handle);
+					$this->template->photos = $photos;
 				}
 				
-				closedir($handle);
+				// So we can hilight current page
+				$current_page = $this->request->uri();
 				
 				$this->template->browser_title = $page->browser_title;
 				$this->template->page_title = $page->page_title;
-				$this->template->photos = $photos;       
 				
 				// Load vars to nav
 				$this->template->leftnav = View::factory('site/blocks/leftnav')
 				->bind('url', $url)
-				->bind('page', $page); 
+				->bind('page', $page)
+				->bind('current_page', $current_page); 
 				
 				// Load vars to page
 				$this->template->content = View::factory('site/pages/page')
