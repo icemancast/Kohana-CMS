@@ -24,3 +24,4 @@ build
 /media/site/sass/
 /application/classes/helper/vendor/awssdk/config.inc.php
 phpinfo.php
+/.sass-cache/
