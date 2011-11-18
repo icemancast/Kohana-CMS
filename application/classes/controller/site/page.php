@@ -44,7 +44,7 @@ class Controller_Site_Page extends Controller_Site_Default {
 				}
 				
 				// So we can hilight current page
-				$current_page = $this->request->uri();
+				//$current_page = $this->request->uri();
 				
 				$this->template->browser_title = $page->browser_title;
 				$this->template->page_title = $page->page_title;
