@@ -22,7 +22,7 @@ class Controller_Site_Page extends Controller_Site_Default {
 			// If page exists then load it
 			if($page->loaded())
 			{				
-				$contents = $page->contents->find_all();
+				$contents = $page->contents->order_by('sort', 'asc')->find_all();
 				$url = ORM::factory('url')
 					->where('nav_id', '=', $page->nav->id)->find_all();
 				
