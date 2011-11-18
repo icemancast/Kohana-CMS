@@ -861,6 +861,9 @@ h1, h2, hh3, h4, h5, h6 {
 .content-block p {
   padding: 0px 10px; }
 
+.content-block em {
+  color: #3c3c3c; }
+
 /* Footer ---------------------------------------------- */
 #footer {
   color: #603813;
