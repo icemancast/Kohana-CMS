@@ -25,3 +25,4 @@ build
 /application/classes/helper/vendor/awssdk/config.inc.php
 phpinfo.php
 /.sass-cache/
+/application/config/amazon.php
