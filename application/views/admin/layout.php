@@ -9,15 +9,24 @@
 <?= HTML::style('media/admin/css/base.css') . "\n"; ?>
 <?= HTML::style('media/admin/css/style.css') . "\n"; ?>
 <?= HTML::style('media/admin/css/jquery-ui-1.8.4.custom.css') . "\n"; ?>
-<?= HTML::script('media/admin/js/jquery-1.4.2.min.js') . "\n"; ?>
+
+<?= HTML::script('http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js') . "\n"; ?>
 <?= HTML::script('media/admin/js/jquery-ui-1.8.4.custom.min.js') . "\n"; ?>
+
+<?= HTML::script('media/admin/js/markitup/jquery.markitup.js') . "\n"; ?>
+<?= HTML::script('media/admin/js/markitup/sets/default/set.js') . "\n"; ?>
+
+<?= HTML::style('media/admin/js/markitup/skins/simple/style.css') . "\n"; ?>
+<?= HTML::style('media/admin/js/markitup/sets/default/style.css') . "\n"; ?>
+
 
 <script type="text/javascript"> 
 	
 	$(document).ready(function()
 		{
+			$(".markItUp").markItUp(mySettings);
 			$(".datepicker").datepicker();
-			$(".time").timepickr();
+			// $(".time").timepickr();
 		}
 	);
 	
