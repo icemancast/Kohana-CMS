@@ -17,7 +17,6 @@ class Controller_Admin_Content extends Controller_Admin_Application {
 
 	public function action_manage()
 	{
-
 		$this->template->content = View::factory('admin/forms/content')
 			->bind('post', $post)
 			->bind('select_page', $select_page)

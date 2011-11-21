@@ -13,9 +13,6 @@ class Model_Content extends ORM {
 	public function rules()
 	{
 		return array(
-			'content_title' => array(
-				array('not_empty'),
-			),
 			'content' => array(
 				array('not_empty'),
 			),
