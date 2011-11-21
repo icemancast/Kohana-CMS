@@ -858,11 +858,41 @@ h1, h2, hh3, h4, h5, h6 {
   margin-bottom: 7px;
   padding: 7px 0px 0px 12px; }
 
+.content-block h2 {
+  margin-bottom: 0px !important; }
+
 .content-block p {
-  padding: 0px 10px; }
+  padding: 10px 10px 0px 10px; }
+
+.content-block strong {
+  color: #02374a; }
 
 .content-block em {
   color: #3c3c3c; }
+
+.content-block a {
+  color: #017da6; }
+
+.content-block a:hover {
+  color: #2390b4;
+  text-decoration: none; }
+
+.content-block .image-left {
+  float: left;
+  margin-right: 5px; }
+
+/* Buttons --------------------------------------------- */
+a.button-small, input.button-small {
+  background: url(../images/layout/button-small.jpg) top right no-repeat;
+  border: none;
+  color: #aedfe5;
+  font-weight: bold;
+  padding: 10px 45px 10px 10px;
+  position: relative;
+  text-decoration: none; }
+
+a:hover.button-small {
+  color: #fff; }
 
 /* Footer ---------------------------------------------- */
 #footer {
