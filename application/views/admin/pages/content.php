@@ -33,10 +33,14 @@ foreach($pages as $page):
 		
 		<?php foreach($page->contents->order_by('sort', 'asc')->find_all() as $content): ?>
 		<?php
-			$date_modified = date('M d, y', $content->date_modified);
+			$date_modified = (empty($content->date_modified) ? $content->date_created : $content->date_modified);
+			$date_modified = date('M d, y', $date_modified);
+			
+			$content_title = (empty($content->content_title) ? $page->page_title : $content->content_title);
+			
 			echo '<tr>
 				<td>' . $content->id . '</td>
-				<td>' . $content->content_title . '</td>
+				<td>' . $content_title . '</td>
 				<td>' . $content->sort . '</td>
 				<td>' . $content->status . '</td>
 				<td>' . $date_modified . '</td>
