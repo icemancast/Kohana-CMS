@@ -4,9 +4,6 @@
 */
 return array(
 	
-	'content_title' => array(
-		'not_empty' => 'Yo fill in the title.',
-	),
 	'content' => array(
 		'not_empty' => 'You need content.',
 	),

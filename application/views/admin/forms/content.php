@@ -19,13 +19,15 @@
 </p>
 
 <p>
-	<?= Form::label('content_title', '* Content Title'); ?>
+	<?= Form::label('content_title', 'Content Title'); ?>
 	<?= Form::input('content_title', !empty($post['content_title']) ? $post['content_title'] : '', array('id' => 'content_title' )); ?>
 </p>
 
 <p>
 	<?= Form::label('content', '* Content'); ?>
-	<?= Form::textarea('content', !empty($post['content']) ? $post['content'] : '', array('id' => 'content' )); ?>
+</p>
+<p>
+	<?= Form::textarea('content', !empty($post['content']) ? $post['content'] : '', array('id' => 'content', 'class' => 'markItUp' )); ?>
 </p>
 
 <p class="clear"></p>
