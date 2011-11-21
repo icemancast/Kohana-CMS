@@ -209,6 +209,7 @@ a:hover {
 	padding-bottom: 10px;
 }*/
 
+
 /* Icon Css ------------------------------------- */
 .icon {
 	display: inline-block;
@@ -325,4 +326,9 @@ form.form {
 	color: #990000;
 	font-weight: bold;
 	margin: 1px;
+}
+
+textarea#content {
+	height: 500px;
+	width: 800px;
 }
