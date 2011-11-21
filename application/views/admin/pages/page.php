@@ -31,7 +31,10 @@ Session::instance()->delete('message');
 		
 		<?php foreach($pages as $page): ?>
 		<?php
-			$date_modified = date('M d, y', $page->date_modified);
+			
+			$date_modified = (empty($page->modified) ? $page->date_created : $page->date_modified);
+			$date_modified = date('M d, y', $date_modified);
+			
 			echo '<tr>
 				<td>' . $page->id . '</td>
 				<td>' . $page->page_title . '</td>
