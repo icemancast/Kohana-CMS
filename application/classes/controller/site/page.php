@@ -23,33 +23,31 @@ class Controller_Site_Page extends Controller_Site_Default {
 			if($page->loaded())
 			{				
 				$contents = $page->contents->order_by('sort', 'asc')->find_all();
-				$url = ORM::factory('url')
-					->where('nav_id', '=', $page->nav->id)->find_all();
+				$url = ORM::factory('url')->get_url_for_page($page->nav->id);
+				
+				Kohana::load(APPPATH . 'classes/helper/vendor/awssdk/sdk.class.php');
+				$s3 = new AmazonS3();
+				
+				$content_config = Kohana::$config->load('content');
+				$headers = $s3->get_object_list('cbcimages', array(
+					'prefix' => 'headers/' . $slug . '/',
+				));
+				$shift_array = array_shift($headers);
 				
 				// Code to check for directory if headers, if so then create slideshow.
-				$directory = DOCROOT . 'media/site/images/content/headers/' . $slug;
-				
-				if(is_dir($directory))
+				if(!empty($headers))
 				{
-					$handle = opendir($directory);
-					while(false !== ($file = readdir($handle)))
+					foreach($headers as $header)
 					{
-						if($file !== '.' && $file != '..' && $file != '.DS_Store')
-						{
-							$photos[] = URL::base() . 'media/site/images/content/headers/' . $slug  . '/' . $file;
-						}
+						$photos[] = $content_config['short_codes']['[IMAGES]'] . $header;
 					}
-					closedir($handle);
 					$this->template->photos = $photos;
 				}
-				
-				// So we can hilight current page
-				//$current_page = $this->request->uri();
 				
 				$this->template->browser_title = $page->browser_title;
 				$this->template->page_title = $page->page_title;
 				
-				// Load vars to nav
+				// Load vars to navhttp://www.communitybible.com/christmas.php
 				$this->template->leftnav = View::factory('site/blocks/leftnav')
 				->bind('url', $url)
 				->bind('page', $page)
