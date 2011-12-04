@@ -45,4 +45,11 @@ class Model_Url extends ORM {
 		return $this->order_by('sort', 'asc')->find_all();
 	}
 	
+	public function get_url_for_page($nav_id)
+	{
+		return $this->where('nav_id', '=', $nav_id)
+			->order_by('sort', 'asc')
+			->find_all();
+	}
+	
 }
