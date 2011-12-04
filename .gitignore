@@ -26,3 +26,5 @@ build
 phpinfo.php
 /.sass-cache/
 /application/config/amazon.php
+
+_sql/20111122-communitybible.sql
