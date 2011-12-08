@@ -107,7 +107,7 @@ Kohana::modules(array(
 	'f1'        => MODPATH.'f1',        // Object Relationship Mapping
 	'unittest'   => MODPATH.'unittest',   // Unit testing
 	'userguide'  => MODPATH.'userguide',  // User guide and API documentation
-	'amazon'  => MODPATH.'amazon',  // User guide and API documentation
+	// 'amazon'  => MODPATH.'amazon',  // User guide and API documentation
 ));
 
 /**
