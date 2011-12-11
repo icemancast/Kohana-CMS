@@ -28,3 +28,8 @@ phpinfo.php
 /application/config/amazon.php
 
 _sql/20111122-communitybible.sql
+_sql/20110923-communitybible.sql
+_sql/20110923-structure.sql
+_sql/20110928-structure.sql
+_sql/20111001-communitybible.sql
+_sql/insert-user.sql
