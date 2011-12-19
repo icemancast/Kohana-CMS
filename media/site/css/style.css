@@ -647,7 +647,7 @@ a#timer-link {
   height: 40px;
   float: right;
   margin: 0px;
-  width: 395px; }
+  width: 508px; }
 
 #nav li {
   list-style: none;
@@ -686,9 +686,10 @@ a#timer-link {
   border-left: solid 1px #aedfe5;
   border-right: solid 1px #aedfe5;
   color: #aedfe5;
+  font-size: 12px;
   height: 29px;
-  padding: 6px 15px 0px 7px;
-  width: 138px;
+  padding: 6px 0px 0px 5px;
+  width: 153px;
   filter: alpha(opacity=90);
   -moz-opacity: .90;
   opacity: .90; }

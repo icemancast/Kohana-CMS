@@ -14,14 +14,14 @@
 <script type="text/javascript" src="<?= $script; ?>"></script>
 <?php endforeach; ?>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 /*<![CDATA[*/
 	// onload
 	$(function() {
-		$("body").addGrid(12, {img_path: '<?= URL::base(); ?>media/site/images/'});
+		$("body").addGrid(12, {img_path: '<? //= URL::base(); ?>media/site/images/'});
 	});
 /*]]>*/
-</script>
+</script> -->
 
 </head>
 
@@ -46,13 +46,13 @@
 		
 		<div id="photos" class="grid_9">
 			
-			<div id="sermon" class="grid_5 alpha left-nav-content">
-				<p>test this stuff</p>
-			</div>
-			
-			<div id="times" class="grid_5 alpha left-nav-content">
-				<p>#2nd content here</p>
-			</div>
+			<!-- <div id="sermon" class="grid_5 alpha left-nav-content">
+							<p>test this stuff</p>
+						</div>
+						
+						<div id="times" class="grid_5 alpha left-nav-content">
+							<p>#2nd content here</p>
+						</div> -->
 			
 			<img src="<?= URL::base(); ?>media/site/images/content/headers/header.jpg" height="454" width="738" />
 		</div><!--end of slidshow -->

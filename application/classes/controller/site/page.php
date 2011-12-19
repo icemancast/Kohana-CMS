@@ -9,7 +9,10 @@ class Controller_Site_Page extends Controller_Site_Default {
 		
 		if(empty($slug))
 		{			
+			$nav = ORM::factory('nav')->get_mainnav();
 			$this->template->set_filename('site/layout/home');
+			$this->template->nav = View::factory('site/blocks/nav')
+				->bind('nav', $nav);
 			
 			// Show home page if no slug appended
 			$this->template->content = View::factory('site/pages/home');
@@ -44,14 +47,18 @@ class Controller_Site_Page extends Controller_Site_Default {
 					$this->template->photos = $photos;
 				}
 				
+				$nav = ORM::factory('nav')->get_mainnav();
+				$this->template->nav = View::factory('site/blocks/nav')
+					->bind('nav', $nav);
+					
 				$this->template->browser_title = $page->browser_title;
 				$this->template->page_title = $page->page_title;
 				
-				// Load vars to navhttp://www.communitybible.com/christmas.php
+				// Load vars to nav
 				$this->template->leftnav = View::factory('site/blocks/leftnav')
-				->bind('url', $url)
-				->bind('page', $page)
-				->bind('current_page', $current_page); 
+					->bind('url', $url)
+					->bind('page', $page)
+					->bind('current_page', $current_page); 
 				
 				// Load vars to page
 				$this->template->content = View::factory('site/pages/page')
@@ -61,13 +68,18 @@ class Controller_Site_Page extends Controller_Site_Default {
 			}
 			else
 			{
-				$message = 'Sorry page not found try the main navigation on top :)';
-				
-				// Page not found send to 404
-				$this->template->page_title = 'Page not found';
-				$this->template->content = View::factory('site/errors/404')
-					->bind('message', $message);
+				//echo 'test';
+				throw new HTTP_Exception_404('does not exist');
 			}
+			// else
+			// 			{
+			// 				$message = 'Sorry page not found try the main navigation on top :)';
+			// 				
+			// 				// Page not found send to 404
+			// 				$this->template->page_title = 'Page not found';
+			// 				$this->template->content = View::factory('site/errors/404')
+			// 					->bind('message', $message);
+			// 			}
 		}
 		
 	}
