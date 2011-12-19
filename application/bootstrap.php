@@ -149,6 +149,9 @@ Route::set('app', 'app(/<controller>(/<var>))')
 		'action'     => 'index',
 	));
 
+Route::set('error', 'site/error/<action>(/<message>)', array('action' => '[0-9]++', 'message' => '.+'));
+
+
 // Route::set('default', '(<controller>(/<slug>))')
 // 	->defaults(array(
 // 		'directory' => 'site',
