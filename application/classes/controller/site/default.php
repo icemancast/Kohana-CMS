@@ -37,19 +37,18 @@ abstract class Controller_Site_Default extends Controller_Template {
 				URL::base() . 'media/site/js/plugin.jquery.cycle.lite.js',
 				URL::base() . 'media/site/js/plugin.jquery.toggleValue.min.js',
 				URL::base() . 'media/site/js/common.js',
-				URL::base() . 'media/site/js/dev-plugin.jquery.960grid-1.0.js',
+				// URL::base() . 'media/site/js/dev-plugin.jquery.960grid-1.0.js',
 			);
 			
 			// Production scripts
 			/*
 			$this->template->scripts 		= array(
 				'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
-				URL::base() . 'media/site/js/jquery.plugins.js',
 				URL::base() . 'media/site/js/common.js',
 			);*/
 			
 			$this->template->head_code		= ''; // Not sure if i need this
-			$this->template->nav			= View::factory('site/blocks/nav')->render();
+			// $this->template->nav			= View::factory('site/blocks/nav')->render();
 			$this->template->leftnav		= View::factory('site/blocks/homeleftnav')->render();
 			$this->template->search			= View::factory('site/blocks/search')->render();
 			$this->template->banners		= View::factory('site/blocks/banners')->render();
