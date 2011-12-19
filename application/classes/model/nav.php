@@ -59,4 +59,11 @@ class Model_Nav extends ORM {
 		return $this->find_all()->as_array('id', 'nav_title');
 	}
 	
+	public function get_mainnav()
+	{
+		return $this->where('mainnav', '=', '1')
+			->order_by('sort', 'asc')
+			->find_all();
+	}
+	
 }
