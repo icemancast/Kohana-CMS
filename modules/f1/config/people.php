@@ -11,8 +11,8 @@ return array(
 	'people_create' => '/v1/People',
 	'people_edit' => '/v1/People/{id}/Edit',
 	'people_show' => '/v1/People/{id} ',
-	'people_update' => '/v1/People/{id}' ;
-	'people_new' => '/v1/People/New' ;
+	'people_update' => '/v1/People/{id}',
+	'people_new' => '/v1/People/New',
 	'statuses_list' => '/v1/People/Statuses',
 	'householdMemberTypes_list' => '/v1/People/HouseholdMemberTypes',
 	'householdMemberTypes_show' => '/v1/People/HouseholdMemberTypes/{id}',
