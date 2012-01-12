@@ -82,6 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
 Kohana::init(array(
 	'base_url'   => 'http://localhost/communitybible/',
 	'index_file' => '',
+	'errors' => TRUE,
 ));
 
 /**
@@ -148,8 +149,6 @@ Route::set('app', 'app(/<controller>(/<var>))')
 		'controller' => 'sermon',
 		'action'     => 'index',
 	));
-
-Route::set('error', 'site/error/<action>(/<message>)', array('action' => '[0-9]++', 'message' => '.+'));
 
 Route::set('default', '(<slug>)')
  	->defaults(array(
