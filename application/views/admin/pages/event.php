@@ -34,7 +34,7 @@ Session::instance()->delete('message');
 		
 			echo '<tr>
 				<td>' . $event->id . '</td>
-				<td>' . $event->event_title . '</td>
+				<td>' . $event->event_title . ' <small>(Image name: ' . $event->event_image . ')</small></td>
 				<td>' . $event_date . '</td>
 				<td class="text-center"><a href="' . url::base() . 'admin/event/manage/' . $event->id . '"><img src="' . url::base() . 'media/admin/images/icons/application_edit.png"></a></td>
 			</tr>';	?>

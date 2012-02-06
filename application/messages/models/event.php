@@ -14,9 +14,6 @@ return array(
 	'event_what' => array(
 		'not_empty' => 'Don\'t forget to add description.',
 	),
-	'tags' => array(
-		'not_empty' => 'Tags, tags, tags.',
-	),
 	'date_published' => array(
 		'not_empty' => 'Well I can\'t put it on the website till you tell me when.',
 	),

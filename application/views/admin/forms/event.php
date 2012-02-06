@@ -14,6 +14,11 @@
 <legend>All required</legend>
 
 <p>
+	<?= Form::label('category_id', '* Category'); ?>
+	<?= Form::select('category_id', $select_category, !empty($post['category_id']) ? $post['category_id'] : ''); ?>
+</p>
+
+<p>
 	<?= Form::label('event_title', '* Event Title'); ?>
 	<?= Form::input('event_title', !empty($post['event_title']) ? $post['event_title'] : '', array('id' => 'event_title' )); ?>
 </p>
@@ -62,9 +67,8 @@
 </p>
 
 <p>
-	<?= Form::label('tags', '* Tags'); ?>
-	<?= Form::input('tags', !empty($post['tags']) ? $post['tags'] : '', array('id' => 'tags' )); ?>
-	<small>(Separate by commma)</small>
+	<?= Form::label('registration_deadline', 'Registration Deadline'); ?>
+	<?= Form::input('registration_deadline', !empty($post['registration_deadline']) ? $post['registration_deadline'] : '', array('id' => 'registration_deadline', 'class' => 'datepicker' )); ?>
 </p>
 
 <p>
@@ -88,6 +92,7 @@
 <p>
 	<label>&nbsp;</label>
 	<?= Form::hidden('id', $post['id']); ?>
+	<?= Form::hidden('event_image', $post['event_image']); ?>
 	<?= Form::submit('send', 'Submit to my Power', array('class' => 'button ui-corner-all')); ?>
 </p>
 

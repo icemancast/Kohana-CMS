@@ -31,6 +31,11 @@
 		</ul>
 	</li>
 	
+	<li><a href="<?= url::base(); ?>admin/category">Categories</a>
+		<ul>
+			<li><a href="<?= url::base(); ?>admin/category/add">Add Category</a></li>
+		</ul>
+	</li>
 	
 	<?php endif; ?>
 	

@@ -68,7 +68,7 @@
 	</div>
 </div>
 <div id="footer" class="width-site">
-	<p class="footer-text left">&#169; 2010  Community Bible Church | (210) 496-5096 | 2477 North Loop 1604 East San Antonio, TX 78232 | Problems? <a href="mailto:webmaster@communitybible.com">webmaster@communitybible.com</a></p>
+	<p class="footer-text left">&#169; <?php echo '2010 - ' . date('Y'); ?>  Community Bible Church | <a href="mailto:webmaster@communitybible.com">webmaster@communitybible.com</a></p>
 
 </div>
 </body>
