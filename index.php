@@ -45,6 +45,7 @@ define('EXT', '.php');
  * deprecated notices. Disable with: E_ALL & ~E_DEPRECATED
  */
 error_reporting(E_ALL | E_STRICT);
+//error_reporting(E_ALL | E_NOTICE);
 
 /**
  * End of standard configuration! Changing any of the code below should only be
@@ -105,10 +106,10 @@ require APPPATH.'bootstrap'.EXT;
  * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
  * If no source is specified, the URI will be automatically detected.
  */
-if( ! defined('SUPPRESS_REQUEST'))
-{
+//if( ! defined('SUPPRESS_REQUEST'))
+//{
 	echo Request::factory()
 		->execute()
 		->send_headers()
 		->body();
-}
+//}

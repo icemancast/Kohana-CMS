@@ -128,8 +128,13 @@ Route::set('admin', 'admin(/<controller>(/<action>(/<id>(/<var>))))')
 		'controller' => 'dashboard',
 		'action'     => 'index',
 	));
+
+Route::set('error', 'error/<action>(/<message>)', array('action' => '[0-9]++', 'message' => '.+'))
+	->defaults(array(
+		'controller' => 'error_handler'
+	));
 	
-Route::set('event', 'event(/<action>(/<var>))')
+Route::set('events', 'events(/<var>)')
 	->defaults(array(
 		'directory' => 'site',
 		'controller' => 'event',

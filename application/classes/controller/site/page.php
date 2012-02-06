@@ -68,18 +68,9 @@ class Controller_Site_Page extends Controller_Site_Default {
 			}
 			else
 			{
-				//echo 'test';
 				throw new HTTP_Exception_404('does not exist');
 			}
-			// else
-			// 			{
-			// 				$message = 'Sorry page not found try the main navigation on top :)';
-			// 				
-			// 				// Page not found send to 404
-			// 				$this->template->page_title = 'Page not found';
-			// 				$this->template->content = View::factory('site/errors/404')
-			// 					->bind('message', $message);
-			// 			}
+			
 		}
 		
 	}
