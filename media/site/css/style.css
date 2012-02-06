@@ -753,7 +753,7 @@ a#timer-link {
   margin: -4px 0px 0px 15px; }
 
 /* Left nav pages ---------------------------------------------- */
-.nav-title a {
+.nav-title a, .nav-title-li {
   background: url(../images/layout/nav-title.jpg) left top no-repeat !important;
   color: #4499a4;
   display: block;
