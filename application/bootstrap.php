@@ -82,7 +82,7 @@ if (isset($_SERVER['KOHANA_ENV']))
 Kohana::init(array(
 	'base_url'   => 'http://localhost/communitybible/',
 	'index_file' => '',
-	'errors' => TRUE,
+	// 'errors' => TRUE,
 ));
 
 /**
@@ -161,3 +161,8 @@ Route::set('default', '(<slug>)')
  		'controller' => 'page',
  		'action'     => 'index',
 ));
+
+/**
+ * Register error handler
+ */
+set_exception_handler(array('Error_Exception_Handler', 'handle'));
