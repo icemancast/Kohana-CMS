@@ -54,6 +54,7 @@ class Model_Event extends ORM {
 			return $this->where('status', '=', 'active')
 				->and_where('category_id', '=', $category_id)
 				->and_where('date_published', '<', $now)
+				->and_where('event_date', '>', $now)
 				->order_by('event_date', 'asc')
 				->find_all();
 		}
@@ -61,6 +62,7 @@ class Model_Event extends ORM {
 		{
 			return $this->where('status', '=', 'active')
 				->and_where('date_published', '<', $now)
+				->and_where('event_date', '>', $now)
 				->order_by('event_date', 'asc')
 				->find_all();
 		}
