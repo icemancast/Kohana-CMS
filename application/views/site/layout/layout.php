@@ -14,14 +14,14 @@
 <script type="text/javascript" src="<?= $script; ?>"></script>
 <?php endforeach; ?>
 
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 /*<![CDATA[*/
 	// onload
 	$(function() {
 		$("body").addGrid(12, {img_path: 'media/site/images/'});
 	});
 /*]]>*/
-</script> -->
+</script>
 
 </head>
 

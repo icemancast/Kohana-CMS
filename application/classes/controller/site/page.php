@@ -63,12 +63,12 @@ class Controller_Site_Page extends Controller_Site_Default {
 				// Load vars to page
 				$this->template->content = View::factory('site/pages/page')
 					->bind('page', $page)
-					->bind('contents', $contents);
-				
+					->bind('contents', $contents);				
 			}
 			else
 			{
-				throw new HTTP_Exception_404('does not exist');
+				throw new HTTP_Exception_404('Page not found.');
+				
 			}
 			
 		}
