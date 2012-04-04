@@ -169,38 +169,6 @@ nav a:hover {
 	background: url(../images/icon-location.png) no-repeat;
 }
 
-#title {
-
-	
-	margin-top:250px;
-	
-}
-
-#title h1 {
-	color:#adfc9b;
-	font-size:60px;
-
-}
-
-#title p.condensed{
-	color:#6dd4c4;
-	font-size:28px;
-	text-align:justify;
-}
-
-.subnav {
-	color:#ffffff;
-	float:right;
-	margin-top:10px;
-	width:500px;
-}
-
-.subnav li{
-	display:inline;
-	font-variant:small-caps;
-	font-size:13px;
-}
-
 /* For debugging block items  ===================================================== */
 .debug {
 	border-collapse: collapse;

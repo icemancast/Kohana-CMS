@@ -15,15 +15,7 @@ body {
 }
 
 #brand {
-  font: 25px/1.5 
-}
-
-.condensed {
-  font-family: "ff-din-web-pro-condensed", sans-serif;
-}
-
-.copy{
-	color:#ffffff;
+  font: 25px/1.5 "ff-din-web-pro-condensed", sans-serif;
 }
 
 pre,
