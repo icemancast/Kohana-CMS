@@ -53,6 +53,13 @@ nav a:hover {
 	background: #bd4929;
 }
 
+#nav2 {
+	
+	font-size:18px;
+	width:100%;
+	
+}
+
 #home-pics {
 	position: fixed;
 	top: -50%;
@@ -167,6 +174,50 @@ nav a:hover {
 
 #event-items .location {
 	background: url(../images/icon-location.png) no-repeat;
+}
+
+#title {
+
+	
+	margin-top:250px;
+	
+}
+
+#title h1 {
+	color:#adfc9b;
+	font-size:60px;
+
+}
+
+#title p.condensed{
+	color:#6dd4c4;
+	font-size:36px;
+	text-align:justify;
+}
+
+.subnav {
+	color:#ffffff;
+	float:right;
+	margin-top:25px;
+	width:500px;
+}
+
+.subnav li{
+	display:inline;
+	font-variant:small-caps;
+	font-size:13px;
+}
+
+#content2{
+	background: url(../images/bg-green.jpg);
+	height:1000px;
+}
+
+#wood {
+	background: url(../images/bg-wood.png) repeat-x;
+	height:360px;
+	margin-top:70px;
+
 }
 
 /* For debugging block items  ===================================================== */
