@@ -56,8 +56,37 @@ nav a:hover {
 #nav2 {
 	
 	font-size:18px;
-	width:100%;
-	
+	min-width:1200px;
+	text-align:center;
+	width:98%;
+	}
+
+#nav2 li {
+	letter-spacing:2px;
+	margin-right:14px;
+	text-transform:uppercase;
+}
+
+#nav2 a:hover{
+	margin-left:-10px;
+	margin-right:-20px;
+}
+
+#nav2 a.button:hover{
+	background:url(../images/bg-button-left.png) no-repeat;
+	background-position:top left;
+	padding:10px 0px 5px 20px;
+}
+
+#nav2 a.button:hover span.button-middle{
+	background:url(../images/bg-middle.png) repeat-x;
+	padding:10px 0 5px 0;
+}
+
+#nav2 a.button:hover span.button-right{
+	background:url(../images/bg-button-right.png) no-repeat;
+	background-position:top right;
+	padding:10px 10px 5px 5px;
 }
 
 #home-pics {
