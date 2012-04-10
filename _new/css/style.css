@@ -53,41 +53,6 @@ nav a:hover {
 	background: #bd4929;
 }
 
-#nav2 {
-	
-	font-size:18px;
-	min-width:1200px;
-	text-align:center;
-	width:98%;
-	}
-
-#nav2 li {
-	letter-spacing:2px;
-	margin-right:14px;
-	text-transform:uppercase;
-}
-
-#nav2 a:hover{
-	margin-left:-10px;
-	margin-right:-20px;
-}
-
-#nav2 a.button:hover{
-	background:url(../images/bg-button-left.png) no-repeat;
-	background-position:top left;
-	padding:10px 0px 5px 20px;
-}
-
-#nav2 a.button:hover span.button-middle{
-	background:url(../images/bg-middle.png) repeat-x;
-	padding:10px 0 5px 0;
-}
-
-#nav2 a.button:hover span.button-right{
-	background:url(../images/bg-button-right.png) no-repeat;
-	background-position:top right;
-	padding:10px 10px 5px 5px;
-}
 
 #home-pics {
 	position: fixed;
@@ -206,8 +171,6 @@ nav a:hover {
 }
 
 #title {
-
-	
 	margin-top:250px;
 	
 }
@@ -222,22 +185,23 @@ nav a:hover {
 	color:#6dd4c4;
 	font-size:36px;
 	text-align:justify;
+	text-transform:uppercase;
 }
 
-.subnav {
+.quicknav {
 	color:#ffffff;
 	float:right;
 	margin-top:25px;
 	width:500px;
 }
 
-.subnav li{
+.quicknav li{
 	display:inline;
 	font-variant:small-caps;
 	font-size:13px;
 }
 
-#content2{
+.subcontent{
 	background: url(../images/bg-green.jpg);
 	height:1000px;
 }
@@ -247,6 +211,62 @@ nav a:hover {
 	height:360px;
 	margin-top:70px;
 
+}
+
+.subnav {
+	font-size:18px;
+	margin-bottom:50px;
+	min-width:1200px;
+	text-align:center;
+	text-transform:uppercase;
+	width:100%;
+}
+
+.subnav li{
+	margin-right:-50px;
+}
+
+.subnav a{
+	padding:10px 20px;
+}
+
+.subnav a span.button-middle{
+	padding:10px 0px;
+}
+
+.subnav a span.button-right{
+	padding:10px 7px
+}
+
+.subnav a:hover{ /*----LEFT button bg----*/
+	background:url(../images/bg-button-left.png) no-repeat;
+	background-position:top left;
+	padding:10px 20px
+}
+
+.subnav a:hover span.button-middle{  /*----MIDDLE button bg----*/
+	background:url(../images/bg-middle.png) repeat-x;
+	padding:10px 0px
+}
+
+.subnav a:hover span.button-right{  /*----RIGHT button bg----*/
+	background:url(../images/bg-button-right.png) no-repeat;
+	background-position:top right;
+	padding:10px 7px 
+}
+
+.subcontent p.condensed {
+	color:#15f6de;
+	font-size:36px;
+	text-align:justify;
+	text-transform:uppercase;
+}
+
+#att{
+	color:#fff;
+	font-size: 48px;
+	font-style:italic;
+	text-align:left;
 }
 
 /* For debugging block items  ===================================================== */
