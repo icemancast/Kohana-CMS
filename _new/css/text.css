@@ -15,7 +15,7 @@ body {
 }
 
 #brand {
-  font: 25px/1.5 
+  font: 25px/1.5 "ff-din-web-pro-condensed", sans-serif;
 }
 
 .condensed {
@@ -67,6 +67,19 @@ h5 {
 h6 {
   font-size: 15px;
 }
+
+
+/* 'Navigation
+-----------------------------------------------------------------------------------------------------*/
+
+.subnav a, .subnav li, .subnav a:hover{
+	color:#fff;
+	font-size:22px;
+	text-decoration:none;
+	
+}
+
+
 
 /* `Spacing
 ----------------------------------------------------------------------------------------------------*/
