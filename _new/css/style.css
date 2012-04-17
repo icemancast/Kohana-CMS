@@ -1,5 +1,8 @@
 body {
 	background: #000;
+	background-image: url(../images/bg-content.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
 }
 
 #header {
@@ -52,7 +55,6 @@ nav a {
 nav a:hover {
 	background: #bd4929;
 }
-
 
 #home-pics {
 	position: fixed;
