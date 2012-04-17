@@ -1,8 +1,5 @@
 body {
 	background: #000;
-	background-image: url(../images/bg-content.jpg);
-	background-size: cover;
-	background-repeat:no-repeat;
 }
 
 #header {
@@ -55,6 +52,7 @@ nav a {
 nav a:hover {
 	background: #bd4929;
 }
+
 
 #home-pics {
 	position: fixed;
@@ -241,6 +239,7 @@ nav a:hover {
 	box-shadow:inset 2px 2px 2px #0b7f72;
 	
 }
+
 
 .subcontent p.condensed {
 	color:#15f6de;
