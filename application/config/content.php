@@ -7,4 +7,4 @@ return array(
 		'[IMAGES]' => 'http://images.communitybible.com/',
 		'[S3-VIDEOS]' => 'http://videos.communitybible.com/',
 	)
-);	
+);
