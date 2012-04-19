@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	
-	<title>Home Page</title>
+	<title>Home Page</title>	
 	
 	<meta charset="utf-8" />
 	<meta name="description" content="{description}" />
@@ -42,6 +42,39 @@
 	/*]]>*/
 	</script>
 
+	<script type="text/javascript" charset="utf-8">
+
+	$(document).ready(function() {
+
+	$(".slideshow").cycle({
+			fx: \fade\,
+			speed: 1000,
+			timeout:  2500
+		});
+
+	});
+
+	</script>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+
+	$(document).ready(function() {
+
+	$('.slideshow').cycle({
+			fx: 'fade',
+			speed: 1000,
+			timeout:  2500
+		});
+
+	});
+
+	</script>
+
+
+
 	<!-- For Media temple production site -->
 	<!-- <script type="text/javascript" src="http://use.typekit.com/dcu6itq.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
@@ -59,10 +92,13 @@
 			<a href="#" id="brand">COMMUNITY BIBLE CHURCH</a>
 			
 			<section id="icons-top">
-				<img src="images/icon-search.png" />
-				<img src="images/icon-facebook.png" />
-				<img src="images/icon-twitter.png" />
-			</section><!--end section .icons-top-->
+				<ul>
+					<li><a id ="twitter" href=""> </a></li>
+					<li><a id ="facebook" href=""> </a></li>
+					<li><a id="search" href=""> </a></li>
+				</ul>
+				
+			</section>
 			
 			<div class="clear"></div>
 			
@@ -84,9 +120,9 @@
 		<div id="title" class="grid_16">
 			<nav class="quicknav">
 				<ul>
-					<li><a href="#"><img src="images/icon-events-sm.png"> Events</a></li>
-					<li><a href="#"><img src="images/icon-contact-sm.png"> Contact</a></li>
-					<li><a href="#"><img src="images/icon-newsletter-sm.png"> Newsletter</a></li>
+					<li><a href="#"><img src="images/icon-events-sm.png"> <span>Events</span></a></li>
+					<li><a href="#"><img src="images/icon-contact-sm.png"> <span>Contact</span></a></li>
+					<li><a href="#"><img src="images/icon-newsletter-sm.png"><span> Newsletter</span></a></li>
 				</ul>
 			</nav>
 			<h1>Pastoral Care.</h1>
@@ -101,13 +137,17 @@
 			<div id="wood">
 				
 						<div id="content-header" class="slideshow">
-								<img src="<?php echo DIR_IMAGES; ?>headers/test/test1.jpg" width="735" height="275" />
-								<img src="<?php echo DIR_IMAGES; ?>headers/test/test2.jpg" width="735" height="275" />
-			                    <img src="<?php echo DIR_IMAGES; ?>headers/test/test3.jpg" width="735" height="275" />
-			                    <img src="<?php echo DIR_IMAGES; ?>headers/test/test4.jpg" width="735" height="275" />
-			                    <img src="<?php echo DIR_IMAGES; ?>headers/test/test5.jpg" width="735" height="275" />
-			                    <img src="<?php echo DIR_IMAGES; ?>headers/test/test6.jpg" width="735" height="275" />
-							
+								<img src="images/headers/test/test1.jpg" width="735" height="275" />
+								<img src="images/headers/test/test2.jpg" width="735" height="275" />
+			                    <img src="images/headers/test/test3.jpg" width="735" height="275" />
+								<img src="images/headers/test/test4.jpg" width="735" height="275" />
+								<img src="images/headers/test/test5.jpg" width="735" height="275" />
+			                    <img src="images/headers/test/test6.jpg" width="735" height="275" />
+								<img src="images/headers/test/test7.jpg" width="735" height="275" />
+								<img src="images/headers/test/test8.jpg" width="735" height="275" />
+			                    <img src="images/headers/test/test9.jpg" width="735" height="275" />
+								<img src="images/headers/test/test10.jpg" width="735" height="275" />
+			                    
 						</div>
 				
 				
