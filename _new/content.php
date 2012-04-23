@@ -203,7 +203,7 @@
 			
 			</div>
 
-			<div id="subnav" class="container_16">
+			<div id="subnav">
 				<ul class="subnav condensed container_16">
 					
 		

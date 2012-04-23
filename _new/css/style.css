@@ -373,27 +373,20 @@ div#subnav ul li {
 }
 
 .subnav a:link{
-	padding:5px 14px;
+	padding:0px 12px;
 }
 	
 
-.subnav a:hover{
+.subnav li a:hover{
 	background-color:#20aa9c;
 	border:2px solid #20aa9c;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding: 3px 12px;
+	padding: 0px 10px;
 	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
 	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
 	box-shadow:inset 2px 2px 2px #0b7f72;
 	
-}
-
-
-
-.subnav li {
-	display:inline;
-
 }
 
 .subnav li ul {
@@ -413,7 +406,7 @@ div#subnav ul li {
 	font-size:18px;
 	font-weight: normal !important;
 	letter-spacing: 0.05em;
-	margin-right:-10px;
+	margin-right:-25px;
 	padding: 0px 8px 0px 7px;
 	position: relative;
 	width:50px;
@@ -422,13 +415,13 @@ div#subnav ul li {
 
 
 .subnav li ul li a:hover {
-	background-color:transparent;
 	color: #fff;
 	font-size:18px;
 }
 
 .subnav li:hover ul {
 	display: block;
+	
 }
 
 .subnav LI.over ul {
