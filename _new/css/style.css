@@ -392,11 +392,11 @@ div#subnav ul li {
 .subnav li ul {
 	
 	display: none;
-	margin: 0px 0px 0 40px;
+	margin: 0px 0px 0 15px;
 	padding: 0px;
 	position: absolute;
 	text-align: left;
-	width:200px;
+	width:50px;
 	z-index: 500 !important;
 }
 
