@@ -9,12 +9,15 @@
 	<link rel="stylesheet"  media="screen" href="css/reset.css" />
 	<link rel="stylesheet"  media="screen" href="css/text.css" />
 	<link rel="stylesheet"  media="screen" href="css/984_16.css" />
-	<link rel="stylesheet"  media="screen" href="css/style3.css" />
+	<link rel="stylesheet"  media="screen" href="css/style.css" />
 	
 	<script type="text/javascript" src="http://use.typekit.com/juo3kpm.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	
+	
+	
 	
 	<script type="text/javascript">
 		// function toggleDiv(divId) {
@@ -31,6 +34,28 @@
 		  });
 		});
 			
+	</script>
+	
+	<script type="text/javascript">
+	// FUNCTION CREATES HOVER
+	startList = function() {
+		if (document.all&&document.getElementById) {
+			navRoot = document.getElementById("nav");
+			for (i=0; i<navRoot.childNodes.length; i++) {
+				node = navRoot.childNodes[i];
+				if (node.nodeName=="LI") {
+					node.onmouseover=function() {
+						this.className+=" over";
+					}
+					node.onmouseout=function() {
+						this.className=this.className.replace(" over", "");
+					}
+				}
+			}
+		}
+	}
+
+	window.onload=startList;
 	</script>
 	
 	<script type="text/javascript">
@@ -67,11 +92,44 @@
 			<div class="clear"></div>
 			
 			<nav>
-				<ul>
-					<li><a href="#">Sermons</a></li>
-					<li><a href="#">Ministries</a></li>
-					<li><a href="#">Lifegroups</a></li>
-					<li><a href="#">About Us</a></li>
+				<ul id="nav">
+					<li><a href="#">Sermons</a>
+					<ul>
+						<li><a href="#">item1</a></li>
+						<li><a href="#">item2</a></li>
+						<li><a href="#">item3</a></li>
+						<li><a href="#">item4</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Ministries</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
+						</ul>
+						</li>
+					<li><a href="#">Lifegroups</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
+						</ul>
+						</li>
+					<li><a href="#">About Us</a>
+						<ul>
+							<li><a href="#">About CBC</a></li>
+							<li><a href="#">Service Times</a></li>
+							<li><a href="#">Our Locations</a></li>
+							<li><a href="#">Baptism</a></li>
+							<li><a href="#">Membership</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Staff</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+						</li>
 				</ul>
 			</nav>
 		</div>
@@ -117,11 +175,60 @@
 			
 			
 			<div class="container_16">
-				<p class="condensed">Anger, Faith, Self-Esteem, Sin, Premarital &amp; Marital Issues, Discouragement, Loneliness, Grief & Loss, Parenting Issues.</p>
-				<p class="copy">Experience a compassionate listening and sound biblical advice in a confidential counseling session. Typical sessions last 45-50 minutes. Counselors will make recommendations for follow-up appointments and participation in other support ministries of CBC. To request an appointment, call us at (210) 253-5971.</p>
-				
-				
-				<p id="att" class="condensed">If you are in crisis, Call 1-800-273-8255 or (210) 223-SAFE.</p>
+				<div id="nav-wrapper">
+
+				    <ul id="navi" class="width-content">
+				        <li><a href="#">About Us</a>				
+							<ul>
+							<li><a href="' . HTTP_SERVER . 'about/about.php">About CBC</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/times.php">Service Times</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/location.php">Our Location</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/beliefs.php">Beliefs</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/baptism.php">Baptism</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/membership.php">Membership</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/careers.php">Careers</a></li>
+							<li><a href="' . HTTP_SERVER . 'giving.php">Give Online</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/faq.php">FAQ</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/staff.php">Staff</a></li>
+							<li><a href="' . HTTP_SERVER . 'about/contact.php">Contact Us</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Ministries</a>
+							<ul>
+							<li><a href="' . HTTP_SERVER . 'ministries/nextgen/index.php">Children</a></li>
+							<li><a href="' . HTTP_SERVER . 'ministries/nextgen/student.php">Students</a></li>
+							<li><a href="' . HTTP_SERVER . 'adult.php">Adults</a></li>
+							<li><a href="' . HTTP_SERVER . 'ministries/sportslife/">SportsLife</a></li>
+							<li><a href="' . HTTP_SERVER . 'ministries/pastoral_care/">Pastoral Care</a></li>
+							<li><a href="' . HTTP_SERVER . 'ministries/worship/">Worship</a></li>			
+						    <li><a href="' . HTTP_SERVER . 'ministries/communications/">Communications</a></li>
+							<li><a href="' . HTTP_SERVER . 'ministries/outbound/">Missions</a></li>
+							<li><a href="' . HTTP_SERVER . 'ministries/guest_services/">Guest Services</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#">Connection Center</a>
+							<ul>
+							<li><a href="' . HTTP_SERVER . 'connections/">Get Connected</a></li>
+							<li><a href="' . HTTP_SERVER . 'assessme/">Spiritual Gift Test</a></li>
+							<li><a href="https://cbcsattx.infellowship.com/userlogin">Update My Info</a></li>
+							<li><a href="https://cbcsattx.infellowship.com/GroupSearch/Index">Find a LifeGroup</a></li>
+							<li><a href="https://cbcsattx.infellowship.com/UserLogin">Manage LifeGroup</a></li>
+							</ul>
+						</li>
+
+						<li><a href="http://www.communitybible.com/online">CBC Online</a>
+							<ul>
+								<li><li><a href="http://live.mediasocial.tv/cbcespanol">Espa&ntilde;ol</a></li>
+								<li><li><a href="http://www.communitybible.com/online/lifegroups.php">Lifegroups</a></li>
+								<li><li><a href="http://live.mediasocial.tv/cbccafe">CBC Cafe</a></li>
+							</ul>
+						</li>
+
+				    </ul>
+
+				</div>
 			
 			</div>
 	

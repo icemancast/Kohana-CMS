@@ -103,11 +103,59 @@
 			<div class="clear"></div>
 			
 			<nav>
-				<ul>
-					<li><a href="#">Sermons</a></li>
-					<li><a href="#">Ministries</a></li>
-					<li><a href="#">Lifegroups</a></li>
-					<li><a href="#">About Us</a></li>
+				<ul id="nav">
+					<li><a href="#">Sermons</a>
+					<ul>
+						<li><a href="#">item1</a></li>
+						<li><a href="#">item2</a></li>
+						<li><a href="#">item3</a></li>
+						<li><a href="#">item4</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Events</a>
+					<ul>
+						<li><a href="#">item1</a></li>
+						<li><a href="#">item2</a></li>
+						<li><a href="#">item3</a></li>
+						<li><a href="#">item4</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Ministries</a>
+					<ul>
+						<li><a href="#">item1</a></li>
+						<li><a href="#">item2</a></li>
+						<li><a href="#">item3</a></li>
+						<li><a href="#">item4</a></li>
+					</ul>
+					</li>
+					<li><a href="#">Get Connected</a>
+					<ul>
+						<li><a href="#">item1</a></li>
+						<li><a href="#">item2</a></li>
+						<li><a href="#">item3</a></li>
+						<li><a href="#">item4</a></li>
+					</ul>
+					</li>
+					<li><a href="#">About Us</a>
+						<ul>
+							<li><a href="#">About CBC</a></li>
+							<li><a href="#">Service Times</a></li>
+							<li><a href="#">Our Locations</a></li>
+							<li><a href="#">Baptism</a></li>
+							<li><a href="#">Membership</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Staff</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					<li><a href="#">Giving</a>
+					<ul>
+						<li><a href="#">item1</a></li>
+						<li><a href="#">item2</a></li>
+						<li><a href="#">item3</a></li>
+						<li><a href="#">item4</a></li>
+					</ul>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -137,36 +185,67 @@
 			<div id="wood">
 				
 						<div id="content-header" class="slideshow">
-								<img src="images/headers/test/test1.jpg" width="735" height="275" />
-								<img src="images/headers/test/test2.jpg" width="735" height="275" />
-			                    <img src="images/headers/test/test3.jpg" width="735" height="275" />
-								<img src="images/headers/test/test4.jpg" width="735" height="275" />
-								<img src="images/headers/test/test5.jpg" width="735" height="275" />
-			                    <img src="images/headers/test/test6.jpg" width="735" height="275" />
-								<img src="images/headers/test/test7.jpg" width="735" height="275" />
-								<img src="images/headers/test/test8.jpg" width="735" height="275" />
-			                    <img src="images/headers/test/test9.jpg" width="735" height="275" />
-								<img src="images/headers/test/test10.jpg" width="735" height="275" />
-			                    
+								<img src="images/headers/pastoral_care/pc-1.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-2.jpg" width="940" height="350" />
+			                    <img src="images/headers/pastoral_care/pc-3.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-4.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-5.jpg" width="940" height="350" />
+			                    <img src="images/headers/pastoral_care/pc-6.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-7.jpg" width="940" height="350" />
 						</div>
 				
-				
+			
 			
 			</div>
 
-			
-				<ul class="subnav container_16 condensed">
+			<div id="subnav">
+				<ul class="subnav condensed container_16">
 					
-				
-					<li><a href="#">Counseling</a></li>
-					<li><a href="#">Leadership</a></li>
-					<li><a href="#">Life Recovery</a></li>
-					<li><a href="#">Marriage &amp; Family</a></li>
-					<li><a href="#">Mentoring</a></li>
-					<li><a href="#">Prayer Ministry</a></li>
-					<li><a href="#">Support Group</a></li>
-				</ul>
-			
+		
+					<li><a href="#">Counseling</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Leadership</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Life Recovery</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Marriage &amp; Family</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Mentoring</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Prayer Ministry</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Support Group</a>
+						<ul>
+							<li><a href="#">item1</a></li>
+							<li><a href="#">item2</a></li>
+						</ul>
+					</li>
+					</ul>
+			</div>	
 			
 			<div class="container_16">
 				<p class="condensed">Anger, Faith, Self-Esteem, Sin, Premarital &amp; Marital Issues, Discouragement, Loneliness, Grief & Loss, Parenting Issues.</p>
