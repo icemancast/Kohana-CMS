@@ -185,18 +185,13 @@
 			<div id="wood">
 				
 						<div id="content-header" class="slideshow">
-								<img src="images/headers/test/test11.jpg" width="940" height="350" />
-								<img src="images/headers/test/test12.jpg" width="940" height="350" />
-			                    <img src="images/headers/test/test13.jpg" width="940" height="350" />
-								<img src="images/headers/test/test14.jpg" width="940" height="350" />
-								<img src="images/headers/test/test15.jpg" width="940" height="350" />
-			                    <img src="images/headers/test/test16.jpg" width="940" height="350" />
-								<img src="images/headers/test/test17.jpg" width="940" height="350" />
-								<img src="images/headers/test/test18.jpg" width="940" height="350" />
-			                    <img src="images/headers/test/test19.jpg" width="940" height="350" />
-								<img src="images/headers/test/test20.jpg" width="940" height="350" />
-							
-			                    
+								<img src="images/headers/pastoral_care/pc-1.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-2.jpg" width="940" height="350" />
+			                    <img src="images/headers/pastoral_care/pc-3.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-4.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-5.jpg" width="940" height="350" />
+			                    <img src="images/headers/pastoral_care/pc-6.jpg" width="940" height="350" />
+								<img src="images/headers/pastoral_care/pc-7.jpg" width="940" height="350" />
 						</div>
 				
 			
