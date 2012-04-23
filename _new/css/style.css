@@ -80,25 +80,28 @@ a:active#twitter{
 	background: url(../images/icon-twitter-rollover.png) bottom ;
 }
 
-nav {
+ nav {
 	color: #fff;
 	float: right;
 	height: 20px;
 	margin: -15px auto;
 	text-align: right;
 	text-transform: uppercase;
-	width: 400px;
+
 }
 
 nav ul li {
 	display: inline;
+	float:left;
 	margin-left: 8px;
+	position:relative;
 }
 
 nav a {
 	color: #fff;
 	padding: 7px 8px 5px 8px;
 	text-decoration: none;
+	float:left;
 }
 
 nav a:hover {
@@ -107,11 +110,52 @@ nav a:hover {
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
 }
 
+
+#nav li ul {
+	background-color:#000;
+	display: none;
+	font-size: 90%;
+	left: 0%;
+	margin: 30px auto auto 0px;
+	padding: 0px;
+	position: absolute;
+	text-align: left;
+	width: 159px;
+	z-index: 500 !important;
+}
+
+#nav li ul li a {
+
+
+	float: left;
+	font-weight: normal !important;
+	letter-spacing: 0.05em;
+	margin-right:-10px;
+	padding: 3px 8px 0px 7px;
+	position: relative;
+	width:135px;
+	
+}
+
+#nav li ul li a:hover {
+	color: #fff;
+}
+
+#nav li:hover ul {
+	display: block;
+}
+
+#nav LI.over ul {
+	display: block;
+}
+
+
+
 .quicknav {
 	color:#ffffff;
-	float:right;
 	margin-top:25px;
-	
+	right:-175px;
+	position:relative;
 	width:500px;
 }
 
@@ -277,33 +321,59 @@ nav a:hover {
 .subcontent{
 	background: url(../images/bg-green.jpg);
 	height:1000px;
+	margin-top:125px;
 }
 
 #wood {
 	background: url(../images/bg-wood-sm.png) repeat-x;
 	height:300px;
-	margin-top:70px;
+	margin:70px 0 0 -20px;
 }
 
 #content-header{
+	background-color:#fff;
 	border:5px solid #fff;
 	margin:auto;
 	position:relative;
-	top:-28px;
+	top:-60px;
+	
+}
+
+
+
+div#subnav ul li {
+
+	position:relative;
+
+}
+
+
+
+
+
+.subnav{
+	margin-top:50px;
+	text-align:center;
+	width:100%;
+	
 }
 
 .subnav ul{
+	
 	padding-bottom:120px;
+
 }
 
 .subnav li{
 	display:inline;
-	margin:0px 25px 0 -12px;
+	margin:0px 25px 0 -13px;
+	text-align:center;
+	
 	
 }
 
 .subnav a:link{
-	padding:7px 15px;
+	padding:5px 14px;
 }
 	
 
@@ -312,12 +382,59 @@ nav a:hover {
 	border:2px solid #20aa9c;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding: 5px 13px;
+	padding: 3px 12px;
 	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
 	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
 	box-shadow:inset 2px 2px 2px #0b7f72;
 	
 }
+
+
+
+.subnav li {
+	display:inline;
+
+}
+
+.subnav li ul {
+	
+	display: none;
+	margin: 0px 0 0 0px;
+	padding: 0px;
+	position: absolute;
+	text-align: left;
+	width:200px;
+	z-index: 500 !important;
+}
+
+
+.subnav li ul li a {
+
+	font-size:18px;
+	font-weight: normal !important;
+	letter-spacing: 0.05em;
+	margin-right:-10px;
+	padding: 0px 8px 0px 7px;
+	position: relative;
+	width:50px;
+	
+}
+
+
+.subnav li ul li a:hover {
+	background-color:transparent;
+	color: #fff;
+	font-size:18px;
+}
+
+.subnav li:hover ul {
+	display: block;
+}
+
+.subnav LI.over ul {
+	display: block;
+}
+
 
 .subcontent p.condensed {
 	color:#15f6de;
@@ -328,12 +445,17 @@ nav a:hover {
 	text-transform:uppercase;
 }
 
+
+
 #att{
 	color:#fff;
 	font-size: 48px;
 	font-style:italic;
 	text-align:left;
 }
+
+ 
+
 
 /* For debugging block items  ===================================================== */
 .debug {
