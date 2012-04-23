@@ -17,21 +17,22 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
 	
 	<script type="text/javascript">
 		// function toggleDiv(divId) {
 		// 	   		$("#"+divId).hide().slideDown('slow');
 		// 		}
 		
-		$('#clickme').click(function() {
-		  $('#event-area').animate({
-		    opacity: 0.25,
-		    left: '+=50',
-		    height: 'toggle'
-		  }, 5000, function() {
-		    // Animation complete.
-		  });
-		});
+		// $('#clickme').click(function() {
+		// 	  $('#event-area').animate({
+		// 	    opacity: 0.25,
+		// 	    left: '+=50',
+		// 	    height: 'toggle'
+		// 	  }, 5000, function() {
+		// 	    // Animation complete.
+		// 	  });
+		// 	});
 			
 	</script>
 	
@@ -78,8 +79,27 @@
 		</div>
 	</header>
 	
-	<section id="home-pics">
-		<img src="images/header-1.jpg">
+	<section id="home-pics" class="slideshow">
+		<img src="images/headers/home/20120417-001.jpg">
+		<img src="images/headers/home/20120417-002.jpg">
+		<img src="images/headers/home/20120417-003.jpg">
+		<img src="images/headers/home/20120417-004.jpg">
+		<img src="images/headers/home/20120417-005.jpg">
+		<img src="images/headers/home/20120417-006.jpg">
+		<img src="images/headers/home/20120417-007.jpg">
+		<img src="images/headers/home/20120417-008.jpg">
+		<img src="images/headers/home/20120417-009.jpg">
+		<img src="images/headers/home/20120417-010.jpg">
+		<img src="images/headers/home/20120417-011.jpg">
+		<img src="images/headers/home/20120417-012.jpg">
+		<img src="images/headers/home/20120417-013.jpg">
+		<img src="images/headers/home/20120417-014.jpg">
+		<img src="images/headers/home/20120417-015.jpg">
+		<img src="images/headers/home/20120417-016.jpg">
+		<img src="images/headers/home/20120417-017.jpg">
+		<img src="images/headers/home/20120417-018.jpg">
+		<img src="images/headers/home/20120417-019.jpg">
+		<img src="images/headers/home/20120417-020.jpg">
 	</section>
 	
 	<section id="events">
@@ -124,5 +144,28 @@
 	
 	<footer>
 	</footer>
+<script>
+
+(function() {
+	
+	$(".slideshow").cycle({
+		fx: 'fade',
+		speed: 1000,
+		timeout:  2500
+	});
+	
+	$('#clickme').on('click', function() {
+		$('#events').animate({
+			bottom: '-=109',
+			// height: 'toggle'
+		}, 500, function() {
+			console.log('done');
+		});
+	});
+	
+})();
+	
+</script>
+
 </body>
 </html>
