@@ -344,7 +344,6 @@ nav a:hover {
 div#subnav ul li {
 
 	position:relative;
-
 }
 
 
@@ -366,23 +365,22 @@ div#subnav ul li {
 
 .subnav li{
 	display:inline;
-	margin:0px 25px 0 -13px;
+	margin:5px ;
 	text-align:center;
-	
 	
 }
 
 .subnav a:link{
-	padding:0px 12px;
+	padding:2px 16px;
 }
 	
 
 .subnav li a:hover{
-	background-color:#20aa9c;
+	background:#20aa9c;
 	border:2px solid #20aa9c;
 	border-radius:25px;
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	padding: 0px 10px;
+	padding: 2px 14px;
 	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
 	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
 	box-shadow:inset 2px 2px 2px #0b7f72;
@@ -390,10 +388,10 @@ div#subnav ul li {
 }
 
 .subnav li ul {
-	
+	background:#20b5a5;
 	display: none;
-	margin: 0px 0px 0 15px;
-	padding: 0px;
+	margin: 5px 0px 0px 10px;
+	padding: 0px 40px 0px 0px;
 	position: absolute;
 	text-align: left;
 	width:50px;
@@ -401,13 +399,18 @@ div#subnav ul li {
 }
 
 
-.subnav li ul li a {
-
+.subnav li ul li a:link {
+	background:none !important;
+	border:0px !important;
+	border-radius:0px !important;
+	box-shadow:inset 0px 0px 0px !important;
 	font-size:18px;
 	font-weight: normal !important;
 	letter-spacing: 0.05em;
-	margin-right:-25px;
-	padding: 0px 8px 0px 7px;
+	
+	padding: 0px 0px !important;
+
+	
 	position: relative;
 	width:50px;
 	
@@ -415,8 +418,9 @@ div#subnav ul li {
 
 
 .subnav li ul li a:hover {
-	color: #fff;
+	color: #828282;
 	font-size:18px;
+	
 }
 
 .subnav li:hover ul {
