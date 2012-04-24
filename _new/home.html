@@ -18,40 +18,6 @@
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
-	
-	<script type="text/javascript">
-		// function toggleDiv(divId) {
-		// 	   		$("#"+divId).hide().slideDown('slow');
-		// 		}
-		
-		// $('#clickme').click(function() {
-		// 	  $('#event-area').animate({
-		// 	    opacity: 0.25,
-		// 	    left: '+=50',
-		// 	    height: 'toggle'
-		// 	  }, 5000, function() {
-		// 	    // Animation complete.
-		// 	  });
-		// 	});
-			
-	</script>
-	
-	<!-- <script type="text/javascript">
-	/*<![CDATA[*/
-		// onload
-		$(function() {
-			$("body").addGrid(12, {img_path: 'media/site/images/'});
-		});
-	/*]]>*/
-	</script> -->
-
-	<!-- For Media temple production site -->
-	<!-- <script type="text/javascript" src="http://use.typekit.com/dcu6itq.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
-
-	<!-- For communitybible.com domain -->
-	<!-- <script type="text/javascript" src="http://use.typekit.com/fyc2auk.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 
 </head>
 
@@ -104,7 +70,7 @@
 	
 	<section id="events">
 		<div class="container_16">
-			<header id="clickme"><a href="#">Current Events</a></header>
+			<header id="clickme">Current Events</header>
 		</div>
 		<div id="event-area">
 			<div id="event-items" class="container_16">
@@ -156,8 +122,11 @@
 	
 	$('#clickme').on('click', function() {
 		$('#events').animate({
-			bottom: '-=109',
-			// height: 'toggle'
+			bottom: '-=112'
+		});
+		$('#event-area').animate({
+			// bottom: '-=109',
+			height: 'toggle'
 		}, 500, function() {
 			console.log('done');
 		});
