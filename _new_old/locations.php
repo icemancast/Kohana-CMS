@@ -43,98 +43,74 @@
 						<p class="clear"></p>
 						
 					</div>
+					
+						<!-- Content Block Start -->
+						<div class="content-block block half-block">
+							<h1>Boerne</h1>
+							<p>745 W. San Antonio Dr., San Antonio, TX 78006<br />
+							(210)896-2631<br />
+							Service Times: Sunday, 10:30am<br>
+								<a href="http://www.cbcboerne.com" target="_blank">cbcboerne.com</a>     </p>
+						</div>
+					
+						 <!-- Content Block Start -->
+							<div class="content-block block half-block">
+								<h1>Brooks City</h1>
+								<p>	3005 Sidney Brooks Dr., Brooks AFT, TX 78235<br />
+								(210)918-0266<br />
+								Service Times: Sunday, 11:00am<br>
+								<a href="http://www.cbcbrookscity.com" target="_blank">cbcbrookscity.com</a></p>
+							</div>
                     
                     <!-- Content Block Start -->
 					<div class="content-block block half-block">
-						<h1>Converse</h1>
-						<p>	<a href="http://www.cbcconverse.com"><img src="../images/churchplants/co.jpg" class="left margin5" height="100" width="75"></a>
-							<strong>Brian Dorris</strong><br>Service Times: Sunday,<br>9:30am<br>
-							<a href="http://www.cbcconverse.com">cbcconverse.com</a></p>
+						<h1>Bulverde</h1>
+						<p>7100 Hwy 281 North, Spring Branch, TX 78070<br />
+						(830)228-5654<br />
+						Service Times: Sunday, 9am and 11am<br />
+						<a href="http://www.cbcbulverde.com" target="_blank">cbcbulverde.com</a></p>
 					</div>
+				
                     
                     <!-- Content Block Start -->
 					<div class="content-block block half-block">
 						<h1>Corpus Christi</h1>
-						<p>	<a href="http://www.cbccorpuschristi.com" target="_blank"><img src="../images/churchplants/cc.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Ed Davila</strong><br>Service Times: Sunday, 10:30am<br>
+						<p>3126 Holly Road, Corpus Christi, TX 78415<br />	
+						Service Times: Sunday, 10:30am<br />
 						<a href="http://www.cbccorpuschristi.com" target="_blank">cbccorpuschristi.com</a></p>						
 					</div>
                     
-                    <div class="clear"></div>
                     
-                    <!-- Content Block Start -->
-					<div class="content-block block half-block">
-						<h1>Potranco</h1>
-						<p>	<a href="http://www.cbcpotranco.com/"><img src="../images/churchplants/po.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Calvin Copeland</strong><br>
-						Service Times: Sunday, 11:00am<br>
-						<a href="http://www.cbcpotranco.com/">cbcpotranco.com</a>				
-						
-					</div>
                     
-                    <!-- Content Block Start -->
-					<div class="content-block block half-block">
-						<h1>Brooks City</h1>
-						<p>	<a href="http://www.cbcbrookscity.com" target="_blank"><img src="../images/churchplants/bc.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Bryan Thomas</strong><br>Service Times: Sunday, 11:00am<br>
-						<a href="http://www.cbcbrookscity.com" target="_blank">cbcbrookscity.com</a></p>
-					</div>
-                    
-                    <div class="clear"></div>
-					
-					<!-- Content Block Start -->
-					<div class="content-block block half-block">
-						
-						<h2>Alamo Heights</h2>
-						<p>	<a href="http://www.cbcalamoheights.com" target="_blank"><img src="../images/churchplants/ah.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Ken Hicks</strong><br>Service Times: Sunday, <br>5:00pm<br>
-						<a href="http://www.heightscc.com" target="_blank">heightscc.com</a></p>
-					
-					</div>
-					
 					<!-- Content Block Start -->
 					<div class="content-block block half-block">
 						<h1>New Braunfels</h1>
-						<p>	<a href="http://www.cbcnewbraunfels.com" target="_blank"><img src="../images/churchplants/nb2.jpg" class="left margin5" height="100" width="75"></a>
-							<strong>Jay Moeller</strong><br>
+						<p>	2002 Spur Street, New Braunfels, TX 78130<br />
 							Service Times: Sunday, 10:00am<br>
+							(830)387-4079<br />
 							<a href="http://www.cbcnewbraunfels.com">cbcnewbraunfels.com</a></p>
 					</div>
                     
-                    <div class="clear"></div>
-					
-					<!-- Content Block Start -->
-					<div class="content-block block half-block">
-						<h1>Boerne</h1>
-						<p>	<a href="http://www.cbcboerne.com" target="_blank"><img src="../images/churchplants/bo.jpg" class="left margin5" height="100" width="75"></a>
-							<strong>Terry Parks</strong><br>Service Times: Sunday, 10:30am<br>
-							<a href="http://www.cbcboerne.com" target="_blank">cbcboerne.com</a>     </p>
-					</div>
-					
-					<!-- Content Block Start -->
-					<div class="content-block block half-block">
-						<h1>Bulverde</h1>
-						<p>	<a href="http://www.cbcbulverde.com" target="_blank"><img src="../images/churchplants/bul.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Larry Andrews</strong><br>Service Times: Sunday, <br>10:00am<br>
-						<a href="http://www.cbcbulverde.com" target="_blank">cbcbulverde.com</a></p>
-					</div>
-					
+         		
 					<!-- Content Block Start -->
 					<div class="content-block block half-block">
 						<h1>Northwest</h1>
-						<p>	<a href="http://www.cbcnorthwest.com" target="_blank"><img src="../images/churchplants/nw.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Carl Huffaker</strong><br>Service Times: Sunday, <br>9:30am &amp; 11:00am<br>
+						<p>8118 Tezel Rd, San Antonio, TX 78250<br />
+						(210)509-1800<br />
+						Service Times: Sunday, <br>9:30am &amp; 11:00am<br>
 						<a href="http://www.cbcnorthwest.com" target="_blank">cbcnorthwest.com</a></p>
-					</div>					
+					</div>
 					
 					<!-- Content Block Start -->
 					<div class="content-block block half-block">
+						<h1>Schertz</h1>
+						<p>17305 IH 35 N, Suite 132, Schertx, TX 78154<br />
+						(210)651-1773<br />
+						Service Times: Sunday, <br>10:30am<br />
 						
-						<h2>College Station</h2>
-						<p>	<a href="http://www.cbccollegestation.com" target="_blank"><img src="../images/churchplants/cs.jpg" class="left margin5" height="100" width="75"></a>
-						<strong>Brian Smith</strong><br>Service Times: Sunday, 10:30am<br>
-						<a href="http://www.cbccollegestation.com" target="_blank">cbccollegestation.com</a></p>
-					</div>
+						<a href="http://www.cbcsc.com" target="_blank">cbcsc.com</a></p>
+					</div>					
+					
                    
                     <!-- Content Block Start -->
                     <!--
