@@ -120,17 +120,61 @@
 		timeout:  2500
 	});
 	
-	$('#clickme').on('click', function() {
-		$('#events').animate({
-			bottom: '-=112'
-		});
-		$('#event-area').animate({
-			// bottom: '-=109',
-			height: 'toggle'
-		}, 500, function() {
-			console.log('done');
-		});
-	});
+	var slideEvents = {
+		
+		toggle: function( div ) {
+			// check height then call function
+			
+			console.log('click')
+		},
+		
+		up: function( div, speed ) {
+			div.animate({
+				'height': '137'
+			}, speed || 1000 );
+		},
+		
+		down: function(	div, speed ) {
+			div.animate({
+				'height': '28'
+			}, speed || 1000 );
+		}
+		
+	};
+	
+	// On certain time 7 seconds slideDown
+	setTimeout(function() {
+		slideEvents.down( $('#events') );
+	}, 5000);
+	
+	$('#clickme').on('click', slideEvents.toggle);
+	
+	// Be able to toggle back and forth
+
+
+	// $('#clickme').on('click', function() {
+
+		// $('#events').toggle(
+		// 	function() {
+		// 		$(this).animate({ "height":"28px" });
+		// 	},
+		// 	function () {
+		// 		$(this).animate({ "height":"137px" });
+		// 	}
+		// );
+	
+	// });
+	
+	// $('#clickme').on('click', function() {
+	// 	$('#events').toggle({
+	// 		// bottom: '-=112',
+	// 		height: '28px'
+	// 	}, function() {
+	// 		$('#events').animate({
+	// 			height: '137px'
+	// 		})
+	// 	});
+	// });
 	
 })();
 	
