@@ -38,17 +38,7 @@ namespace :deploy do
   
   desc "Delete unwanted files and folders"
   task :setupsite do
-    run "rm -rf #{current_path}/.htaccess 
-      #{current_path}/DEVELOPERS.md 
-      #{current_path}/LICENSE.md 
-      #{current_path}/README.md 
-      #{current_path}/TESTING.md 
-      #{current_path}/application/logs 
-      #{current_path}/application/cache 
-      #{current_path}/application/config/database.php.template 
-      #{current_path}/application/config/f1.php.template 
-      #{current_path}/_new 
-      #{current_path}/_new_old"
+    run "rm -rf #{current_path}/.htaccess #{current_path}/DEVELOPERS.md #{current_path}/LICENSE.md #{current_path}/README.md #{current_path}/TESTING.md #{current_path}/application/logs #{current_path}/application/cache #{current_path}/application/config/database.php.template #{current_path}/application/config/f1.php.template #{current_path}/_new #{current_path}/_new_old"
     run "cp #{shared_path}/settings/.htaccess #{current_path}/.htaccess"
   end
   
