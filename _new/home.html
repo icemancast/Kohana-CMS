@@ -17,40 +17,7 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	
-	<script type="text/javascript">
-		// function toggleDiv(divId) {
-		// 	   		$("#"+divId).hide().slideDown('slow');
-		// 		}
-		
-		$('#clickme').click(function() {
-		  $('#event-area').animate({
-		    opacity: 0.25,
-		    left: '+=50',
-		    height: 'toggle'
-		  }, 5000, function() {
-		    // Animation complete.
-		  });
-		});
-			
-	</script>
-	
-	<!-- <script type="text/javascript">
-	/*<![CDATA[*/
-		// onload
-		$(function() {
-			$("body").addGrid(12, {img_path: 'media/site/images/'});
-		});
-	/*]]>*/
-	</script> -->
-
-	<!-- For Media temple production site -->
-	<!-- <script type="text/javascript" src="http://use.typekit.com/dcu6itq.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
-
-	<!-- For communitybible.com domain -->
-	<!-- <script type="text/javascript" src="http://use.typekit.com/fyc2auk.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
+	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
 
 </head>
 
@@ -130,13 +97,32 @@
 		</div>
 	</header>
 	
-	<section id="home-pics">
-		<img src="images/header-1.jpg">
+	<section id="home-pics" class="slideshow">
+		<img src="images/headers/home/20120417-001.jpg">
+		<img src="images/headers/home/20120417-002.jpg">
+		<img src="images/headers/home/20120417-003.jpg">
+		<img src="images/headers/home/20120417-004.jpg">
+		<img src="images/headers/home/20120417-005.jpg">
+		<img src="images/headers/home/20120417-006.jpg">
+		<img src="images/headers/home/20120417-007.jpg">
+		<img src="images/headers/home/20120417-008.jpg">
+		<img src="images/headers/home/20120417-009.jpg">
+		<img src="images/headers/home/20120417-010.jpg">
+		<img src="images/headers/home/20120417-011.jpg">
+		<img src="images/headers/home/20120417-012.jpg">
+		<img src="images/headers/home/20120417-013.jpg">
+		<img src="images/headers/home/20120417-014.jpg">
+		<img src="images/headers/home/20120417-015.jpg">
+		<img src="images/headers/home/20120417-016.jpg">
+		<img src="images/headers/home/20120417-017.jpg">
+		<img src="images/headers/home/20120417-018.jpg">
+		<img src="images/headers/home/20120417-019.jpg">
+		<img src="images/headers/home/20120417-020.jpg">
 	</section>
 	
 	<section id="events">
 		<div class="container_16">
-			<header id="clickme"><a href="#">Current Events</a></header>
+			<header id="clickme">Current Events</header>
 		</div>
 		<div id="event-area">
 			<div id="event-items" class="container_16">
@@ -176,5 +162,75 @@
 	
 	<footer>
 	</footer>
+<script>
+
+(function() {
+	
+	$(".slideshow").cycle({
+		fx: 'fade',
+		speed: 1000,
+		timeout:  2500
+	});
+	
+	var slideEvents = {
+		
+		toggle: function( div ) {
+			// check height then call function
+			
+			console.log('click')
+		},
+		
+		up: function( div, speed ) {
+			div.animate({
+				'height': '137'
+			}, speed || 1000 );
+		},
+		
+		down: function(	div, speed ) {
+			div.animate({
+				'height': '28'
+			}, speed || 1000 );
+		}
+		
+	};
+	
+	// On certain time 7 seconds slideDown
+	setTimeout(function() {
+		slideEvents.down( $('#events') );
+	}, 5000);
+	
+	$('#clickme').on('click', slideEvents.toggle);
+	
+	// Be able to toggle back and forth
+
+
+	// $('#clickme').on('click', function() {
+
+		// $('#events').toggle(
+		// 	function() {
+		// 		$(this).animate({ "height":"28px" });
+		// 	},
+		// 	function () {
+		// 		$(this).animate({ "height":"137px" });
+		// 	}
+		// );
+	
+	// });
+	
+	// $('#clickme').on('click', function() {
+	// 	$('#events').toggle({
+	// 		// bottom: '-=112',
+	// 		height: '28px'
+	// 	}, function() {
+	// 		$('#events').animate({
+	// 			height: '137px'
+	// 		})
+	// 	});
+	// });
+	
+})();
+	
+</script>
+
 </body>
 </html>

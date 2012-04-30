@@ -16,46 +16,6 @@
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	
-	<script type="text/javascript">
-		// function toggleDiv(divId) {
-		// 	   		$("#"+divId).hide().slideDown('slow');
-		// 		}
-		
-		$('#clickme').click(function() {
-		  $('#event-area').animate({
-		    opacity: 0.25,
-		    left: '+=50',
-		    height: 'toggle'
-		  }, 5000, function() {
-		    // Animation complete.
-		  });
-		});
-			
-	</script>
-	
-	<script type="text/javascript">
-	/*<![CDATA[*/
-		// onload
-		$(function() {
-			$("body").addGrid(12, {img_path: 'media/site/images/'});
-		});
-	/*]]>*/
-	</script>
-
-	<script type="text/javascript" charset="utf-8">
-
-	$(document).ready(function() {
-
-	$(".slideshow").cycle({
-			fx: \fade\,
-			speed: 1000,
-			timeout:  2500
-		});
-
-	});
-
-	</script>
-	
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
 	
