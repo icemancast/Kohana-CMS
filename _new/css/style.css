@@ -16,6 +16,7 @@ body {
 
 #brand {
 	background: url(../images/logo.png) no-repeat;
+	background-position:middle left;
 	display: block;
 	float: left;
 	height: 40px;
@@ -29,6 +30,12 @@ a#brand {
 	color: #fff;
 	display: block;
 	text-decoration: none;
+	
+}
+
+.communitybible{
+	position:relative;
+	top:5px;
 }
 
 #icons-top li{
@@ -80,6 +87,18 @@ a:active#twitter{
 	background: url(../images/icon-twitter-rollover.png) bottom ;
 }
 
+a:link#newsletter{
+	background: url(../images/icon-newsletter-rollover.png) bottom ;
+}
+
+a:hover#newsletter{
+	background: url(../images/icon-newsletter-rollover.png) top ;
+}
+
+a:active#newsletter{
+	background: url(../images/icon-newsletter-rollover.png) bottom ;
+}
+
  nav {
 	color: #fff;
 	float: right;
@@ -115,25 +134,22 @@ nav a:hover {
 	background-color:#000;
 	display: none;
 	font-size: 90%;
-	left: 0%;
-	margin: 30px auto auto 0px;
+	left: -5px;
+	margin: 35px auto auto 0px;
 	padding: 0px;
 	position: absolute;
 	text-align: left;
-	width: 159px;
-	z-index: 500 !important;
+	width: 80px;
+	
 }
 
 #nav li ul li a {
 
 
 	float: left;
-	font-weight: normal !important;
-	letter-spacing: 0.05em;
-	margin-right:-10px;
 	padding: 3px 8px 0px 7px;
 	position: relative;
-	width:135px;
+	width:75px;
 	
 }
 
@@ -351,9 +367,6 @@ div#subnav ul li {
 }
 
 
-
-
-
 .subnav{
 	margin-top:50px;
 	text-align:center;
@@ -364,6 +377,7 @@ div#subnav ul li {
 .subnav ul{
 	
 	padding-bottom:120px;
+
 
 }
 
@@ -392,31 +406,44 @@ div#subnav ul li {
 }
 
 .subnav li ul {
-	background:#20b5a5;
+	
 	display: none;
-	margin: 5px 0px 0px 10px;
-	padding: 0px 40px 0px 0px;
+	margin: 5px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	position: absolute;
-	text-align: left;
-	width:50px;
-	z-index: 500 !important;
+
+
+
+
 }
 
+
+.subnav li ul li{
+	background:#20aa9c;
+	border-radius:25px;
+	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
+	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
+	box-shadow:inset 2px 2px 2px #0b7f72;
+	display:block;
+	text-align:left;
+	padding:2px 14px;
+	width:125px;
+}
 
 .subnav li ul li a:link {
 	background:none !important;
 	border:0px !important;
 	border-radius:0px !important;
 	box-shadow:inset 0px 0px 0px !important;
+	display:block;
 	font-size:18px;
 	font-weight: normal !important;
-	letter-spacing: 0.05em;
-	
+
 	padding: 0px 0px !important;
+	width:150px;
 
 	
-	position: relative;
-	width:50px;
 	
 }
 
@@ -424,6 +451,7 @@ div#subnav ul li {
 .subnav li ul li a:hover {
 	color: #828282;
 	font-size:18px;
+	
 	
 }
 

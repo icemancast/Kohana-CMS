@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	
-	<title>Home Page</title>	
+	<title>Pastoral Care</title>	
 	
 	<meta charset="utf-8" />
 	<meta name="description" content="{description}" />
@@ -49,10 +49,11 @@
 <body>
 	<header id="header">
 		<div id="head" class="container_16">
-			<a href="#" id="brand">COMMUNITY BIBLE CHURCH</a>
+			<a href="#" id="brand"><span class="communitybible">COMMUNITY BIBLE CHURCH</span></a>
 			
 			<section id="icons-top">
 				<ul>
+					<li><a id ="newsletter" href=""> </a><li>
 					<li><a id ="twitter" href=""> </a></li>
 					<li><a id ="facebook" href=""> </a></li>
 					<li><a id="search" href=""> </a></li>
