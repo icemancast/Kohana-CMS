@@ -3,7 +3,7 @@
 
 <head>
 	
-	<title>Home page</title>
+	<title>Home page template</title>
 	
 	<meta charset="utf-8" />
 	<meta name="description" content="{description}" />
@@ -17,41 +17,8 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
 	
-	<script type="text/javascript">
-		// function toggleDiv(divId) {
-		// 	   		$("#"+divId).hide().slideDown('slow');
-		// 		}
-		
-		$('#clickme').click(function() {
-		  $('#event-area').animate({
-		    opacity: 0.25,
-		    left: '+=50',
-		    height: 'toggle'
-		  }, 5000, function() {
-		    // Animation complete.
-		  });
-		});
-			
-	</script>
-	
-	<!-- <script type="text/javascript">
-	/*<![CDATA[*/
-		// onload
-		$(function() {
-			$("body").addGrid(12, {img_path: 'media/site/images/'});
-		});
-	/*]]>*/
-	</script> -->
-
-	<!-- For Media temple production site -->
-	<!-- <script type="text/javascript" src="http://use.typekit.com/dcu6itq.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
-
-	<!-- For communitybible.com domain -->
-	<!-- <script type="text/javascript" src="http://use.typekit.com/fyc2auk.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
-
 </head>
 
 <body>
@@ -130,13 +97,32 @@
 		</div>
 	</header>
 	
-	<section id="home-pics">
-		<img src="images/header-1.jpg">
+	<section id="home-pics" class="slideshow">
+		<img src="images/headers/home/20120417-001.jpg">
+		<img src="images/headers/home/20120417-002.jpg">
+		<img src="images/headers/home/20120417-003.jpg">
+		<img src="images/headers/home/20120417-004.jpg">
+		<img src="images/headers/home/20120417-005.jpg">
+		<img src="images/headers/home/20120417-006.jpg">
+		<img src="images/headers/home/20120417-007.jpg">
+		<img src="images/headers/home/20120417-008.jpg">
+		<img src="images/headers/home/20120417-009.jpg">
+		<img src="images/headers/home/20120417-010.jpg">
+		<img src="images/headers/home/20120417-011.jpg">
+		<img src="images/headers/home/20120417-012.jpg">
+		<img src="images/headers/home/20120417-013.jpg">
+		<img src="images/headers/home/20120417-014.jpg">
+		<img src="images/headers/home/20120417-015.jpg">
+		<img src="images/headers/home/20120417-016.jpg">
+		<img src="images/headers/home/20120417-017.jpg">
+		<img src="images/headers/home/20120417-018.jpg">
+		<img src="images/headers/home/20120417-019.jpg">
+		<img src="images/headers/home/20120417-020.jpg">
 	</section>
 	
 	<section id="events">
 		<div class="container_16">
-			<header id="clickme"><a href="#">Current Events</a></header>
+			<header id="clickme">Current Events</header>
 		</div>
 		<div id="event-area">
 			<div id="event-items" class="container_16">
@@ -176,5 +162,57 @@
 	
 	<footer>
 	</footer>
+<script>
+
+(function() {
+	
+	// Slide show ----------------------------//
+	$(".slideshow").cycle({
+		fx: 'fade',
+		speed: 1000,
+		timeout:  2500
+	});
+	
+	// Slide drawer ---------------------------//
+	var slideEvents = {
+		
+		container: $('#events'),
+		
+		config: {
+			fullHeight: 137,
+			hiddenHeight: 28
+		},
+		
+		toggle: function() {
+			// check height then call function
+			var div = slideEvents.container,
+				divHeight = div.height(),
+				fullHeight = slideEvents.config.fullHeight,
+				hiddenHeight = slideEvents.config.hiddenHeight;
+						
+			(divHeight === fullHeight) ? slideEvents.slide( div, hiddenHeight ): slideEvents.slide( div, fullHeight );
+			
+		},
+		
+		slide: function( div, height, speed ) {
+			div.animate({
+				'height': height
+			}, speed || 300 );
+		},
+		
+	};
+	
+	setTimeout(function() {
+		slideEvents.slide( $('#events'), slideEvents.config.hiddenHeight, 1000 );
+	}, 5000);
+	
+	$('#clickme').on('click', slideEvents.toggle);
+	
+	// 
+	
+})();
+	
+</script>
+
 </body>
 </html>
