@@ -5,11 +5,11 @@ body {
 	background-repeat:no-repeat;
 }
 
-.wrapper{
+#wrapper{
 	background-image: url(../images/background/bg-content2.jpg);
 }
 
-#header {
+header {
 	background: url(../images/header.png);
 	height: 110px;
 	top: 0;
@@ -21,26 +21,23 @@ body {
 #brand {
 	background: url(../images/logo.png) no-repeat;
 	background-position:middle left;
+	color:#fff;
 	display: block;
 	float: left;
 	height: 40px;
-	width: 250px;
 	margin-top: 36px;
 	padding-left: 62px;
+	text-decoration:none;
+	width: 250px;
 	z-index: 3;
 }
 
-a#brand {
-	color: #fff;
-	display: block;
-	text-decoration: none;
-	
-}
-
-.communitybible{
+#brand div {
 	position:relative;
 	top:5px;
 }
+
+
 
 #icons-top li{
 	display:inline;
@@ -53,64 +50,52 @@ a#brand {
 	height:24px;
 	width:24px;
 	
-} 
+}
 
-a:link#search{
-	background: url(../images/icon-search-rollover.png) bottom ;
+a:link#search, a:active#search{
+	background: url(../images/icon-search-rollover.png) bottom;
 }
 
 a:hover#search{
-	background: url(../images/icon-search-rollover.png) top ;
+	background: url(../images/icon-search-rollover.png) top;
 }
 
-a:active#search{
-	background: url(../images/icon-search-rollover.png) bottom ;
-}
-
-a:link#facebook{
-	background: url(../images/icon-facebook-rollover.png) bottom ;
+a:link#facebook, a:active#facebook{
+	background: url(../images/icon-facebook-rollover.png) bottom;
 }
 
 a:hover#facebook{
-	background: url(../images/icon-facebook-rollover.png) top ;
+	background: url(../images/icon-facebook-rollover.png) top;
 }
 
-a:active#facebook{
-	background: url(../images/icon-facebook-rollover.png) bottom ;
-}
-
-a:link#twitter{
-	background: url(../images/icon-twitter-rollover.png) bottom ;
+a:link#twitter, a:active#twitter{
+	background: url(../images/icon-twitter-rollover.png) bottom;
 }
 
 a:hover#twitter{
-	background: url(../images/icon-twitter-rollover.png) top ;
+	background: url(../images/icon-twitter-rollover.png) top;
 }
 
-a:active#twitter{
-	background: url(../images/icon-twitter-rollover.png) bottom ;
-}
-
-a:link#newsletter{
-	background: url(../images/icon-newsletter-rollover.png) bottom ;
+a:link#newsletter, a:active#newsletter{
+	background: url(../images/icon-newsletter-rollover.png) bottom;
 }
 
 a:hover#newsletter{
-	background: url(../images/icon-newsletter-rollover.png) top ;
+	background: url(../images/icon-newsletter-rollover.png) top;
 }
 
-a:active#newsletter{
-	background: url(../images/icon-newsletter-rollover.png) bottom ;
-}
+/*#top-search {
+	position: absolute;
+	top: 50;
+	z-index: 200;
+}*/
 
- nav {
+nav {
 	color: #fff;
 	float: right;
 	height: 20px;
 	margin: -15px auto;
-	
 	text-transform: uppercase;
-
 }
 
 
@@ -135,14 +120,12 @@ nav a:hover {
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
 }
 
-
-#nav li ul {
+nav li ul {
 
 	display: none;
-
 	font-size: 90%;
 	left: -5px;
-	margin:30px 0px 0px -15px;
+	margin:30px 0px 0px -15%;
 	padding: 0px 15px 0px 0px;
 	position: absolute;
 	text-align: left;
@@ -151,46 +134,46 @@ nav a:hover {
 	
 }
 
-#nav li ul li{
-	background:#000000;
+nav li ul li{
+	background:#bd4929;
+	/*border:1px solid #fff;*/
 	margin: 0px;
 }
 
-
-
-
 div.pointer{
 	background:url(../images/pointer.gif) no-repeat top center;
-	width:100px;
-	height:200px;
 	margin-top:8px;
 	padding-top:15px;
+	width:100px;
 	z-index:100;
 	
 }
 
-#nav li ul li a {
+nav li ul li a {
 	float: left;
-
 	padding: 3px 8px 0px 7px;
 	position: relative;
 	width:150px;
 	
 }
 
-#nav li ul li a:hover {
-	color: #fff;
+nav li ul li a:hover {
+	background:#fff;
+	border-radius:0px !important;
+	-moz-border-radius:0px !important; /* Firefox 3.6 and earlier */
+	color: #000;
+	font-style:italic;
+	font-weight:bold;
+	
 }
 
-#nav li:hover ul {
+nav li:hover ul {
 	display: block;
 }
 
-#nav LI.over ul {
+nav LI.over ul {
 	display: block;
 }
-
-
 
 .quicknav {
 	color:#ffffff;
@@ -369,13 +352,13 @@ div.pointer{
 	margin-top:125px;
 }
 
-#wood {
+#header-pics {
 	background: url(../images/bg-wood-sm.png) repeat-x;
 	height:300px;
 	margin:70px 0 0 -20px;
 }
 
-#content-header{
+.slideshow{
 	background-color:#fff;
 	border:5px solid #fff;
 	margin:auto;
@@ -402,22 +385,18 @@ div#subnav ul li {
 .subnav ul{
 	
 	padding-bottom:120px;
-
-
 }
 
 .subnav li{
 	display:inline;
 	margin:5px ;
 	text-align:center;
-	
 }
 
 .subnav a:link{
 	padding:2px 16px;
 }
 	
-
 .subnav li a:hover{
 	background:#20aa9c;
 	border:2px solid #20aa9c;
@@ -427,33 +406,35 @@ div#subnav ul li {
 	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
 	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
 	box-shadow:inset 2px 2px 2px #0b7f72;
-	
 }
 
 .subnav li ul {
 	
 	display: none;
-	margin: 5px 0px 0px 0px;
+	margin: 5px 0px 0px -50px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
+	width:400px;
+}
 
-
-
+.subnav li.margin-right50 ul {
+	
+	display: none;
+	margin: 5px 0px 0px -200px !important;
+	
 
 }
 
 
+
 .subnav li ul li{
-	background:#20aa9c;
-	border-radius:25px;
-	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
-	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
-	box-shadow:inset 2px 2px 2px #0b7f72;
-	display:block;
+
+	
+	display:inline;
 	text-align:left;
 	padding:2px 14px;
-	width:125px;
+	
+	
 }
 
 .subnav li ul li a:link {
@@ -461,12 +442,12 @@ div#subnav ul li {
 	border:0px !important;
 	border-radius:0px !important;
 	box-shadow:inset 0px 0px 0px !important;
-	display:block;
+	display:inline;
 	font-size:18px;
 	font-weight: normal !important;
 
 	padding: 0px 0px !important;
-	width:150px;
+	width:50px;
 
 	
 	
