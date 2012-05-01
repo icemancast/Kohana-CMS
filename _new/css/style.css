@@ -5,6 +5,10 @@ body {
 	background-repeat:no-repeat;
 }
 
+.wrapper{
+	background-image: url(../images/background/bg-content2.jpg);
+}
+
 #header {
 	background: url(../images/header.png);
 	height: 110px;

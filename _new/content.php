@@ -47,6 +47,7 @@
 </head>
 
 <body>
+	<div class="wrapper">
 	<header id="header">
 		<div id="head" class="container_16">
 			<a href="#" id="brand"><span class="communitybible">COMMUNITY BIBLE CHURCH</span></a>
@@ -235,6 +236,7 @@
 	
 	<footer>
 	</footer>
+</div><!--end of .wrapper-->
 </body>
 </html>
 			
