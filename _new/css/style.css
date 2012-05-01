@@ -85,7 +85,7 @@ a:hover#facebook{
 }
 
 a:active#facebook{
-	background: url(../images/icon-facebook-rollover.png) bottom ;
+	background: url(../images/icon-facebook-rollover.png) bottom;
 }
 
 a:link#twitter{

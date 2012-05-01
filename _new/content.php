@@ -49,7 +49,7 @@
 <body>
 	<header id="header">
 		<div id="head" class="container_16">
-			<a href="#" id="brand"><span class="communitybible">COMMUNITY BIBLE CHURCH</span></a>
+			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</di></a>
 			
 			<section id="icons-top">
 				<ul>
