@@ -47,6 +47,7 @@
 </head>
 
 <body>
+	<div class="wrapper">
 	<header id="header">
 		<div id="head" class="container_16">
 			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</di></a>
@@ -67,38 +68,48 @@
 				<ul id="nav">
 					<li><a href="#">Sermons</a>
 					<ul>
+						<div class="pointer">
+						
 						<li><a href="#">item1</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
 					</ul>
 					</li>
 					<li><a href="#">Events</a>
 					<ul>
+						<div class="pointer">
 						<li><a href="#">item1</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
 					</ul>
 					</li>
 					<li><a href="#">Ministries</a>
 					<ul>
+						<div class="pointer">
 						<li><a href="#">item1</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
 					</ul>
 					</li>
 					<li><a href="#">Get Connected</a>
 					<ul>
+						<div class="pointer">
 						<li><a href="#">item1</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
 					</ul>
 					</li>
 					<li><a href="#">About Us</a>
 						<ul>
+							<div class="pointer">
 							<li><a href="#">About CBC</a></li>
 							<li><a href="#">Service Times</a></li>
 							<li><a href="#">Our Locations</a></li>
@@ -108,13 +119,16 @@
 							<li><a href="#">FAQ</a></li>
 							<li><a href="#">Staff</a></li>
 							<li><a href="#">Contact</a></li>
+							</div>
 						</ul>
 					<li><a href="#">Giving</a>
 					<ul>
+						<div class="pointer">
 						<li><a href="#">item1</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
 					</ul>
 					</li>
 				</ul>
@@ -222,6 +236,7 @@
 	
 	<footer>
 	</footer>
+</div><!--end of .wrapper-->
 </body>
 </html>
 			
