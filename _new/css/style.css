@@ -385,22 +385,18 @@ div#subnav ul li {
 .subnav ul{
 	
 	padding-bottom:120px;
-
-
 }
 
 .subnav li{
 	display:inline;
 	margin:5px ;
 	text-align:center;
-	
 }
 
 .subnav a:link{
 	padding:2px 16px;
 }
 	
-
 .subnav li a:hover{
 	background:#20aa9c;
 	border:2px solid #20aa9c;
@@ -410,29 +406,35 @@ div#subnav ul li {
 	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
 	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
 	box-shadow:inset 2px 2px 2px #0b7f72;
-	
 }
 
 .subnav li ul {
 	
 	display: none;
-	margin: 5px 0px 0px 0px;
+	margin: 5px 0px 0px -50px;
 	padding: 0px 0px 0px 0px;
 	position: absolute;
+	width:400px;
+}
+
+.subnav li.margin-right50 ul {
+	
+	display: none;
+	margin: 5px 0px 0px -200px !important;
+	
+
 }
 
 
+
 .subnav li ul li{
-	background:#20aa9c;
-	border-radius:25px;
-	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
-	-moz-box-shadow:inset 2px 2px 2px #0b7f72;
-	-webkit-box-shadow:inset 2px 2px 2px #0b7f72;
-	box-shadow:inset 2px 2px 2px #0b7f72;
-	display:block;
+
+	
+	display:inline;
 	text-align:left;
 	padding:2px 14px;
-	width:125px;
+	
+	
 }
 
 .subnav li ul li a:link {
@@ -440,12 +442,12 @@ div#subnav ul li {
 	border:0px !important;
 	border-radius:0px !important;
 	box-shadow:inset 0px 0px 0px !important;
-	display:block;
+	display:inline;
 	font-size:18px;
 	font-weight: normal !important;
 
 	padding: 0px 0px !important;
-	width:150px;
+	width:50px;
 
 	
 	

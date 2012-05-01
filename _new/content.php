@@ -181,42 +181,56 @@
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Leadership</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Life Recovery</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Marriage &amp; Family</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Mentoring</a>
+					<li class="margin-right50"><a href="#">Mentoring</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Prayer Ministry</a>
+					<li class="margin-right50"><a href="#">Prayer Ministry</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Support Group</a>
+					<li class="margin-right50"><a href="#">Support Group</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					</ul>
