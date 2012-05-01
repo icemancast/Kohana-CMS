@@ -104,16 +104,18 @@ a:active#newsletter{
 	float: right;
 	height: 20px;
 	margin: -15px auto;
-	text-align: right;
+	
 	text-transform: uppercase;
 
 }
+
 
 nav ul li {
 	display: inline;
 	float:left;
 	margin-left: 8px;
 	position:relative;
+	
 }
 
 nav a {
@@ -131,25 +133,44 @@ nav a:hover {
 
 
 #nav li ul {
-	background-color:#000;
+
 	display: none;
+
 	font-size: 90%;
 	left: -5px;
-	margin: 35px auto auto 0px;
-	padding: 0px;
+	margin:30px 0px 0px -15px;
+	padding: 0px 15px 0px 0px;
 	position: absolute;
 	text-align: left;
-	width: 80px;
+	width: 150px;
+	z-index:-1;
+	
+}
+
+#nav li ul li{
+	background:#000000;
+	margin: 0px;
+}
+
+
+
+
+div.pointer{
+	background:url(../images/pointer.gif) no-repeat top center;
+	width:100px;
+	height:200px;
+	margin-top:8px;
+	padding-top:15px;
+	z-index:100;
 	
 }
 
 #nav li ul li a {
-
-
 	float: left;
+
 	padding: 3px 8px 0px 7px;
 	position: relative;
-	width:75px;
+	width:150px;
 	
 }
 

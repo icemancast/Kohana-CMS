@@ -18,7 +18,7 @@
 	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://www.communitybible.com/js/jquery.cycle.all.min.js"></script>
-
+	
 </head>
 
 <body>
@@ -166,67 +166,49 @@
 
 (function() {
 	
+	// Slide show ----------------------------//
 	$(".slideshow").cycle({
 		fx: 'fade',
 		speed: 1000,
 		timeout:  2500
 	});
 	
+	// Slide drawer ---------------------------//
 	var slideEvents = {
 		
-		toggle: function( div ) {
+		container: $('#events'),
+		
+		config: {
+			fullHeight: 137,
+			hiddenHeight: 28
+		},
+		
+		toggle: function() {
 			// check height then call function
+			var div = slideEvents.container,
+				divHeight = div.height(),
+				fullHeight = slideEvents.config.fullHeight,
+				hiddenHeight = slideEvents.config.hiddenHeight;
+						
+			(divHeight === fullHeight) ? slideEvents.slide( div, hiddenHeight ): slideEvents.slide( div, fullHeight );
 			
-			console.log('click')
 		},
 		
-		up: function( div, speed ) {
+		slide: function( div, height, speed ) {
 			div.animate({
-				'height': '137'
-			}, speed || 1000 );
+				'height': height
+			}, speed || 300 );
 		},
-		
-		down: function(	div, speed ) {
-			div.animate({
-				'height': '28'
-			}, speed || 1000 );
-		}
 		
 	};
 	
-	// On certain time 7 seconds slideDown
 	setTimeout(function() {
-		slideEvents.down( $('#events') );
+		slideEvents.slide( $('#events'), slideEvents.config.hiddenHeight, 1000 );
 	}, 5000);
 	
 	$('#clickme').on('click', slideEvents.toggle);
 	
-	// Be able to toggle back and forth
-
-
-	// $('#clickme').on('click', function() {
-
-		// $('#events').toggle(
-		// 	function() {
-		// 		$(this).animate({ "height":"28px" });
-		// 	},
-		// 	function () {
-		// 		$(this).animate({ "height":"137px" });
-		// 	}
-		// );
-	
-	// });
-	
-	// $('#clickme').on('click', function() {
-	// 	$('#events').toggle({
-	// 		// bottom: '-=112',
-	// 		height: '28px'
-	// 	}, function() {
-	// 		$('#events').animate({
-	// 			height: '137px'
-	// 		})
-	// 	});
-	// });
+	// 
 	
 })();
 	
