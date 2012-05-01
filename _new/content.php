@@ -47,10 +47,11 @@
 </head>
 
 <body>
-	<div class="wrapper">
-	<header id="header">
+	<div id="wrapper">
+	<header>
 		<div id="head" class="container_16">
-			<a href="#" id="brand"><div class="communitybible">COMMUNITY BIBLE CHURCH</div></a>
+
+			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</div></a>
 			
 			<section id="icons-top">
 				<ul>
@@ -65,7 +66,7 @@
 			<div class="clear"></div>
 			
 			<nav>
-				<ul id="nav">
+				<ul>
 					<li><a href="#">Sermons</a>
 					<ul>
 						<div class="pointer">
@@ -157,9 +158,9 @@
 	</section>
 	<p class="clear">
 	<section class="subcontent">
-			<div id="wood">
+			<div id="header-pics">
 				
-						<div id="content-header" class="slideshow">
+						<div class="slideshow">
 								<img src="images/headers/pastoral_care/pc-1.jpg" width="940" height="350" />
 								<img src="images/headers/pastoral_care/pc-2.jpg" width="940" height="350" />
 			                    <img src="images/headers/pastoral_care/pc-3.jpg" width="940" height="350" />
@@ -181,42 +182,56 @@
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Leadership</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Life Recovery</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					<li><a href="#">Marriage &amp; Family</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Mentoring</a>
+					<li class="margin-right50"><a href="#">Mentoring</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Prayer Ministry</a>
+					<li class="margin-right50"><a href="#">Prayer Ministry</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
-					<li><a href="#">Support Group</a>
+					<li class="margin-right50"><a href="#">Support Group</a>
 						<ul>
 							<li><a href="#">item1</a></li>
 							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
 						</ul>
 					</li>
 					</ul>
