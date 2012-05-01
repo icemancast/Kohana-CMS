@@ -37,7 +37,10 @@ a#brand {
 	
 }
 
-.communitybible{
+/* ########################################
+believe the code below can just go on lines above under a#brand
+########################################### */
+.communitybible {
 	position:relative;
 	top:5px;
 }
@@ -55,6 +58,13 @@ a#brand {
 	
 } 
 
+/*###################################################
+below can be like the following:
+a:link#search, a:active#search {
+	background: url(../images/icon-search-rollover.png) bottom ;
+}
+#################################################### */
+
 a:link#search{
 	background: url(../images/icon-search-rollover.png) bottom ;
 }
@@ -63,6 +73,9 @@ a:hover#search{
 	background: url(../images/icon-search-rollover.png) top ;
 }
 
+/* #################################################
+below can be removed because of the fix on line 57
+################################################### */
 a:active#search{
 	background: url(../images/icon-search-rollover.png) bottom ;
 }
@@ -103,14 +116,19 @@ a:active#newsletter{
 	background: url(../images/icon-newsletter-rollover.png) bottom ;
 }
 
- nav {
+#top-search {
+	position: absolute;
+	top: 50;
+	z-index: 200;
+}
+
+nav {
 	color: #fff;
 	float: right;
 	height: 20px;
 	margin: -15px auto;
 	
 	text-transform: uppercase;
-
 }
 
 
@@ -135,7 +153,10 @@ nav a:hover {
 	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
 }
 
-
+/* ####################################################
+We need to just have one property for this, we are using nav and then #nav just need to use one and I prefer
+nav alone.
+####################################################### */
 #nav li ul {
 
 	display: none;
