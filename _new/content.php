@@ -47,10 +47,10 @@
 </head>
 
 <body>
-	<div class="wrapper">
-	<header id="header">
+	<div id="wrapper">
+	<header>
 		<div id="head" class="container_16">
-			<a href="#" id="brand"><span class="communitybible">COMMUNITY BIBLE CHURCH</span></a>
+			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</div></a>
 			
 			<section id="icons-top">
 				<ul>
@@ -65,7 +65,7 @@
 			<div class="clear"></div>
 			
 			<nav>
-				<ul id="nav">
+				<ul>
 					<li><a href="#">Sermons</a>
 					<ul>
 						<div class="pointer">
@@ -157,9 +157,9 @@
 	</section>
 	<p class="clear">
 	<section class="subcontent">
-			<div id="wood">
+			<div id="header-pics">
 				
-						<div id="content-header" class="slideshow">
+						<div class="slideshow">
 								<img src="images/headers/pastoral_care/pc-1.jpg" width="940" height="350" />
 								<img src="images/headers/pastoral_care/pc-2.jpg" width="940" height="350" />
 			                    <img src="images/headers/pastoral_care/pc-3.jpg" width="940" height="350" />
