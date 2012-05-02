@@ -48,15 +48,9 @@
 
 <body>
 	<div id="wrapper">
-	<header>
+	<header id="header">
 		<div id="head" class="container_16">
-<<<<<<< HEAD
-
-			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</div></a>
-=======
-			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</di></a>
->>>>>>> parent of 1d5e78c... fixed logo bug on content page
-			
+			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</div></a>			
 			<section id="icons-top">
 				<ul>
 					<li><a id ="newsletter" href=""> </a><li>
@@ -164,7 +158,7 @@
 	<section class="subcontent">
 			<div id="header-pics">
 				
-						<div class="slideshow">
+						<div class="slideshow content-slideshow">
 								<img src="images/headers/pastoral_care/pc-1.jpg" width="940" height="350" />
 								<img src="images/headers/pastoral_care/pc-2.jpg" width="940" height="350" />
 			                    <img src="images/headers/pastoral_care/pc-3.jpg" width="940" height="350" />

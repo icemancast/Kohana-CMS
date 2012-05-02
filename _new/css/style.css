@@ -9,7 +9,7 @@ body {
 	background-image: url(../images/background/bg-content2.jpg);
 }
 
-header {
+#header {
 	background: url(../images/header.png);
 	height: 110px;
 	top: 0;
@@ -358,13 +358,12 @@ nav LI.over ul {
 	margin:70px 0 0 -20px;
 }
 
-.slideshow{
+.content-slideshow{
 	background-color:#fff;
 	border:5px solid #fff;
 	margin:auto;
 	position:relative;
 	top:-60px;
-	
 }
 
 
