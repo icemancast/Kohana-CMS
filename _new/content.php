@@ -50,8 +50,12 @@
 	<div id="wrapper">
 	<header>
 		<div id="head" class="container_16">
+<<<<<<< HEAD
 
 			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</div></a>
+=======
+			<a href="#" id="brand"><div>COMMUNITY BIBLE CHURCH</di></a>
+>>>>>>> parent of 1d5e78c... fixed logo bug on content page
 			
 			<section id="icons-top">
 				<ul>
