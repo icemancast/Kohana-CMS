@@ -102,7 +102,7 @@ nav {
 nav ul li {
 	display: inline;
 	float:left;
-	margin-left: 8px;
+	margin-left: 0px;
 	position:relative;
 	
 }
@@ -121,49 +121,87 @@ nav a:hover {
 }
 
 nav li ul {
-
+	
 	display: none;
 	font-size: 90%;
-	left: -5px;
-	margin:30px 0px 0px -15%;
-	padding: 0px 15px 0px 0px;
+	margin:30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	position: absolute;
+	width:500px;
 	text-align: left;
-	width: 150px;
-	z-index:-1;
-	
 }
 
 nav li ul li{
-	background:#bd4929;
-	/*border:1px solid #fff;*/
-	margin: 0px;
+	
+	margin:20px 20px 0px 0px;
+	padding:0px 10px;
+	position:relative;
+	left:300px;
 }
 
 div.pointer{
-	background:url(../images/pointer.gif) no-repeat top center;
-	margin-top:8px;
+	
+	background:url(../images/pointer.png) no-repeat bottom center;
+	height:15px;
+	margin-top:1px;
 	padding-top:15px;
-	width:100px;
-	z-index:100;
+	position:relative;
+	width:1000px;
+	z-index:2;
 	
 }
 
+ul li div.drop-bg {
+	background:#bd4929;
+	border:1px solid #fff;
+	height:30px;
+
+	margin-top:-1px;
+	position:absolute;
+	z-index:1;
+
+}
+
+nav ul li ul{
+	
+	left:-495px;
+}
+
+nav ul li ul#b{
+	left:-573px;
+}
+
+nav ul li ul#c{
+	left:-637px;
+}
+
+nav ul li ul#d{
+	left:-726px;
+}
+
+nav ul li ul#e{
+	left:-844px;
+}
+
+nav ul li ul#f{
+	left:-921px;
+}
+
 nav li ul li a {
-	float: left;
-	padding: 3px 8px 0px 7px;
+	
+	padding: 3px 0px 0px 7px;
 	position: relative;
-	width:150px;
+	
 	
 }
 
 nav li ul li a:hover {
-	background:#fff;
+
 	border-radius:0px !important;
 	-moz-border-radius:0px !important; /* Firefox 3.6 and earlier */
 	color: #000;
 	font-style:italic;
-	font-weight:bold;
+
 	
 }
 
@@ -174,6 +212,8 @@ nav li:hover ul {
 nav LI.over ul {
 	display: block;
 }
+
+
 
 .quicknav {
 	color:#ffffff;
