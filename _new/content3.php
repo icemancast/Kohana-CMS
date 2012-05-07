@@ -9,7 +9,7 @@
 	<link rel="stylesheet"  media="screen" href="css/reset.css" />
 	<link rel="stylesheet"  media="screen" href="css/text.css" />
 	<link rel="stylesheet"  media="screen" href="css/984_16.css" />
-	<link rel="stylesheet"  media="screen" href="css/style.css" />
+	<link rel="stylesheet"  media="screen" href="css/style3.css" />
 	
 	<script type="text/javascript" src="http://use.typekit.com/juo3kpm.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -66,67 +66,74 @@
 			<nav>
 				<ul>
 					<li><a href="#">Sermons</a>
-					<ul>
+					<ul id="a">
 						<div class="pointer">
 						
-						<li><a href="#">item1</a></li>
+						<li><a href="#">itema</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
+						<div class="drop-bg grid_16">
 						</div>
 					</ul>
 					</li>
 					<li><a href="#">Events</a>
-					<ul>
+					<ul id="b">
 						<div class="pointer">
-						<li><a href="#">item1</a></li>
+						<li><a href="#">itemb</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
 						</div>
+						<div class="drop-bg grid_16">
+						</div>
 					</ul>
 					</li>
-					<li><a href="#">Ministries</a>
-					<ul>
+					<li id="3"><a href="#">Ministries</a>
+					<ul id="c">
 						<div class="pointer">
-						<li><a href="#">item1</a></li>
+						<li><a href="#">itemc</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
+						<div class="drop-bg grid_16">
 						</div>
 					</ul>
 					</li>
 					<li><a href="#">Get Connected</a>
-					<ul>
+					<ul id="d">
 						<div class="pointer">
-						<li><a href="#">item1</a></li>
+						<li><a href="#">itemd</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
 						</div>
+						<div class="drop-bg grid_16">
+						</div>
 					</ul>
 					</li>
 					<li><a href="#">About Us</a>
-						<ul>
+						<ul id="e">
 							<div class="pointer">
-							<li><a href="#">About CBC</a></li>
-							<li><a href="#">Service Times</a></li>
-							<li><a href="#">Our Locations</a></li>
-							<li><a href="#">Baptism</a></li>
-							<li><a href="#">Membership</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Staff</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="#">iteme</a></li>
+							<li><a href="#">item2</a></li>
+							<li><a href="#">item3</a></li>
+							<li><a href="#">item4</a></li>
+							</div>
+							<div class="drop-bg grid_16">
 							</div>
 						</ul>
 					<li><a href="#">Giving</a>
-					<ul>
+					<ul id="f">
 						<div class="pointer">
-						<li><a href="#">item1</a></li>
+						<li><a href="#">itemf</a></li>
 						<li><a href="#">item2</a></li>
 						<li><a href="#">item3</a></li>
 						<li><a href="#">item4</a></li>
+						</div>
+						<div class="drop-bg grid_16">
 						</div>
 					</ul>
 					</li>
@@ -134,13 +141,14 @@
 			</nav>
 		</div>
 	</header>
-		
+	
+	
+	
 	<section id="content" class="container_16">
 		
 		<div id="title" class="grid_16">
 			<nav class="quicknav">
 				<ul>
-					<!-- Do images as backgrounds -->
 					<li><a href="#"><img src="images/icon-events-sm.png"> <span>Events</span></a></li>
 					<li><a href="#"><img src="images/icon-contact-sm.png"> <span>Contact</span></a></li>
 					<li><a href="#"><img src="images/icon-newsletter-sm.png"><span> Newsletter</span></a></li>
