@@ -134,14 +134,13 @@
 			</nav>
 		</div>
 	</header>
-	
-	
-	
+		
 	<section id="content" class="container_16">
 		
 		<div id="title" class="grid_16">
 			<nav class="quicknav">
 				<ul>
+					<!-- Do images as backgrounds -->
 					<li><a href="#"><img src="images/icon-events-sm.png"> <span>Events</span></a></li>
 					<li><a href="#"><img src="images/icon-contact-sm.png"> <span>Contact</span></a></li>
 					<li><a href="#"><img src="images/icon-newsletter-sm.png"><span> Newsletter</span></a></li>

@@ -32,11 +32,12 @@ abstract class Controller_Site_Default extends Controller_Template {
 			
 			// Development scripts
 			$this->template->scripts 		= array(
-				'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js',
-				URL::base() . 'media/site/js/plugin.jquery.countdown.js',
+				'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js',
+				// URL::base() . 'media/site/js/plugin.jquery.countdown.js',
 				URL::base() . 'media/site/js/plugin.jquery.cycle.lite.js',
-				URL::base() . 'media/site/js/plugin.jquery.toggleValue.min.js',
-				URL::base() . 'media/site/js/common.js',
+				// URL::base() . 'media/site/js/plugin.jquery.toggleValue.min.js',
+				// URL::base() . 'media/site/js/common.js',
+				'http://use.typekit.com/juo3kpm.js',
 				// URL::base() . 'media/site/js/dev-plugin.jquery.960grid-1.0.js',
 			);
 			
@@ -49,7 +50,6 @@ abstract class Controller_Site_Default extends Controller_Template {
 			
 			$this->template->head_code		= ''; // Not sure if i need this
 			// $this->template->nav			= View::factory('site/blocks/nav')->render();
-			$this->template->leftnav		= View::factory('site/blocks/homeleftnav')->render();
 			$this->template->search			= View::factory('site/blocks/search')->render();
 			$this->template->banners		= View::factory('site/blocks/banners')->render();
 			$this->template->footer			= View::factory('site/blocks/footer')->render();
