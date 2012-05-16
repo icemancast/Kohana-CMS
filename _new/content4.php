@@ -66,35 +66,68 @@
 			
 		</div>
 	</header>
-	<div id="navbar"> </div>
-	<nav>
-		<ul class="container_16">
-			<li>Messages</li>
-			<li>Events</li>
-			<li>Ministries</li>
-			<li>Get Involved</li>
-			<li>About Us</li>
-			<li>Giving</li>
-			<li>Get Help</li>
-			<ul>
-	</nav>
 	
-	<section id="content" class="container_16">
-		
-		<div id="title" class="grid_16">
-
-			<h1>Pastoral Care.</h1>
-			
-			<p class="condensed">CBC'S PASTORAL CARE MINISTRY IS COMMITTED TO OFFERING SOLUTIONS FOR YOUR PRESENT NEEDS WHILE STRENGTHENING YOU FOR THE FUTURE.</p>
-			<p class="copy">We are committed to bringing Christ-centered ministries: To encourage you as an individual to grow in Christ. To enrich your life with biblical teaching within a healing community. To empower you to experience God's healing and direction in your life. We hope you will become familiar with the many ways we are here to serve you.</p>
-			
+	<section id="nav-wrapper">
+		<div id="navbar">
+			<nav>
+				<ul>
+					<li><a href="#">New Here</a>
+						<ul>
+							<li>New Here</li>
+							<li>Something Something</li>
+						</ul>
+					<li>
+					<li><a href="#">Messages</a>
+						<ul>
+							<li>Messages</li>
+							<li>More Something</li>
+						</ul>
+					</li>
+					<li><a href="#">Events</a>
+						<ul>
+							<li>Events</li>
+							<li>Some Thing</li>
+						</ul>
+					</li>
+					<li><a href="#">Need Help</a>
+						<ul>
+							<li>Need Help</li>
+							<li>Something Help</li>
+							</ul>
+					</li>
+					<li><a href="#">Ministries</a>
+						<ul>
+							<li>Ministries</li>
+							<li>More Ministry Links</li>
+							</ul>
+					</li>
+					<li><a href="#">Get Connected</a>
+						<ul>
+							<li>Get Connected</li>
+							<li>Something Connections</li>
+							</ul>
+					</li>
+					<li><a href="#">CBC Online</a>
+						<ul>
+							<li>CBC Online</li>
+							<li>Something Online</li>
+							</ul>
+					</li>
+					<li><a href="#">Give</a>
+						<ul>
+							<li>Give</li>
+							<li>Something Something</li>
+							</ul>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</section>
+	
 	<p class="clear">
 	<section class="subcontent">
 			<div id="header-pics">
-				
-						<div class="slideshow content-slideshow">
+				<div class="slideshow content-slideshow">
 								<img src="images/headers/pastoral_care/pc-1.jpg" width="940" height="350" />
 								<img src="images/headers/pastoral_care/pc-2.jpg" width="940" height="350" />
 			                    <img src="images/headers/pastoral_care/pc-3.jpg" width="940" height="350" />
@@ -102,12 +135,10 @@
 								<img src="images/headers/pastoral_care/pc-5.jpg" width="940" height="350" />
 			                    <img src="images/headers/pastoral_care/pc-6.jpg" width="940" height="350" />
 								<img src="images/headers/pastoral_care/pc-7.jpg" width="940" height="350" />
-						</div>
-				
-			
-			
+				</div>
 			</div>
-
+	
+	
 			<div id="subnav">
 				<ul class="subnav condensed container_16">
 					
@@ -190,7 +221,21 @@
 						</ul>
 					</li>
 					</ul>
-			</div>	
+			</div>
+	
+	<section id="content" class="container_16">
+		
+		<div id="title" class="grid_16">
+
+			<h1>Pastoral Care.</h1>
+			
+			<p class="condensed">CBC'S PASTORAL CARE MINISTRY IS COMMITTED TO OFFERING SOLUTIONS FOR YOUR PRESENT NEEDS WHILE STRENGTHENING YOU FOR THE FUTURE.</p>
+			<p class="copy">We are committed to bringing Christ-centered ministries: To encourage you as an individual to grow in Christ. To enrich your life with biblical teaching within a healing community. To empower you to experience God's healing and direction in your life. We hope you will become familiar with the many ways we are here to serve you.</p>
+			
+		</div>
+	
+
+			
 			
 			<div class="container_16">
 				<p class="condensed">Anger, Faith, Self-Esteem, Sin, Premarital &amp; Marital Issues, Discouragement, Loneliness, Grief & Loss, Parenting Issues.</p>

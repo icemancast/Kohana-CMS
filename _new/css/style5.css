@@ -103,70 +103,115 @@ a:hover#newsletter{
 	background:#bd4929;
 	height:50px;
 	width:100%;
-/*	opacity:0.6;*/
+	opacity:0.6;
 	position:relative;
 	top:85px;
 }
 
-nav{
-	
-	position:relative;
-	
+#navbar{
+	background
 	height:50px;
-	width:100%;
+	width:400px;
+	
+}
+
+nav{
+	color:#fff;
+	position:relative;
+	text-transform:uppercase;
+	top:48px;
+	padding:1px;
 }
 
 nav ul{
-	height:60px;
+	left:125px;
 	position:relative;
-	text-align:center;
+}
+
+
+nav ul li{
 	
-	top:15px;
-	width:100%;
-}
-
-nav li{
 	display:inline;
+	color:#bd4929;
+/*	float:left;*/
+	font-size:14px;
+	margin-left:0px;
+	margin-right:0px;
 
-
-	margin:0px;
-	padding:20px;
+	
+	position:relative;
+	top:0px;
+/*	width:100px;*/
+	z-index:1;
 }
 
-nav li:hover, nav li:active{
+nav ul li a{
+	border:1px solid #fff;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 14px;
+}
+
+nav ul li a:hover, nav ul li a:active{
 	background:#fff;
 	color:#bd4929;
-	padding:20px;
+	padding:10px 14px;
 }
 
-nav li a:link, nav li a:visited{
-	color:#fff;
-	
-	text-decoration:none;
-
-}
-
-nav li a:hover{
-	color:#bd4929;
-}
 
 nav li ul{
 	background:#fff;
+	border:1px solid #fff;
 	display:none;
-	padding-top:20px;
-	position:absolute;
-	top:25px;
+/*	float:left;*/
+	height:50px;
+/*	position:relative !important;*/
+	top:100px;
+
+	width:1000px;
+}
+
+.tab{
+	background:#fff;
+/*	border:1px solid #000;*/
+	color:#bd4929;
 	
+	height:50px;
+	padding-top:18px;
+	position:relative;
+	text-align:center;
+	top:-50px;
+	
+	z-index:2;
+
 }
 
-nav li ul li, nav li ul li:hover{
-	padding:0px !important;
+#tab1{
+	width:99px;
+	left:124px;
 }
 
+#tab2{
+	width:80px;
+	left:226px;
+}
+
+.tab a:link, .tab a:hover, .tab a:visited, .tab a:active{
+	color:#bd4929;
+}
+
+
+
+nav li ul li{
+	position:relative;
+	top:-50px;
+
+
+}
 
 nav li:hover ul {
 	display: block !important;
-	
+	position:relative;
 
 }
 
