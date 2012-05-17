@@ -71,51 +71,51 @@
 		<div id="navbar">
 			<nav>
 				<ul>
-					<li><a href="#">New Here</a>
+					<li>New Here
 						<ul>
 							<li>New Here</li>
 							<li>Something Something</li>
 						</ul>
 					<li>
-					<li><a href="#">Messages</a>
+					<li>Messages
 						<ul>
 							<li>Messages</li>
 							<li>More Something</li>
 						</ul>
 					</li>
-					<li><a href="#">Events</a>
+					<li>Events
 						<ul>
 							<li>Events</li>
 							<li>Some Thing</li>
 						</ul>
 					</li>
-					<li><a href="#">Need Help</a>
+					<li>Need Help
 						<ul>
 							<li>Need Help</li>
 							<li>Something Help</li>
 							</ul>
 					</li>
-					<li><a href="#">Ministries</a>
+					<li>Ministries
 						<ul>
 							<li>Ministries</li>
 							<li>More Ministry Links</li>
 							</ul>
 					</li>
-					<li><a href="#">Get Connected</a>
+					<li>Get Connected
 						<ul>
 							<li>Get Connected</li>
 							<li>Something Connections</li>
 							</ul>
 					</li>
-					<li><a href="#">CBC Online</a>
+					<li>CBC Online
 						<ul>
 							<li>CBC Online</li>
 							<li>Something Online</li>
 							</ul>
 					</li>
-					<li><a href="#">Give</a>
+					<li>Give
 						<ul>
-							<li>Give</li>
+							<li>Giving</li>
 							<li>Something Something</li>
 							</ul>
 					</li>

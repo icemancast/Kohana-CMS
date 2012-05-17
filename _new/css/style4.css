@@ -105,7 +105,7 @@ a:hover#newsletter{
 	width:100%;
 /*	opacity:0.6;*/
 	position:relative;
-	top:85px;
+	top:88px;
 }
 
 nav{
@@ -127,20 +127,30 @@ nav ul{
 
 nav li{
 	display:inline;
-
+	
 
 	margin:0px;
 	padding:20px;
+	z-index:1;
+}
+
+
+
+nav li a:hover{
+	color:#bd4929;
+
 }
 
 nav li:hover, nav li:active{
 	background:#fff;
+
 	color:#bd4929;
-	padding:20px;
+
 }
 
 nav li a:link, nav li a:visited{
 	color:#fff;
+	height:100px;
 	
 	text-decoration:none;
 
@@ -148,6 +158,9 @@ nav li a:link, nav li a:visited{
 
 nav li a:hover{
 	color:#bd4929;
+	height:100px;
+	
+	
 }
 
 nav li ul{
@@ -155,9 +168,11 @@ nav li ul{
 	display:none;
 	padding-top:20px;
 	position:absolute;
-	top:25px;
+	top:35px;
+	
 	
 }
+
 
 nav li ul li, nav li ul li:hover{
 	padding:0px !important;
