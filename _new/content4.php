@@ -71,49 +71,49 @@
 		<div id="navbar">
 			<nav>
 				<ul>
-					<li><img src="images/icons/new.png"> New Here
+					<li><img src="images/new.png"> New Here
 						<ul>
 							<li>New Here</li>
 							<li>Something Something</li>
 						</ul>
 					<li>
-					<li><img src="images/icons/play.png"> Messages
+					<li><img src="images/play.png"> Messages
 						<ul>
 							<li>Messages</li>
 							<li>More Something</li>
 						</ul>
 					</li>
-					<li><img src="images/icons/events.png"> Events
+					<li><img src="images/events.png"> Events
 						<ul>
 							<li>Events</li>
 							<li>Some Thing</li>
 						</ul>
 					</li>
-					<li><img src="images/icons/help.png"> Need Help
+					<li><img src="images/help.png"> Need Help
 						<ul>
 							<li>Need Help</li>
 							<li>Something Help</li>
 							</ul>
 					</li>
-					<li><img src="images/icons/ministries.png">  Ministries
+					<li><img src="images/ministries.png">  Ministries
 						<ul>
 							<li>Ministries</li>
 							<li>More Ministry Links</li>
 							</ul>
 					</li>
-					<li><img src="images/icons/connected.png"> Get Connected
+					<li><img src="images/connected.png"> Get Connected
 						<ul>
 							<li>Get Connected</li>
 							<li>Something Connections</li>
 							</ul>
 					</li>
-					<li><img src="images/icons/online.png">  CBC Online
+					<li><img src="images/online.png">  CBC Online
 						<ul>
 							<li>CBC Online</li>
 							<li>Something Online</li>
 							</ul>
 					</li>
-					<li><img src="images/icons/give.png">  Give
+					<li><img src="images/give.png">  Give
 						<ul>
 							<li>Giving</li>
 							<li>Something Something</li>
