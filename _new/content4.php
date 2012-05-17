@@ -71,49 +71,49 @@
 		<div id="navbar">
 			<nav>
 				<ul>
-					<li>New Here
+					<li><img src="images/icons/new.png"> New Here
 						<ul>
 							<li>New Here</li>
 							<li>Something Something</li>
 						</ul>
 					<li>
-					<li>Messages
+					<li><img src="images/icons/play.png"> Messages
 						<ul>
 							<li>Messages</li>
 							<li>More Something</li>
 						</ul>
 					</li>
-					<li>Events
+					<li><img src="images/icons/events.png"> Events
 						<ul>
 							<li>Events</li>
 							<li>Some Thing</li>
 						</ul>
 					</li>
-					<li>Need Help
+					<li><img src="images/icons/help.png"> Need Help
 						<ul>
 							<li>Need Help</li>
 							<li>Something Help</li>
 							</ul>
 					</li>
-					<li>Ministries
+					<li><img src="images/icons/ministries.png">  Ministries
 						<ul>
 							<li>Ministries</li>
 							<li>More Ministry Links</li>
 							</ul>
 					</li>
-					<li>Get Connected
+					<li><img src="images/icons/connected.png"> Get Connected
 						<ul>
 							<li>Get Connected</li>
 							<li>Something Connections</li>
 							</ul>
 					</li>
-					<li>CBC Online
+					<li><img src="images/icons/online.png">  CBC Online
 						<ul>
 							<li>CBC Online</li>
 							<li>Something Online</li>
 							</ul>
 					</li>
-					<li>Give
+					<li><img src="images/icons/give.png">  Give
 						<ul>
 							<li>Giving</li>
 							<li>Something Something</li>

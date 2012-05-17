@@ -130,7 +130,8 @@ nav li{
 	
 
 	margin:0px;
-	padding:20px;
+	padding:20px 15px;
+	text-transform:uppercase;
 	z-index:1;
 }
 
