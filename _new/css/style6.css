@@ -111,7 +111,6 @@ a:hover#newsletter{
 nav{
 	
 	position:relative;
-	
 	height:50px;
 	width:100%;
 }
@@ -133,6 +132,7 @@ nav li{
 	padding:20px 16px;
 	text-transform:uppercase;
 	z-index:1;
+	
 }
 
 
@@ -146,11 +146,11 @@ nav li div{
 }
 
 nav li div.left-border{
-	margin:4px 0px 0px -15px;
+	margin:4px 0px 0px -10px;
 }
 
 nav li div.right-border{
-	margin:3px 0px 0px 10px;
+	margin:3px 0px 0px 15px;
 }
 
 nav li a:hover{
@@ -178,7 +178,7 @@ nav li a:link, nav li a:visited{
 nav li a:hover{
 	color:#bd4929;
 	height:100px;
-	padding:20px;
+	padding:25px;
 	
 	
 }
