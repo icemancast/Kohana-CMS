@@ -43,7 +43,7 @@ body {
 .grid_14,
 .grid_15,
 .grid_16 {
-/*	display:inline;*/
+	display:inline;
 	float: left;
 	position: relative;
 	margin-left: 10px;
@@ -51,6 +51,7 @@ body {
 }
 
 
+}
 
 .push_1, .pull_1,
 .push_2, .pull_2,
