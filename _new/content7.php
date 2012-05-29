@@ -57,6 +57,7 @@
 					<li><a id ="twitter" href=""> </a></li>
 					<li><a id ="facebook" href=""> </a></li>
 					<li><a id="search" href=""> </a></li>
+					<li><form><input></input></form></li>
 				</ul>
 				
 			</section>
@@ -74,17 +75,27 @@
 					<li><p>New Here</p>
 						<ul>
 							<li>New Here</li>
-							<li>Something Something</li>
+							<li>Click Here</li>
 						</ul>
 					
 					</li>
 				
 					<li> <div class="left-border"></div><!--nav divider--><p> Messages</p>
-						
+					
 						<ul>
-							<li>Messages</li>
-							<li>More Something</li>
+						
+							<li><img src="images/robert.jpg" />Robert Emmitt
+
+
+
+							<li><img src="images/chris.jpg" />Chris Emmitt</li>
+							
+						
+							<li><img src="images/john.jpg" />John Val</li>
+
+							
 						</ul>
+
 					<div class="right-border"></div><!--nav divider-->
 					</li>
 					

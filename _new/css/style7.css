@@ -54,6 +54,18 @@ body {
 	
 }
 
+#icons-top input{
+	height:19px;
+	position:relative;
+	top:-1px;
+}
+
+#search{
+	margin-left:-24px;
+	position:relative;
+	z-index:1;
+}
+
 a:link#search, a:active#search{
 	background: url(../images/icon-search-rollover.png) bottom;
 }
@@ -116,7 +128,7 @@ nav{
 }
 
 nav ul{
-	height:60px;
+	height:180px;
 	position:relative;
 	text-align:center;
 	
@@ -191,7 +203,8 @@ nav li a:hover{
 nav li ul{
 	background:#fff;
 	display:none;
-	padding-top:20px;
+	padding-top:5px;
+	padding-left:0px;
 	position:absolute;
 	top:35px;
 	
@@ -199,12 +212,32 @@ nav li ul{
 }
 
 nav li ul li{
-	margin: 0px !important;
+	color:#000;
+	display:inline;
+	font-size:90%;
+	margin-right: 100px !important;
+/*	text-align:left;*/
+
+}
+
+nav li ul img{
+/*	float:left;*/
+	margin-right:10px;
 }
 
 
 nav li ul li, nav li ul li:hover{
+	color:#000;
 	padding:0px !important;
+}
+
+nav li ul li a:link{
+	color:#4cadc1;
+	padding:0px;
+}
+
+nav li ul li a:hover{
+	color:#bd4929;
 }
 
 
