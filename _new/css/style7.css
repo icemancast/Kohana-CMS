@@ -204,20 +204,34 @@ nav li ul{
 	background:#fff;
 	display:none;
 	padding-top:5px;
-	padding-left:0px;
+	
 	position:absolute;
+
 	top:35px;
+	
 	
 	
 }
 
 nav li ul li{
+	border:1px solid #fff;
 	color:#000;
 	display:inline;
 	font-size:90%;
 	margin-right: 100px !important;
-/*	text-align:left;*/
+	text-transform:capitalize;
+	
 
+}
+
+nav li ul li table{
+	float:left;
+	margin-right:100px;
+	
+}
+
+nav li ul li td.pastor{
+	font-weight:900;
 }
 
 nav li ul img{

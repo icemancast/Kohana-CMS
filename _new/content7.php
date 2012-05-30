@@ -77,23 +77,74 @@
 							<li>New Here</li>
 							<li>Click Here</li>
 						</ul>
-					
 					</li>
 				
 					<li> <div class="left-border"></div><!--nav divider--><p> Messages</p>
 					
 						<ul>
-						
-							<li><img src="images/robert.jpg" />Robert Emmitt
+							<li>
+
+							<table>
+																						<tr>
+																							<td rowspan="5"><img src="images/robert.jpg" /></td>
+																						</tr>
+																						<tr>
+																							<td class="pastor">Robert Emmitt</td>
+																						</tr>
+																						<tr>
+																							<td>Watch Sermons</td>
+																						</tr>
+																						<tr>
+																							<td>iTunes Subscription</td>
+																						</tr>
+																						<tr>
+																							<td>Podcast Feed</td>
+																						</tr>
+																						
+																					</table>
+																						
+																					
+																						
 
 
+																					<table>
+																						<tr>
+																							<td rowspan="5"><img src="images/john.jpg" /></td>
+																						</tr>
+																						<tr>
+																							<td>John Val</td>
+																						</tr>
+																						<tr>
+																							<td>Watch Sermons</td>
+																						</tr>
+																						<tr>
+																							<td>iTunes Subscription</td>
+																						</tr>
+																						<tr>
+																							<td>Podcast Feed</td>
+																						</tr>
+																					</table>
+																									
+																					<table>
+																						<tr>
+																							<td rowspan="5"><img src="images/chris.jpg" /></td>
+																						</tr>
+																						<tr>
 
-							<li><img src="images/chris.jpg" />Chris Emmitt</li>
+																							<td>Chris Emmitt</td>
+																						</tr>
+																						<tr>
+																							<td>Watch Sermons</td>
+																						</tr>
+																						<tr>
+																							<td>iTunes Subscription</td>
+																						</tr>
+																						<tr>
+																							<td>Podcast Feed</td>
+																						</tr>
+																					</table>
 							
-						
-							<li><img src="images/john.jpg" />John Val</li>
-
-							
+						</li>	
 						</ul>
 
 					<div class="right-border"></div><!--nav divider-->
